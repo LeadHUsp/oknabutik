@@ -1,0 +1,59 @@
+.child-tabs {
+  display: flex;
+}
+.child-tabs__nav {
+  padding: 36px 25px 0;
+  display: flex;
+  flex-direction: column;
+}
+.child-tabs__btn {
+  position: relative;
+  text-align: left;
+  padding: 14px 26px;
+  background: #e9f2f7;
+  border-radius: 3px;
+  margin-top: 20px;
+  font-size: 13px;
+  line-height: 16px;
+  transition: all 0.5s ease-in-out;
+  &:first-child {
+    margin-top: 0;
+  }
+  &:hover {
+    background: darken(#e9f2f7, 10%);
+  }
+}
+.child-tabs__triangle {
+  content: '';
+  position: absolute;
+  right: -12px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 11px 0 11px 12px;
+  border-color: transparent transparent transparent $yellow;
+  display: none;
+  transition: all 0.5s ease-in-out;
+}
+.child-tabs__btn-active {
+  background: $yellow;
+  filter: drop-shadow(0px 6px 20px rgba(26, 64, 73, 0.12));
+  & > .child-tabs__triangle {
+    display: block;
+  }
+  &:hover {
+    background: darken($yellow, 5%);
+  }
+  &:hover > .child-tabs__triangle {
+    border-color: transparent transparent transparent darken($yellow, 5%);
+  }
+}
+.child-tabs__link-title {
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 120%;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+}

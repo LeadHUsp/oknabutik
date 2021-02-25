@@ -35,6 +35,10 @@
     "webpack": "^5.23.0",
     "webpack-stream": "^6.1.2"
   },
+  "browserslist": [
+    "> 2%",
+    "not dead"
+  ],
   "dependencies": {
     "gsap": "npm:@gsap/shockingly@^3.6.0",
     "install": "^0.13.0"

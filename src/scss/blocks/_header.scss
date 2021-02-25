@@ -21,6 +21,7 @@
   align-items: center;
   box-shadow: 0px 6px 20px rgba(26, 64, 73, 0.12);
   border-radius: 0px 0px 3px 3px;
+  background: #fff;
 }
 .header__list {
   display: flex;
@@ -47,7 +48,7 @@
   font-size: 27px;
   font-weight: bold;
   color: $text;
-  font-feature-settings: "pnum" on, "lnum" on;
+  font-feature-settings: 'pnum' on, 'lnum' on;
 }
 .header__item-messagers {
   width: width(975, 100);

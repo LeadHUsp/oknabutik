@@ -2,11 +2,11 @@
 
 doctype
 html
-	include blocks/head.pug
+	include blocks/_head.pug
 		title index page
 	body
-		include blocks/header.pug
-		.banner(style={'background-image': 'url(../img/main/main.png)'})
+		include blocks/_header.pug
+		.banner(style={'background-image': 'url(/img/main/main.png)'})
 			.container
 				.banner__wrapper 
 					.banner__title
@@ -35,13 +35,13 @@ html
 							button(type="submit" class="btn banner-form__btn") Рассчитать окно
 						.banner-form__policy Нажимая на кнопку, вы даете согласие на 
 							a(href="#" class="banner-form__link")  обработку своих персональных данных.
-		include blocks/page-inner.pug
-		include blocks/product-tabs.pug
+		include blocks/_page-inner.pug
+		include blocks/_product-tabs.pug
 
 
 		
 		
 			
 		
-		include blocks/footer.pug
-		include blocks/scripts.pug
+		include blocks/_footer.pug
+		include blocks/_scripts.pug
