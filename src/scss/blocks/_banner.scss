@@ -1,0 +1,93 @@
+.banner {
+  padding-top: 116px;
+  padding-bottom: 100px;
+  background-size: cover;
+  background-position: center;
+}
+.banner__wrapper {
+  width: width(1170, 770);
+}
+.banner__title {
+  font-size: 60px;
+  line-height: 63px;
+  font-weight: 300;
+  padding-bottom: 20px;
+}
+.banner__subtitle {
+  font-size: 24px;
+  line-height: 24px;
+  padding-bottom: 21px;
+  font-weight: 600;
+}
+.banner__text {
+  font-size: 18px;
+  line-height: 150%;
+  padding-bottom: 27px;
+}
+.banner__list {
+  width: width(770, 680);
+  padding-bottom: 37px;
+  display: flex;
+}
+.banner__item {
+  display: flex;
+  padding-right: 15px;
+  flex-shrink: 1;
+  font-weight: 300;
+
+  &:nth-child(2) {
+    flex-shrink: 1;
+  }
+  &:nth-child(3) {
+    flex-shrink: 1;
+    padding-right: 0;
+  }
+}
+.banner__number {
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 60px;
+  flex-shrink: 0;
+  padding-right: 8px;
+}
+.banner__advantage {
+  flex-shrink: 1;
+  font-size: 17px;
+  line-height: 120%;
+}
+.banner-form {
+  padding: 20px 30px;
+  background: #fff;
+}
+.banner-form__title {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 130%;
+  letter-spacing: 0.01em;
+  color: #2a3135;
+  margin-bottom: 12px;
+}
+.banner-form__form {
+  display: flex;
+}
+.banner-form__input {
+  width: width(3, 1);
+  margin-right: 17px;
+}
+.banner-form__btn {
+  width: width(3, 1);
+}
+.banner-form__policy {
+  padding-top: 12px;
+  font-size: 11px;
+  line-height: 140%;
+  opacity: 0.7;
+}
+.banner-form__link {
+  color: inherit;
+  text-decoration: underline;
+  transition: 0.4s ease;
+  &:hover {
+    color: $orange;
+  }
+}

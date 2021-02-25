@@ -1,0 +1,95 @@
+.header {
+  position: relative;
+}
+.header__inner {
+  position: relative;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  padding-left: 195px;
+  font-size: 14px;
+  color: $gray;
+  z-index: 1000;
+}
+.logo {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 170px;
+  height: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 6px 20px rgba(26, 64, 73, 0.12);
+  border-radius: 0px 0px 3px 3px;
+}
+.header__list {
+  display: flex;
+  justify-content: space-between;
+}
+.header__item {
+  width: width(975, 129);
+  display: flex;
+  align-items: center;
+}
+.header__icon {
+  margin-right: 10px;
+}
+.header__item-work {
+  width: width(975, 136);
+}
+.header__item-tel {
+  width: width(975, 270);
+}
+.header-tel {
+  padding-left: 10px;
+}
+.header-tel__item {
+  font-size: 27px;
+  font-weight: bold;
+  color: $text;
+  font-feature-settings: "pnum" on, "lnum" on;
+}
+.header__item-messagers {
+  width: width(975, 100);
+  flex-direction: column;
+}
+.messagers-links {
+  padding-top: 5px;
+  display: flex;
+}
+.messagers-links__item {
+  display: block;
+  margin-right: 5px;
+}
+.messagers-links__item:last-child {
+  margin-right: 0;
+}
+.header-nav {
+  background: $orange;
+
+  color: #fff;
+  z-index: 500;
+}
+.stellarnav {
+  .header-nav__item {
+    flex-shrink: 1;
+  }
+  .header-nav__link {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 10px;
+    padding: 20px 10px;
+    color: #fff;
+    &:hover {
+      background: $danger;
+    }
+  }
+
+  .header-nav__list {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.header-nav__container {
+  padding-left: 195px;
+}

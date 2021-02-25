@@ -1,0 +1,66 @@
+//utils
+@import "utils/_reset", "utils/_vars", "utils/_mixins", "utils/fonts";
+@import "../fonts/fontello/css/fontello.css";
+
+// blocks
+@import "blocks/_header", "blocks/_footer", "blocks/banner", "blocks/page-inner";
+
+@include make_container($breakpoints);
+
+html,
+body {
+  font-family: "Myriad Pro", sans-serif;
+  background: #fff;
+  color: $text;
+}
+.icon {
+  width: 46px;
+  height: 46px;
+  background: #fff;
+  border-radius: 50%;
+  font-size: 21px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $danger;
+  box-shadow: 0px 0px 27px -1px rgba(34, 60, 80, 0.16);
+  flex-shrink: 0;
+}
+.btn {
+  font-size: 16px;
+  font-weight: 700;
+  background: $danger;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: 0.4s ease;
+  &:hover {
+    background: darken($danger, 20%);
+  }
+}
+.input {
+  font-size: 14px;
+  line-height: 16px;
+  font-family: inherit;
+  font-weight: 300;
+  padding: 17px 20px;
+  color: $text;
+  letter-spacing: 0.01em;
+  font-feature-settings: "pnum" on, "lnum" on;
+  border: 1px solid #e1e1e1;
+  background: #f6f6f6;
+  border-radius: 3px;
+}
+.block-title {
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 120%;
+  text-align: center;
+  letter-spacing: 0.01em;
+  font-feature-settings: "pnum" on, "lnum" on;
+  padding-bottom: 30px;
+}

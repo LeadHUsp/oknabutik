@@ -1,0 +1,23 @@
+//breakpoints
+$breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1280px,
+  xxl: 1440px,
+);
+//mockup width
+$mockup-width: 1920;
+
+//colors
+$text: #404040;
+$orange: #ff8b00;
+$danger: #d20a11;
+$success: #00a900;
+$yellow: #ffe500;
+$gray: #828282;
+
+@function width($parent-width, $element-width) {
+  @return ($element-width / $parent-width) * 100%;
+}
