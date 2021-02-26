@@ -2,6 +2,7 @@
   display: flex;
 }
 .child-tabs__nav {
+  width: 27%;
   padding: 36px 25px 0;
   display: flex;
   flex-direction: column;
@@ -24,7 +25,7 @@
   }
 }
 .child-tabs__triangle {
-  content: '';
+  content: "";
   position: absolute;
   right: -12px;
   top: 50%;
@@ -56,4 +57,76 @@
   line-height: 120%;
   letter-spacing: 0.01em;
   text-transform: uppercase;
+}
+.child-tabs__content {
+  width: 73%;
+}
+.child-tabs__item {
+  display: none;
+  flex-direction: column;
+}
+.child-tabs__item-active {
+  display: flex;
+}
+.child-tabs__cards {
+  display: flex;
+  justify-content: space-between;
+}
+//product card
+.tabs-card {
+  width: 31%;
+  padding-bottom: 22px;
+}
+.tabs-card__title {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 130%;
+  text-align: center;
+  letter-spacing: 0.01em;
+}
+.tabs-card__price {
+  font-weight: 400;
+  font-size: 16px;
+}
+.tabs-card__price-red {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 100%;
+  color: $danger;
+}
+.tabs-card__price-full {
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 130%;
+  letter-spacing: 0.01em;
+  padding-top: 3px;
+  padding-bottom: 7px;
+}
+.tabs-card__chars {
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 140%;
+  list-style: disc;
+  padding-left: 16px;
+  letter-spacing: 0.01em;
+  padding-bottom: 15px;
+}
+.tabs-card__char {
+  list-style: disc;
+  color: $danger;
+  span {
+    color: $text;
+  }
+}
+.tabs-card__btn {
+  width: 100%;
+}
+.child-tabs__description {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 130%;
+  letter-spacing: 0.01em;
+}
+.child-tabs__subtitle {
+  font-weight: 400;
 }

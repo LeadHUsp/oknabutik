@@ -48,7 +48,7 @@
   font-size: 27px;
   font-weight: bold;
   color: $text;
-  font-feature-settings: 'pnum' on, 'lnum' on;
+  font-feature-settings: "pnum" on, "lnum" on;
 }
 .header__item-messagers {
   width: width(975, 100);
@@ -67,7 +67,6 @@
 }
 .header-nav {
   background: $orange;
-
   color: #fff;
   z-index: 500;
 }

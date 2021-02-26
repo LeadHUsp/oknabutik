@@ -1,8 +1,8 @@
 $(document).ready(function ($) {
-  $('.stellarnav').stellarNav({
+  $(".stellarnav").stellarNav({
     breakpoint: 1280,
   });
-  $("input[type='tel']").inputmask('+9(999)-999-99-99');
+  $("input[type='tel']").inputmask("+9(999)-999-99-99");
   //tabs
   let tab = (
     controlSelector,
@@ -14,7 +14,7 @@ $(document).ready(function ($) {
     const tabContent = document.querySelectorAll(contentSelector);
     let tabName;
     tabControl.forEach((item) => {
-      item.addEventListener('click', selectNavTab);
+      item.addEventListener("click", selectNavTab);
     });
 
     function selectNavTab() {
@@ -22,27 +22,39 @@ $(document).ready(function ($) {
         tab.classList.remove(controlActiveClass);
       });
       this.classList.add(controlActiveClass);
-      tabName = this.getAttribute('data-tab');
+      tabName = this.getAttribute("data-tab");
       selectTabContent(tabName);
     }
     function selectTabContent(tabName) {
       tabContent.forEach((item) => {
-        item.getAttribute('data-tab-content') == tabName
+        item.getAttribute("data-tab-content") == tabName
           ? item.classList.add(contentActiveClass)
           : item.classList.remove(contentActiveClass);
       });
     }
   };
   tab(
-    '.tabs-nav__elem',
-    '.tabs-content__item',
-    'tabs-nav__elem-active',
-    'tabs-content__item-active'
+    ".tabs-nav__elem",
+    ".tabs-content__item",
+    "tabs-nav__elem-active",
+    "tabs-content__item-active",
+    true
   );
-  /*  tab(
-    '#profile-tabs .tab-control__btn',
-    '#profile-tabs .profile-tab',
-    'tab-control__btn-active-secondary',
-    'profile-tab-active'
-  ); */
+  tab(
+    ".child-tabs__btn",
+    ".child-tabs__item",
+    "child-tabs__btn-active",
+    "child-tabs__item-active",
+    false
+  );
+
+  $(".furniture-slider__wrapper").slick({
+    infinite: false,
+    slidesToShow: 6,
+    slidesToScroll: 1,
+    arrows: true,
+    centerPadding: "23px",
+    prevArrow: $(".slider__btn-prev"),
+    nextArrow: $(".slider__btn-next"),
+  });
 });

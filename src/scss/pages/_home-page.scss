@@ -1,0 +1,15 @@
+.furniture-slider__slide {
+  display: flex;
+  flex-direction: column;
+  margin: 0 11px;
+}
+.furniture-slider__text {
+  margin-top: 7px;
+  font-size: 18px;
+  line-height: 120%;
+  text-align: center;
+  letter-spacing: 0.01em;
+}
+.furniture-slider {
+  position: relative;
+}
