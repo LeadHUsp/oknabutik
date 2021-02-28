@@ -1,0 +1,44 @@
+.creation {
+  display: flex;
+  padding-top: 80px;
+}
+.creation__slider {
+  position: relative;
+  width: width(1170, 570);
+}
+
+.creation__img {
+  border-radius: 3px;
+}
+.creation__dots {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+.creation__arrow-prev {
+  left: -22px;
+  transform: translateY(-50%) rotate(180deg);
+}
+.creation__arrow-next {
+  right: -22px;
+}
+.creation__description {
+  width: width(1170, 600);
+  padding-left: 30px;
+}
+.creation__title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 120%;
+}
+.creation__subtitle {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 120%;
+}
+.creation__content {
+  padding-top: 10px;
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 150%;
+}

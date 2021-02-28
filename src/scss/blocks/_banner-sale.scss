@@ -1,0 +1,42 @@
+.banner-sale {
+  position: relative;
+  margin-top: 90px;
+}
+.banner-sale__wrapper {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 55px 0 65px 170px;
+}
+.banner-sale__text {
+  width: width(1170, 627);
+}
+.banner-sale__title {
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 105%;
+  margin-bottom: 11px;
+}
+.banner-sale__subtitle {
+  font-weight: 300;
+  font-size: 27px;
+  line-height: 100%;
+  margin-bottom: 31px;
+}
+.banner-sale__subtitle-danger {
+  font-weight: 900;
+  color: $danger;
+  text-transform: uppercase;
+}
+.banner-sale__btn {
+  width: width(627, 356);
+  font-size: 18px;
+  line-height: 10px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.banner-sale__img {
+  position: absolute;
+  top: -14%;
+  right: 144px;
+}

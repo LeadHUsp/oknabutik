@@ -36,6 +36,7 @@ const path = {
       './src/libs/Magnific-Popup-master/dist/magnific-popup.css',
       './src/libs/slick-carousel/slick/slick.css',
       './src/libs/stellarnav-master/css/stellarnav.min.css',
+      './src/libs/fancybox/dist/jquery.fancybox.min.css',
     ],
     scss: ['./src/scss/**/*.scss', './src/scss/**/*.sass'],
     result: './app/css',
@@ -64,6 +65,7 @@ const path = {
       './src/libs/slick-carousel/slick/slick.min.js',
       './src/libs/stellarnav-master/js/stellarnav.min.js',
       './src/libs/inputmask/dist/min/jquery.inputmask.bundle.min.js',
+      './src/libs/fancybox/dist/jquery.fancybox.min.js',
     ],
     source: {
       all: './src/js/**/*.js',

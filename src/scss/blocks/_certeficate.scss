@@ -1,0 +1,32 @@
+.certeficate {
+  display: flex;
+  letter-spacing: 0.01em;
+  padding-top: 60px;
+}
+.certeficate__title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 120%;
+  margin-bottom: 10px;
+}
+.certeficate__content {
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 150%;
+}
+.certeficate__slider {
+  position: relative;
+  width: width(1170, 600);
+  padding-left: 30px;
+}
+.certeficate__arrow-prev {
+  left: 10px;
+  transform: translateY(-50%) rotate(180deg);
+}
+.certeficate__arrow-next {
+  right: -20px;
+}
+.certeficate__description {
+  width: width(1170, 570);
+  padding-top: 30px;
+}

@@ -1,0 +1,35 @@
+.promos__wrapper {
+  display: flex;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.promos__item {
+  width: width(3, 1);
+  padding: 0 15px;
+  color: $text;
+}
+.promos__inner {
+  position: relative;
+}
+.promos__img {
+  border-radius: 3px;
+}
+.promos__icon {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  font-size: 46px;
+  color: $danger;
+}
+.promos__title {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 120%;
+}
+.promos__text {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 120%;
+}

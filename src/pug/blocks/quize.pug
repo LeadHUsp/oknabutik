@@ -1,0 +1,42 @@
+.quize 
+    .container 
+       .block-title <b>Рассчитайте предварительную стоимость</b> пластикового<br/> окна, ответив на 6 простых вопросов за 1 минуту.
+       .quize__wrapper 
+            .quize-description
+                .quize-description__title После расчёта <span style="font-weight: 900"><br/>Вы получите:</span>
+                ul.quize-description__list
+                    li.quize-description__item 
+                        .quize-description__icon
+                            i.icon-gift.quize-icon
+                        .quize-description__text Подарок ценой <br/><span style="font-weight: 900">до 5 000 руб.</span> за ваши ответы
+                    li.quize-description__item 
+                        .quize-description__icon
+                            i.icon-list.quize-icon
+                        .quize-description__text <span style="font-weight: 900">3 варианта</span><br/> сметы по вышим параметрам
+                    li.quize-description__item 
+                        .quize-description__icon
+                            i.icon-sale.quize-icon
+                        .quize-description__text <span style="font-weight: 900">30% скидка</span><br/> на все варианты
+                .quize-description__details А также детальное описание всех типов окон и методы их применения.
+            .quize-form
+                .quize-form__title 1. Какой объект планируется остеклить?
+                form.quize-form__steps
+                    include quize-parts/quize-step.pug
+                    include quize-parts/quize-step.pug
+                    include quize-parts/quize-step.pug
+                    include quize-parts/quize-step.pug
+                    include quize-parts/quize-step.pug
+                    include quize-parts/quize-step.pug
+                .quize-form__nav
+                    .quize-form__group 
+                        .quize-form__dots 
+                        .quize-form__count Осталось <span id="quize-form-count"></span> вопросов
+                    .quize-form__group.quize-form__group-control
+                        button.quize-from__control.quize-from__control-prev  Назад
+                        button.quize-from__control-next.btn Далее
+            .quize-help
+                .quize-help__avatar 
+                    img(src="/img/quize/avatar.png", alt="Алексей выездной замерщик")
+                .quize-help__profession Выездной замерщик
+                .quize-help__name Алексей
+                .quize-help__notate Для более точного расчета стоимости выберите вариант, который вам больше подходит

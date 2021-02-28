@@ -1,0 +1,38 @@
+.compare {
+  display: flex;
+  margin-top: 90px;
+}
+.compare__collumn {
+  padding: 30px;
+}
+.compare__collumn-advantage {
+  width: 50%;
+  margin-right: 30px;
+  background: $blue;
+}
+.compare__collumn-danger {
+  width: calc(50% - 30px);
+}
+.compare__title {
+  font-size: 36px;
+  line-height: 120%;
+  font-weight: 300;
+  text-align: center;
+}
+.compare__list {
+  font-size: 17px;
+  line-height: 130%;
+  font-weight: 300;
+  margin-top: 20px;
+}
+.compare__item {
+  display: flex;
+  align-items: flex-start;
+  padding-bottom: 20px;
+}
+.compare__icon {
+  flex-shrink: 0;
+  width: 34px;
+  height: 34px;
+  margin-right: 16px;
+}
