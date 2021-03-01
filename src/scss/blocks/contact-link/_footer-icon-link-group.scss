@@ -1,0 +1,41 @@
+.link-group__item {
+  display: flex;
+  margin-bottom: 10px;
+  align-items: center;
+}
+.link-group__icon {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  font-size: 14px;
+  margin-right: 8px;
+  i:before {
+    font-weight: 700;
+  }
+}
+.link-group__phone {
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 100%;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+  transition: all 0.4s ease;
+  &:hover {
+    color: $orange;
+  }
+}
+.link-group__text {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 130%;
+}
+.link-group__email {
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 130%;
+  color: #fff;
+  transition: all 0.4s ease;
+  &:hover {
+    color: $orange;
+  }
+}

@@ -2,10 +2,59 @@
   padding-top: 37px;
   padding-bottom: 50px;
   background: #07282c;
+  color: #fff;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 130%;
 }
 .footer__wrapper {
   display: flex;
 }
 .footer__logo {
-  width: width(12, 3);
+  width: width(1170, 300);
+  padding-right: 30px;
+}
+.footer__content {
+  padding-top: 24px;
+  opacity: 0.8;
+}
+.footer__text {
+  font-weight: bold;
+  line-height: 140%;
+  padding-top: 15px;
+}
+.footer__nav {
+  width: width(1170, 192);
+}
+.footer__info {
+  width: width(1170, 164);
+}
+.footer__subtitle {
+  padding-top: 13px;
+  padding-bottom: 8px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+}
+.footer__list {
+  font-size: 14px;
+  line-height: 200%;
+  color: #fff;
+}
+.footer__link {
+  font-size: 14px;
+  line-height: 200%;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  &:hover {
+    color: $orange;
+  }
+}
+.footer__recvizites {
+  width: width(1170, 241);
+}
+.footer__contact {
+  width: width(1170, 269);
+  padding-left: 74px;
 }

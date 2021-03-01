@@ -3,13 +3,51 @@ footer.footer
 		.footer__wrapper 
 			.footer__logo
 				img(src="/img/footer-logo.png", alt="Оконный Бутик Виталия Хрусталева")
-				p Оконные системы REHAU. Полный комплекс услуг по остеклению квартир и частных домов.
-				p Работаем по Санкт-Петербургу и Лен.области
+				p.footer__content Оконные системы REHAU.<br/> Полный комплекс услуг по остеклению<br/> квартир и частных домов.
+				p.footer__text Работаем по Санкт-Петербургу и Лен.области
 				include social-links/footer-social-links.pug
 			.footer__nav 
+				.footer__subtitle Меню сайта
+				ul.footer__list 
+					li
+						a(href="#").footer__link Окна
+					li
+						a(href="#").footer__link Балконы и лоджии  
+					li
+						a(href="#").footer__link Котеджи и дома
+					li
+						a(href="#").footer__link Конструкции
+					li
+						a(href="#").footer__link Бренды
+					li
+						a(href="#").footer__link Услуги
 			.footer__info 
+				.footer__subtitle Информация
+				ul.footer__list 
+					li
+						a(href="#").footer__link Главная
+					li
+						a(href="#").footer__link О нас  
+					li
+						a(href="#").footer__link Отзывы
+					li
+						a(href="#").footer__link Видеоблог
+					li
+						a(href="#").footer__link Сертификаты	
+					li
+						a(href="#").footer__link Контакты
 			.footer__recvizites 
+				.footer__subtitle Наши реквизиты
+				ul.footer__list 
+					li «Оконный Бутик Виталия Хрусталева»
+					li ИНН: 7811670471
+					li КПП: 781101001
+					li ОГРН: 1177847360767
+					li БИК: 044525974 - АО “ТИНЬКОФФ БАНК”
+					li к/с: 30101810145250000974
 			.footer__contact
+				.footer__subtitle Наши контакты
+				include contact-link/footer-icon-link-group.pug
 
 	
 
