@@ -1,11 +1,11 @@
-import './color-solutions';
-import { quizeInit } from './quize';
+import "./color-solutions";
+import { quizeInit } from "./quize";
 
-document.addEventListener('DOMContentLoaded', () => {
-  $('.stellarnav').stellarNav({
+document.addEventListener("DOMContentLoaded", () => {
+  $(".stellarnav").stellarNav({
     breakpoint: 1280,
   });
-  $("input[type='tel']").inputmask('+9(999)-999-99-99');
+  $("input[type='tel']").inputmask("+7(999)-999-99-99");
   //tabs
   let tab = (
     controlSelector,
@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const tabContent = document.querySelectorAll(contentSelector);
     let tabName;
     tabControl.forEach((item) => {
-      item.addEventListener('click', selectNavTab);
+      item.addEventListener("click", selectNavTab);
     });
 
     function selectNavTab() {
@@ -26,31 +26,31 @@ document.addEventListener('DOMContentLoaded', () => {
         tab.classList.remove(controlActiveClass);
       });
       this.classList.add(controlActiveClass);
-      tabName = this.getAttribute('data-tab');
+      tabName = this.getAttribute("data-tab");
       selectTabContent(tabName, parent);
     }
     function selectTabContent(tabName, parentParam) {
       if (parentParam) {
         tabContent.forEach((item) => {
-          if (item.getAttribute('data-tab-content') == tabName) {
+          if (item.getAttribute("data-tab-content") == tabName) {
             item.classList.add(contentActiveClass);
-            let childTabNavEl = item.querySelectorAll('.child-tabs__btn');
-            let childTabContent = item.querySelectorAll('.child-tabs__item');
+            let childTabNavEl = item.querySelectorAll(".child-tabs__btn");
+            let childTabContent = item.querySelectorAll(".child-tabs__item");
             childTabNavEl.forEach((childNav) => {
-              childNav.classList.remove('child-tabs__btn-active');
+              childNav.classList.remove("child-tabs__btn-active");
             });
-            childTabNavEl[0].classList.add('child-tabs__btn-active');
+            childTabNavEl[0].classList.add("child-tabs__btn-active");
             childTabContent.forEach((child) => {
-              child.classList.remove('child-tabs__item-active');
+              child.classList.remove("child-tabs__item-active");
             });
-            childTabContent[0].classList.add('child-tabs__item-active');
+            childTabContent[0].classList.add("child-tabs__item-active");
           } else {
             item.classList.remove(contentActiveClass);
           }
         });
       } else {
         tabContent.forEach((item) => {
-          item.getAttribute('data-tab-content') == tabName
+          item.getAttribute("data-tab-content") == tabName
             ? item.classList.add(contentActiveClass)
             : item.classList.remove(contentActiveClass);
         });
@@ -58,51 +58,51 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   };
   tab(
-    '.tabs-nav__elem',
-    '.tabs-content__item',
-    'tabs-nav__elem-active',
-    'tabs-content__item-active',
+    ".tabs-nav__elem",
+    ".tabs-content__item",
+    "tabs-nav__elem-active",
+    "tabs-content__item-active",
     true
   );
   tab(
-    '.child-tabs__btn',
-    '.child-tabs__item',
-    'child-tabs__btn-active',
-    'child-tabs__item-active',
+    ".child-tabs__btn",
+    ".child-tabs__item",
+    "child-tabs__btn-active",
+    "child-tabs__item-active",
     false
   );
 
-  $('.furniture-slider__wrapper').slick({
+  $(".furniture-slider__wrapper").slick({
     infinite: false,
     slidesToShow: 6,
     slidesToScroll: 1,
     arrows: true,
-    centerPadding: '23px',
-    prevArrow: $('.slider__btn-prev'),
-    nextArrow: $('.slider__btn-next'),
+    centerPadding: "23px",
+    prevArrow: $(".slider__btn-prev"),
+    nextArrow: $(".slider__btn-next"),
   });
   //quize init
   quizeInit();
   //advantages tabs
   tab(
-    '.advantages-tabs__link',
-    '.advantages-tabs__item',
-    'advantages-tabs__link-active',
-    'advantages-tabs__item-active',
+    "#advantages-tabs .advantages-tabs__link",
+    "#advantages-tabs .advantages-tabs__item",
+    "advantages-tabs__link-active",
+    "advantages-tabs__item-active",
     false
   );
   //reviews slider
-  $('.gallery-parent').slick({
+  $(".gallery-parent").slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: true,
     fade: true,
     infinite: false,
-    prevArrow: $('#reviews-prev'),
-    nextArrow: $('#reviews-next'),
-    asNavFor: '.gallery-child, .reviews__text',
+    prevArrow: $("#reviews-prev"),
+    nextArrow: $("#reviews-next"),
+    asNavFor: ".gallery-child, .reviews__text",
   });
-  $('.gallery-child').slick({
+  $(".gallery-child").slick({
     slidesToShow: 3,
     slidesToScroll: 1,
     arrows: false,
@@ -110,40 +110,48 @@ document.addEventListener('DOMContentLoaded', () => {
     verticalSwiping: true,
     focusOnSelect: true,
     infinite: false,
-    asNavFor: '.gallery-parent, .reviews__text',
+    asNavFor: ".gallery-parent, .reviews__text",
   });
-  $('.reviews__text').slick({
+  $(".reviews__text").slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     fade: true,
     arrows: false,
     infinite: false,
-    asNavFor: '.gallery-parent, .gallery-child',
+    asNavFor: ".gallery-parent, .gallery-child",
   });
   //Наше производство
-  $('.creation__gallery').slick({
+  $(".creation__gallery").slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: true,
     dots: true,
     infinite: false,
-    appendDots: $('.creation__dots'),
-    prevArrow: $('#creation-prev'),
-    nextArrow: $('#creation-next'),
+    appendDots: $(".creation__dots"),
+    prevArrow: $("#creation-prev"),
+    nextArrow: $("#creation-next"),
   });
   //Сертефикаты
-  $('.certeficate__gallery').slick({
+  $(".certeficate__gallery").slick({
     slidesToShow: 2,
     slidesToScroll: 1,
     arrows: true,
     infinite: true,
-    prevArrow: $('#certeficate-prev'),
-    nextArrow: $('#certeficate-next'),
+    prevArrow: $("#certeficate-prev"),
+    nextArrow: $("#certeficate-next"),
   });
-  $('.certeficate__slide').fancybox({
-    buttons: ['zoom', 'close'],
+  $(".certeficate__slide").fancybox({
+    buttons: ["zoom", "close"],
     /* thumbs: {
       autoStart: true,
     }, */
   });
+  //Вопросы
+  tab(
+    "#questions-tabs .advantages-tabs__link",
+    "#questions-tabs .advantages-tabs__item",
+    "advantages-tabs__link-active",
+    "advantages-tabs__item-active",
+    false
+  );
 });

@@ -1,0 +1,43 @@
+mixin content(title,active,data, text)
+    div(class=active, data-tab-content=data).advantages-tabs__item
+        .advantages-tabs__text.questions-text
+            .advantages-tabs__title=title
+            p=text 
+        
+
+.questions.container 
+    <div class="block-title"> На <b>Ваши вопросы</b> отвечает генеральный<br/> директор Виталий Хрусталёв</div>
+        div(id="questions-tabs").advantages-tabs__wrapper 
+            .advantages-tabs__nav.questions-tabs__nav 
+                div(data-tab="questions-tab-1").advantages-tabs__link.advantages-tabs__link-active
+                    |Вопрос - 1
+                    .advantages-tabs__triangle
+                div(data-tab="questions-tab-2").advantages-tabs__link
+                    |Вопрос - 2
+                    .advantages-tabs__triangle
+                div(data-tab="questions-tab-3").advantages-tabs__link
+                    |Вопрос - 3
+                    .advantages-tabs__triangle
+                div(data-tab="questions-tab-4").advantages-tabs__link
+                    |Вопрос - 4
+                    .advantages-tabs__triangle
+                div(data-tab="questions-tab-5").advantages-tabs__link
+                    |Вопрос - 5
+                    .advantages-tabs__triangle
+                div(data-tab="questions-tab-6").advantages-tabs__link
+                    |Вопрос - 6
+                    .advantages-tabs__triangle
+                div(data-tab="questions-tab-7").advantages-tabs__link
+                    |Вопрос - 7
+                    .advantages-tabs__triangle
+            .advantages-tabs__content.questions-tabs__content
+                +content('Вопрос - 1', "advantages-tabs__item-active", "questions-tab-1", 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut, vehicula eu diam. Pellentesque rhoncus aliquam mattis. Ut vulputate eros sed felis sodales nec vulputate justo hendrerit. Vivamus varius pretium ligula, a aliquam odio euismod sit amet. Quisque laoreet sem sit amet orci ullamcorper at ultricies metus viverra.' , '/img/main/advantages-tabs.jpg', 'window')
+                +content('Вопрос - 2', "", "questions-tab-2", 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut, vehicula eu diam. Pellentesque rhoncus aliquam mattis. Ut vulputate eros sed felis sodales nec vulputate justo hendrerit. Vivamus varius pretium ligula, a aliquam odio euismod sit amet. Quisque laoreet sem sit amet orci ullamcorper at ultricies metus viverra.' , '/img/main/advantages-tabs.jpg', 'window')
+                +content('Вопрос - 3', "", "questions-tab-3", 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut, vehicula eu diam. Pellentesque rhoncus aliquam mattis. Ut vulputate eros sed felis sodales nec vulputate justo hendrerit. Vivamus varius pretium ligula, a aliquam odio euismod sit amet. Quisque laoreet sem sit amet orci ullamcorper at ultricies metus viverra.' , '/img/main/advantages-tabs.jpg', 'window')
+                +content('Вопрос - 4', "", "questions-tab-4", 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut, vehicula eu diam. Pellentesque rhoncus aliquam mattis. Ut vulputate eros sed felis sodales nec vulputate justo hendrerit. Vivamus varius pretium ligula, a aliquam odio euismod sit amet. Quisque laoreet sem sit amet orci ullamcorper at ultricies metus viverra.' , '/img/main/advantages-tabs.jpg', 'window')
+                +content('Вопрос - 5', "", "questions-tab-5", 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut, vehicula eu diam. Pellentesque rhoncus aliquam mattis. Ut vulputate eros sed felis sodales nec vulputate justo hendrerit. Vivamus varius pretium ligula, a aliquam odio euismod sit amet. Quisque laoreet sem sit amet orci ullamcorper at ultricies metus viverra.' , '/img/main/advantages-tabs.jpg', 'window')
+                +content('Вопрос - 6', "", "questions-tab-6", 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut, vehicula eu diam. Pellentesque rhoncus aliquam mattis. Ut vulputate eros sed felis sodales nec vulputate justo hendrerit. Vivamus varius pretium ligula, a aliquam odio euismod sit amet. Quisque laoreet sem sit amet orci ullamcorper at ultricies metus viverra.' , '/img/main/advantages-tabs.jpg', 'window')
+                +content('Вопрос - 7', "", "questions-tab-7", 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut, vehicula eu diam. Pellentesque rhoncus aliquam mattis. Ut vulputate eros sed felis sodales nec vulputate justo hendrerit. Vivamus varius pretium ligula, a aliquam odio euismod sit amet. Quisque laoreet sem sit amet orci ullamcorper at ultricies metus viverra.' , '/img/main/advantages-tabs.jpg', 'window')
+            .questions__profile 
+                include profile/profile.pug
+

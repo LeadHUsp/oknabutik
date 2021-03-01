@@ -1,22 +1,24 @@
 //utils
-@import 'utils/_reset', 'utils/_vars', 'utils/_mixins', 'utils/fonts', 'utils/ui-parts',
-  '../libs/sass-mediaqueries/media-queries';
-@import '../fonts/fontello/css/fontello.css';
+@import "utils/_reset", "utils/_vars", "utils/_mixins", "utils/fonts",
+  "utils/ui-parts", "../libs/sass-mediaqueries/media-queries";
+@import "../fonts/fontello/css/fontello.css";
 
 // blocks
-@import 'blocks/_header', 'blocks/_footer', 'blocks/banner', 'blocks/page-inner',
-  'blocks/product-tabs', 'blocks/child-tabs', 'blocks/_color-solutions', 'blocks/quize',
-  'blocks/advantages-tabs', 'blocks/_services', 'blocks/banner-sale', 'blocks/promos',
-  'blocks/reviews', 'blocks/list-compare', 'blocks/creation', 'blocks/certeficate',
-  'blocks/our-workers';
+@import "blocks/_header", "blocks/_footer", "blocks/banner", "blocks/page-inner",
+  "blocks/product-tabs", "blocks/child-tabs", "blocks/_color-solutions",
+  "blocks/quize", "blocks/advantages-tabs", "blocks/_services",
+  "blocks/banner-sale", "blocks/promos", "blocks/reviews", "blocks/list-compare",
+  "blocks/creation", "blocks/certeficate", "blocks/our-workers",
+  "blocks/banner-sizes", "blocks/stars-rating", "blocks/questions",
+  "blocks/parts/profile", "blocks/contact-label", "blocks/social-links";
 //pages
-@import 'pages/_home-page';
+@import "pages/_home-page";
 
 @include make_container($breakpoints);
 
 html,
 body {
-  font-family: 'Myriad Pro', sans-serif;
+  font-family: "Myriad Pro", sans-serif;
   background: #fff;
   color: $text;
   padding-bottom: 50px;

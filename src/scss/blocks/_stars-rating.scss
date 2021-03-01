@@ -1,0 +1,48 @@
+.stars-rating {
+  margin-top: 90px;
+  display: flex;
+  color: #fff;
+}
+.stars-rating__content {
+  padding-top: 64px;
+  padding-bottom: 55px;
+  width: 50%;
+  text-align: center;
+  background: #07272c;
+}
+.stars-rating__title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 120%;
+  margin-bottom: 10px;
+}
+.stars-rating__list {
+  display: flex;
+  justify-content: center;
+}
+.stars-rating__icon {
+  font-size: 40px;
+  color: $yellow;
+  margin-bottom: 13px;
+  .icon-star:before {
+    margin-right: 0;
+  }
+}
+.stars-rating__text {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 120%;
+  margin-bottom: 23px;
+}
+.stars-rating__btn {
+  width: width(585, 226);
+  margin: 0 auto;
+}
+.stars-rating__img {
+  width: 50%;
+  padding-top: 50px;
+  padding-bottom: 60px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}

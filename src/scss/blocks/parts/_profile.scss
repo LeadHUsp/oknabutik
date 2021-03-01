@@ -1,0 +1,48 @@
+.profile {
+  text-align: center;
+  letter-spacing: 0.01em;
+}
+.profile__name {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+}
+.profile__text {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 18px;
+}
+.profile__social {
+  display: flex;
+  justify-content: center;
+}
+.profile__link {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: $blue;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #828282;
+  margin-right: 5px;
+  transition: all 0.4s ease-in;
+  &:hover {
+    color: $orange;
+  }
+}
+.profile__btn {
+  margin-top: 6px;
+  display: block;
+  background: $orange;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 10px;
+  color: #fff;
+  padding: 20px 0;
+  transition: all 0.3s ease-out;
+  &:hover {
+    background: darken($orange, 5%);
+  }
+}

@@ -1,0 +1,36 @@
+.banner-sizes {
+  position: relative;
+  margin-top: 90px;
+  padding-top: 23px;
+}
+.banner-sizes__wrapper {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 50px 0 55px 100px;
+}
+.banner-sizes__content {
+  width: width(1170, 754);
+}
+.banner-sizes__title {
+  font-size: 30px;
+  line-height: 120%;
+  font-weight: 300;
+  margin-bottom: 35px;
+}
+.banner-sizes__form {
+  display: flex;
+}
+.banner-sizes__input {
+  min-width: 226px;
+  margin-right: 20px;
+}
+.banner-sizes__btn {
+  min-width: 226px;
+}
+.banner-size__img {
+  position: absolute;
+  right: 39px;
+  bottom: 0;
+  width: width(1170, 449);
+}

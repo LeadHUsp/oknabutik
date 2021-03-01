@@ -31,7 +31,7 @@ html
 						.banner-form__title Замер бесплатно уже сегодня!
 						form(action="POST" class="banner-form__form")
 							input(type="text" class="input banner-form__input" placeholder="Ваше имя")
-							input(type="tel" class="input banner-form__input" )
+							input(type="tel" class="input banner-form__input" placeholder="+7(___)-___-__-__")
 							button(type="submit" class="btn banner-form__btn") Рассчитать окно
 						.banner-form__policy Нажимая на кнопку, вы даете согласие на 
 							a(href="#" class="banner-form__link")  обработку своих персональных данных.
@@ -88,12 +88,11 @@ html
 		include blocks/creation.pug
 		include blocks/certeficate.pug
 		include blocks/our-workers.pug
-
-
-
-		
+		include blocks/banner-sizes.pug
+		include blocks/stars-rating.pug
+		include blocks/questions.pug	
 		
 			
-		
+		include blocks/map.pug
 		include blocks/_footer.pug
 		include blocks/_scripts.pug
