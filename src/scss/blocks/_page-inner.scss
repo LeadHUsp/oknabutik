@@ -7,3 +7,8 @@
   font-size: 17px;
   line-height: 140%;
 }
+@media (max-width: 600px) {
+  .page-inner__text {
+    font-size: 14px;
+  }
+}

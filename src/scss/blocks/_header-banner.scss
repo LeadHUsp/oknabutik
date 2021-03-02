@@ -9,7 +9,7 @@
 }
 .banner__title {
   font-size: 60px;
-  line-height: 63px;
+  line-height: 100%;
   font-weight: 300;
   padding-bottom: 20px;
 }
@@ -46,7 +46,7 @@
 .banner__number {
   font-weight: 700;
   font-size: 72px;
-  line-height: 60px;
+  line-height: 83%;
   flex-shrink: 0;
   padding-right: 8px;
 }
@@ -89,5 +89,82 @@
   transition: 0.4s ease;
   &:hover {
     color: $orange;
+  }
+}
+@media (max-width: 1279.9px) {
+  .banner {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .banner__wrapper {
+    width: 80%;
+  }
+}
+@media (max-width: 991.9px) {
+  .banner {
+    background-position: left;
+  }
+  .banner__wrapper {
+    width: 100%;
+  }
+}
+@media (max-width: 767.9px) {
+  .banner__title {
+    font-size: 40px;
+  }
+  .banner__list {
+    width: 100%;
+  }
+  .banner__number {
+    font-size: 50px;
+  }
+}
+@media (max-width: 600px) {
+  .banner__list {
+    flex-wrap: wrap;
+  }
+  .banner__text {
+    padding-bottom: 10px;
+  }
+  .banner__item {
+    width: 50%;
+    padding-top: 10px;
+  }
+  .banner-form__title {
+    font-size: 16px;
+  }
+  .banner-form {
+    max-width: 360px;
+    margin: 0 auto;
+  }
+  .banner-form__form {
+    flex-wrap: wrap;
+  }
+  .banner-form__input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .banner-form__btn {
+    width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  .banner {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  .banner__title {
+    font-size: 30px;
+    padding-bottom: 10px;
+  }
+  .banner__subtitle {
+    font-size: 16px;
+    padding-bottom: 10px;
+  }
+  .banner__text {
+    font-size: 14px;
+  }
+  .banner__item {
+    width: 100%;
   }
 }

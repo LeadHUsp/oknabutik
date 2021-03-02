@@ -75,7 +75,7 @@
   position: relative;
   border-radius: 3px;
   &:before {
-    content: '';
+    content: "";
     width: 100%;
     height: 100%;
     position: absolute;
@@ -120,7 +120,10 @@
 .quize-form__input:checked + .quize-form__img:before {
   opacity: 1;
 }
-.quize-form__input:checked + .quize-form__img > .quize-form__btn > .quize-form__chose {
+.quize-form__input:checked
+  + .quize-form__img
+  > .quize-form__btn
+  > .quize-form__chose {
   opacity: 1;
 }
 .quize-form__nav {
@@ -172,15 +175,14 @@
   background: $blue;
   font-weight: 300;
 }
-.quize-help__avatar {
-  padding-bottom: 26px;
-}
+
 .quize-help__profession {
   font-weight: bold;
   font-size: 17px;
   line-height: 20px;
   text-align: center;
   letter-spacing: 0.01em;
+  padding-top: 26px;
   padding-bottom: 4px;
 }
 .quize-help__name {
@@ -198,4 +200,81 @@
   background: #fff;
   border-radius: 3px;
   filter: drop-shadow(0px 6px 20px rgba(26, 64, 73, 0.12));
+}
+@media (max-width: 1279.9px) {
+  .quize__wrapper {
+    flex-wrap: wrap;
+  }
+  .quize-description {
+    width: 100%;
+    padding-bottom: 25px;
+    order: 1;
+  }
+  .quize-description__list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .quize-description__item {
+    width: width(12, 4);
+  }
+  .quize-form {
+    width: 70%;
+  }
+  .quize-help {
+    width: 30%;
+  }
+}
+@media (max-width: 991.9px) {
+  .quize-help {
+    width: 100%;
+    order: 1;
+  }
+  .quize-form {
+    width: 100%;
+    order: 3;
+  }
+  .quize-help__avatar {
+    margin-right: 15px;
+  }
+  .quize-help {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+  }
+}
+@media (max-width: 767.9px) {
+  .quize-description__item {
+    width: 100%;
+  }
+  .quize-help__avatar {
+    width: 45%;
+  }
+  .quize-help__notate {
+    width: 55%;
+  }
+  .quize-form__label {
+    width: 50%;
+  }
+}
+@media (max-width: 480px) {
+  .quize-help__notate {
+    font-size: 12px;
+  }
+  .quize-form {
+    padding: 10px;
+  }
+  .quize-form__caption {
+    font-size: 12px;
+  }
+  .quize-form__nav {
+    flex-wrap: wrap;
+  }
+  .quize-form__group {
+    width: 100%;
+  }
+  .quize-form__group-control {
+    padding-top: 15px;
+    justify-content: center;
+  }
 }

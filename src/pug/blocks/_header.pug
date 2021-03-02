@@ -1,15 +1,15 @@
 header.header
 	.header__inner.container
-		.logo
-			img(src="/img/logo.png", alt="logo", class='logo__img')
+		a(href="/").logo
+			img(src="/img/logo.png", alt="logo", class='logo__img').img-full
 		.header__list 
-			.header__item.header__item-work Работаем<br/> по Санкт-Петербургу<br/> и Лен.области
-			.header__item 
+			.header__item.header__item-work.header__item-tablet-hide Работаем<br/> по Санкт-Петербургу<br/> и Лен.области
+			.header__item.header__item-tablet-hide 
 				.icon.icon-tape.header__icon
-				|Вызов замерщика
-			.header__item 
+				a(href="#").header__link Вызов замерщика
+			.header__item.header__item-tablet-hide 
 				.icon.icon-price.header__icon
-				|Скачать прайс-лист
+				a(href="#").header__link Скачать прайс-лист
 			.header__item.header__item-tel
 				.icon.icon-phone.header__icon
 				.header-tel
@@ -60,15 +60,29 @@ header.header
 						</defs>
 						</svg>
 	.header-nav
-		.container
+		.container.header-nav__table
 			.stellarnav.header-nav__container
 				ul.header-nav__list
 					li.header-nav__item
 						a(href="#" class="header-nav__link") О нас
+						ul
+							li.header-nav__item 
+								a(href="#" class="header-nav__link") Балконы и лоджии
+							li.header-nav__item 
+								a(href="#" class="header-nav__link") Балконы и лоджии
+							li.header-nav__item 
+								a(href="#" class="header-nav__link") Балконы и лоджии
 					li.header-nav__item
 						a(href="#" class="header-nav__link") Окна
 					li.header-nav__item
 						a(href="#" class="header-nav__link") Балконы и лоджии
+						ul
+							li.header-nav__item 
+								a(href="#" class="header-nav__link") Балконы и лоджии
+							li.header-nav__item 
+								a(href="#" class="header-nav__link") Балконы и лоджии
+							li.header-nav__item 
+								a(href="#" class="header-nav__link") Балконы и лоджии
 					li.header-nav__item
 						a(href="#" class="header-nav__link") Коттеджи и дома
 					li.header-nav__item
@@ -79,6 +93,15 @@ header.header
 						a(href="#" class="header-nav__link") Услуги
 					li.header-nav__item
 						a(href="#" class="header-nav__link") Контакты
+			.header__tablet
+				.header__item.header__item-work Работаем<br/> по Санкт-Петербургу<br/> и Лен.области
+				.header__item 
+					.icon.icon-tape.header__icon
+					a(href="#").header__link Вызов замерщика
+				.header__item 
+					.icon.icon-price.header__icon
+					a(href="#").header__link Скачать прайс-лист
+
 					
 
   

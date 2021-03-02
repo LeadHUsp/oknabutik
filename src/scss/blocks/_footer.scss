@@ -57,4 +57,47 @@
 .footer__contact {
   width: width(1170, 269);
   padding-left: 74px;
+  .messagers-links {
+    justify-content: center;
+  }
+}
+.footer__subtitle-contact {
+  padding-bottom: 20px;
+}
+.footer__online {
+  padding-top: 22px;
+  display: flex;
+  align-items: center;
+}
+.footer-bot {
+  padding: 30px 0;
+  background: #00181b;
+  color: #fff;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 150%;
+}
+.footer-bot__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-bot__copy {
+  width: width(12, 3);
+}
+.footer-bot__info {
+  width: width(12, 5);
+  text-align: center;
+}
+.footer-bot__policy {
+  width: width(12, 3);
+  text-align: right;
+}
+.footer-bot__link {
+  color: #fff;
+  text-decoration: underline;
+  transition: all 0.4s ease;
+  cursor: pointer;
+  &:hover {
+    color: $orange;
+  }
 }

@@ -6,35 +6,7 @@ html
 		title index page
 	body
 		include blocks/_header.pug
-		.banner(style={'background-image': 'url(/img/main/main.png)'})
-			.container
-				.banner__wrapper 
-					.banner__title
-						b Пластиковые окна 
-						|Rehau <br/> от производителя
-					.banner__subtitle в Санкт-Петербурге от 7 тыс.руб
-					.banner__text Закажи немецкие термоокна с защитой от холода <br/> и жары по цене обычных со скидкой до 50%
-					.banner__list
-						.banner__item
-							.banner__number 1-3
-							.banner__advantage <b>дня</b> средняя 
-								|продолжительность ремонта
-						.banner__item
-							.banner__number 7
-							.banner__advantage <b>дней в неделю</b> выезд 
-								|наших специалистов <br/> на замер
-						.banner__item
-							.banner__number 5
-							.banner__advantage лет гарантия 
-								|с последующим <br/> сервисом
-					.banner-form
-						.banner-form__title Замер бесплатно уже сегодня!
-						form(action="POST" class="banner-form__form")
-							input(type="text" class="input banner-form__input" placeholder="Ваше имя")
-							input(type="tel" class="input banner-form__input" placeholder="+7(___)-___-__-__")
-							button(type="submit" class="btn banner-form__btn") Рассчитать окно
-						.banner-form__policy Нажимая на кнопку, вы даете согласие на 
-							a(href="#" class="banner-form__link")  обработку своих персональных данных.
+		include blocks/header-banner.pug
 		include blocks/_page-inner.pug
 		include blocks/_product-tabs.pug
 		.block-title Получите <b>максимальный комплект<br/> фурнитуры</b> к вашим окнам
@@ -82,17 +54,17 @@ html
 		include blocks/advantages-tabs.pug
 		include blocks/services.pug
 		include blocks/banner-sale.pug
-		include blocks/promos.pug
-		include blocks/reviews.pug
-		include blocks/list-compare.pug
-		include blocks/creation.pug
-		include blocks/certeficate.pug
-		include blocks/our-workers.pug
-		include blocks/banner-sizes.pug
-		include blocks/stars-rating.pug
-		include blocks/questions.pug	
+		// include blocks/promos.pug
+		// include blocks/reviews.pug
+		// include blocks/list-compare.pug
+		// include blocks/creation.pug
+		// include blocks/certeficate.pug
+		// include blocks/our-workers.pug
+		// include blocks/banner-sizes.pug
+		// include blocks/stars-rating.pug
+		// include blocks/questions.pug	
 		
 			
-		include blocks/map.pug
-		include blocks/_footer.pug
+		// include blocks/map.pug
+		// include blocks/_footer.pug
 		include blocks/_scripts.pug

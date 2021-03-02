@@ -4,6 +4,10 @@ import { quizeInit } from "./quize";
 document.addEventListener("DOMContentLoaded", () => {
   $(".stellarnav").stellarNav({
     breakpoint: 1280,
+    menuLabel: "",
+    closeBtn: true,
+    closeLabel: "",
+    position: "right",
   });
   $("input[type='tel']").inputmask("+7(999)-999-99-99");
   //tabs
@@ -77,9 +81,29 @@ document.addEventListener("DOMContentLoaded", () => {
     slidesToShow: 6,
     slidesToScroll: 1,
     arrows: true,
-    centerPadding: "23px",
     prevArrow: $(".slider__btn-prev"),
     nextArrow: $(".slider__btn-next"),
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 4,
+        },
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          arrows: false,
+        },
+      },
+    ],
   });
   //quize init
   quizeInit();

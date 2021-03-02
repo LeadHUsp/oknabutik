@@ -1,28 +1,29 @@
 //utils
-@import 'utils/_reset', 'utils/_vars', 'utils/_mixins', 'utils/fonts',
-  '../libs/sass-mediaqueries/media-queries';
-@import '../fonts/fontello/css/fontello.css';
+@import "utils/_reset", "utils/_vars", "utils/_mixins", "utils/fonts",
+  "../libs/sass-mediaqueries/media-queries";
+@import "../fonts/fontello/css/fontello.css";
 
 // blocks
-@import 'blocks/ui-parts', 'blocks/_header', 'blocks/_footer', 'blocks/banner',
-  'blocks/page-inner', 'blocks/product-tabs', 'blocks/child-tabs',
-  'blocks/_color-solutions', 'blocks/quize', 'blocks/advantages-tabs', 'blocks/_services',
-  'blocks/banner-sale', 'blocks/promos', 'blocks/reviews', 'blocks/list-compare',
-  'blocks/creation', 'blocks/certeficate', 'blocks/our-workers', 'blocks/banner-sizes',
-  'blocks/stars-rating', 'blocks/questions', 'blocks/parts/profile',
-  'blocks/contact-label', 'blocks/social-links',
-  'blocks/contact-link/footer-icon-link-group';
+@import "blocks/ui-parts", "blocks/_header", "blocks/_footer",
+  "blocks/header-banner", "blocks/page-inner", "blocks/product-tabs",
+  "blocks/child-tabs", "blocks/_color-solutions", "blocks/quize",
+  "blocks/advantages-tabs", "blocks/_services", "blocks/banner-sale",
+  "blocks/promos", "blocks/reviews", "blocks/list-compare", "blocks/creation",
+  "blocks/certeficate", "blocks/our-workers", "blocks/banner-sizes",
+  "blocks/stars-rating", "blocks/questions", "blocks/parts/profile",
+  "blocks/contact-label", "blocks/social-links",
+  "blocks/contact-link/footer-icon-link-group";
 //pages
-@import 'pages/_home-page';
+@import "pages/_home-page";
 
 @include make_container($breakpoints);
 
 html,
 body {
-  font-family: 'Myriad Pro', sans-serif;
+  font-family: "Myriad Pro", sans-serif;
   background: #fff;
   color: $text;
-  padding-bottom: 50px;
+  overflow-x: hidden;
 }
 button {
   font-family: inherit;
@@ -33,4 +34,10 @@ button {
 .img-full {
   width: 100%;
   height: auto;
+}
+@media (max-width: 620px) {
+  .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }

@@ -46,8 +46,18 @@ footer.footer
 					li БИК: 044525974 - АО “ТИНЬКОФФ БАНК”
 					li к/с: 30101810145250000974
 			.footer__contact
-				.footer__subtitle Наши контакты
+				.footer__subtitle.footer__subtitle-contact Наши контакты
 				include contact-link/footer-icon-link-group.pug
+				.footer__online
+					.contact-label__dot.contact-label__dot-footer 
+					.contact-label__online Мы Online, Спрашивайте 
+				include messagers/messagers.pug
+.footer-bot
+	.footer-bot__wrapper.container 
+		.footer-bot__copy © 2021 Оконный Бутик. Все права защищены. Создание сайта и продвижение: <a class="footer-bot__link" rel="nofollow" href="https://mnogoland.ru/">Многоленд</a>
+		.footer-bot__info Вся информация на сайте, носит ознакомительный характер и может отличаться от действительности
+		.footer-bot__policy <a class="footer-bot__link" rel="nofollow" href="#">Политика конфиденциальности</a>
+
 
 	
 
