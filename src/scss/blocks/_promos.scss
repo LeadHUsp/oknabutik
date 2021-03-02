@@ -33,3 +33,25 @@
   font-size: 18px;
   line-height: 120%;
 }
+@media (max-width: 991.9px) {
+  .promos__title {
+    font-size: 18px;
+  }
+  .promos__text {
+    font-size: 15px;
+  }
+}
+@media (max-width: 575.9px) {
+  .promos__wrapper {
+    flex-wrap: wrap;
+  }
+  .promos__item {
+    width: 50%;
+    padding-bottom: 14px;
+  }
+}
+@media (max-width: 470px) {
+  .promos__item {
+    width: 100%;
+  }
+}

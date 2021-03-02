@@ -47,8 +47,14 @@
 }
 @media (max-width: 991.9px) {
   .banner-sale__img {
-    right: 10px;
+    right: 16px;
     top: 0;
+  }
+  .banner-sale__btn {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 70%;
+    font-size: 15px;
   }
 }
 @media (max-width: 767.9px) {
@@ -57,12 +63,24 @@
   }
   .banner-sale__img {
     width: 120px;
-    top: 50%;
+    top: 30%;
   }
   .banner-sale__text {
     width: 80%;
   }
-  .banner-sale__btn {
-    width: 70%;
+  .banner-sale__title {
+    font-size: 25px;
+  }
+  .banner-sale__subtitle {
+    font-size: 17px;
+  }
+}
+@media (max-width: 480px) {
+  .banner-sale__wrapper {
+    padding: 25px 0;
+  }
+  .banner-sale__img {
+    width: 60px;
+    top: 60%;
   }
 }

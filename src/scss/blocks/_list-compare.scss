@@ -36,3 +36,32 @@
   height: 34px;
   margin-right: 16px;
 }
+@media (max-width: 991.9px) {
+  .compare {
+    margin-top: 35px;
+    flex-wrap: wrap;
+  }
+  .compare__collumn {
+    width: 100%;
+  }
+  .compare__collumn-advantage {
+    margin-right: 0;
+  }
+  .compare__title {
+    font-size: 30px;
+  }
+  .compare__list {
+    font-size: 14px;
+  }
+  .compare__item {
+    padding-bottom: 10px;
+  }
+}
+@media (max-width: 600px) {
+  .compare__title {
+    font-size: 24px;
+  }
+  .compare__collumn {
+    padding: 15px;
+  }
+}
