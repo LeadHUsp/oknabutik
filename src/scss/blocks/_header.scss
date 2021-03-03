@@ -35,6 +35,7 @@
 }
 .header__link {
   color: inherit;
+  text-decoration: underline;
 }
 .header__icon {
   margin-right: 10px;
@@ -52,7 +53,7 @@
   font-size: 27px;
   font-weight: bold;
   color: $text;
-  font-feature-settings: "pnum" on, "lnum" on;
+  font-feature-settings: 'pnum' on, 'lnum' on;
 }
 .header__item-messagers {
   width: width(975, 100);
