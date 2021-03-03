@@ -42,3 +42,38 @@
   font-size: 17px;
   line-height: 150%;
 }
+@media (max-width: 991.9px) {
+  .creation {
+    flex-wrap: wrap;
+  }
+  .creation__slider {
+    width: 100%;
+  }
+  .creation__description {
+    width: 100%;
+    padding-left: 0;
+    padding-top: 20px;
+  }
+  .creation__arrow-next {
+    right: 0;
+  }
+  .creation__arrow-prev {
+    left: 0;
+  }
+}
+@media (max-width: 769.9px) {
+  .creation {
+    padding-top: 35px;
+  }
+}
+@media (max-width: 600px) {
+  .creation__title {
+    font-size: 24px;
+  }
+  .creation__subtitle {
+    font-size: 17px;
+  }
+  .creation__content {
+    font-size: 14px;
+  }
+}

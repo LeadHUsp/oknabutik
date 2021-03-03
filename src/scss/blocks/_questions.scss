@@ -12,3 +12,25 @@
 .questions__profile {
   width: width(1170, 300);
 }
+@media (max-width: 991.9px) {
+  .advantages-tabs__wrapper {
+    flex-wrap: wrap;
+  }
+  .questions-tabs__nav {
+    order: 2;
+  }
+  .questions-tabs__content {
+    width: 100%;
+    order: 3;
+  }
+  .questions__profile {
+    width: 100%;
+    order: 1;
+    margin-bottom: 15px;
+  }
+  .profile__btn {
+    max-width: 250px;
+    margin: 0 auto;
+    margin-top: 15px;
+  }
+}

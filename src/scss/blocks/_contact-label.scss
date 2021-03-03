@@ -1,11 +1,11 @@
 .contact-label {
   position: absolute;
-  left: 40%;
+  left: 30%;
   top: 50%;
   padding: 40px 30px;
   background: #fff;
   width: width(1920, 770);
-  z-index: 2000;
+  z-index: 1000;
   display: flex;
   box-shadow: 0px 0px 30px rgba(26, 64, 73, 0.12);
   border-radius: 3px;
@@ -85,4 +85,40 @@
 }
 .contact-label__img {
   border-radius: 3px;
+}
+.contact__map {
+  min-height: 560px;
+}
+@media (max-width: 1564px) {
+  .contact-label {
+    width: 49%;
+  }
+}
+@media (max-width: 1279.9px) {
+  .contact-label {
+    width: 56%;
+  }
+}
+@media (max-width: 1199px) {
+  .contact-label {
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: translate(0%, 0%);
+    margin: 0 auto;
+  }
+}
+@media (max-width: 640px) {
+  .contact-label {
+    flex-wrap: wrap;
+  }
+  .contact-label__info {
+    width: 100%;
+    padding-right: 0;
+  }
+  .contact-label__photo {
+    padding-top: 20px;
+    width: 100%;
+  }
 }

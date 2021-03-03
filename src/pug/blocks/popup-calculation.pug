@@ -1,0 +1,27 @@
+form.form-calc.mfp-hide(id="form-calc") 
+    .form-calc__wrapper 
+        .form-calc__head Наш отдел продаж <span class="form-calc__head-orange">работает с 10:00 до 00:00</span>
+            p.form-calc__head-small Мы свяжемся с вами в ближайшее рабочее время, либо по вашему выбору ниже
+        .form-calc__head.form-calc__head-mb16 Выезжаем <span class="form-calc__head-orange">в день обращения</span>
+        .form-calc__group 
+            label.form-calc__label Контактные данные
+            input(type="text" placeholder="Имя").form-calc__input
+            input(type="tel" placeholder="+7(___)-___-__-__").form-calc__input
+        .form-calc__group 
+            label.form-calc__label Когда удобно общаться?
+            input(type="time" value="00:00").form-calc__input
+            input(type="time" value="00:00").form-calc__input 
+        .form-calc__time C Вами свяжутся: c 01:01  по 12:00
+        .form-calc__group
+            .form-calc__subtitle Как удобно общаться?
+        .form-calc__group.form-calc__group-connect      
+            label.form-calc__label.form-calc__label-radio(for="input-whatsapp")
+                input(type='radio' name="connect_type" id="input-whatsapp" value="whatsapp").form-calc__radio
+                .form-calc__mark
+                span.form-calc__text WhatsApp           
+            label.form-calc__label.form-calc__label-radio(for="input-call")
+                input(type='radio' name="connect_type" id="input-call" value="call").form-calc__radio
+                .form-calc__mark
+                span.form-calc__text Звонок
+        button.form-calc__submit Отправить анкету
+        .form-calc__policy Оставляя свои контактные данные, вы подтверждаете свое совершеннолетие, соглашаетесь <a href="#" class="form-calc__policy-link">на обработку персональных данных в соответствии с Правовой информацией</a>

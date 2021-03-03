@@ -46,3 +46,17 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
+@media (max-width: 991.9px) {
+  .stars-rating {
+    margin-top: 35px;
+    flex-wrap: wrap;
+  }
+  .stars-rating__content {
+    width: 100%;
+    padding: 25px 0;
+  }
+  .stars-rating__img {
+    width: 100%;
+    min-height: 300px;
+  }
+}

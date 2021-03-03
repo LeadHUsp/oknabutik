@@ -41,6 +41,7 @@
   ],
   "dependencies": {
     "gsap": "npm:@gsap/shockingly@^3.6.0",
-    "install": "^0.13.0"
+    "install": "^0.13.0",
+    "lozad": "^1.16.0"
   }
 }

@@ -34,3 +34,31 @@
   bottom: 0;
   width: width(1170, 449);
 }
+@media (max-width: 1279.9px) {
+  .banner-size__img {
+    display: none;
+  }
+  .banner-sizes__content {
+    width: 90%;
+  }
+}
+@media (max-width: 767.9px) {
+  .banner-sizes {
+    margin-top: 0;
+  }
+  .banner-sizes__wrapper {
+    padding: 15px;
+  }
+  .banner-sizes__title {
+    font-size: 24px;
+  }
+}
+@media (max-width: 540px) {
+  .banner-sizes__input {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+  .banner-sizes__form {
+    flex-direction: column;
+  }
+}

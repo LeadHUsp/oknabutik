@@ -1,0 +1,10 @@
+form.form-calc.mfp-hide(id="form-callback")
+    .form-calc__wrapper
+        .form-calc__title У вас есть вопросы? <b style="color:#FF8B00;">Напишите мне!</b>
+        .form-calc__group 
+            input(type="text" placeholder="Ваше имя").form-calc__input.form-calc__input-callback
+            input(type="tel" placeholder="+7(___)-___-__-__").form-calc__input.form-calc__input-callback
+            input(type="text" placeholder="Email").form-calc__input.form-calc__input-callback
+            textarea(name="message" rows="10" placeholder="Текст вашего обращения...").form-calc__input.form-calc__input-callback
+            button.form-calc__submit Отправить
+            .form-calc__policy Оставляя свои контактные данные, вы подтверждаете свое совершеннолетие, соглашаетесь <a href="#" class="form-calc__policy-link">на обработку персональных данных в соответствии с Правовой информацией</a>

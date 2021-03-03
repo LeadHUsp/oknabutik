@@ -1,0 +1,138 @@
+.form-calc {
+  position: relative;
+  width: 100%;
+  max-width: 445px;
+  background: #fff;
+  padding: 40px 40px 30px;
+  margin: 0 auto;
+  font-weight: 400;
+}
+.form-calc__head {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 160.5%;
+  color: #000;
+  margin-bottom: 33px;
+  text-align: center;
+}
+.form-calc__head-orange {
+  color: $orange;
+}
+.form-calc__head-small {
+  font-weight: 400;
+  font-size: 10px;
+}
+.form-calc__head-mb16 {
+  margin-bottom: 16px;
+}
+.form-calc__group {
+  max-width: 273px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+.form-calc__label {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 34px;
+  display: flex;
+  align-items: center;
+}
+.form-calc__input {
+  color: grey;
+  font-size: 16px;
+  line-height: 1;
+  padding: 14px;
+  margin-bottom: 10px;
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+.form-calc__time {
+  padding-top: 13px;
+  padding-bottom: 30px;
+  font-size: 14px;
+  line-height: 71%;
+  text-align: center;
+}
+.form-calc__subtitle {
+  font-size: 17px;
+  line-height: 30px;
+  width: 100%;
+}
+.form-calc__group-connect {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.form-calc__radio {
+  visibility: hidden;
+  position: absolute;
+  left: 100%;
+}
+.form-calc__label-radio {
+  display: flex;
+  width: 50%;
+  cursor: pointer;
+}
+.form-calc__mark {
+  width: 24px;
+  height: 24px;
+  border: 1px solid #d6d6d6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  flex-shrink: 0;
+  &:before {
+    content: "";
+    width: 13px;
+    height: 13px;
+    background: $orange;
+    display: none;
+  }
+}
+.form-calc__radio:checked + .form-calc__mark:before {
+  display: block;
+}
+.form-calc__submit {
+  background: $orange;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 62%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  width: 100%;
+  max-width: 300px;
+  margin: 30px auto 20px;
+  transition: all 0.4s ease;
+  &:hover {
+    background: darken($orange, 10%);
+  }
+}
+.form-calc__policy {
+  text-align: center;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 137%;
+}
+.form-calc__policy-link {
+  text-decoration: underline;
+  color: inherit;
+  transition: all 0.4s ease;
+  &:hover {
+    color: $orange;
+  }
+}
+.form-calc__title {
+  font-size: 17px;
+  line-height: 176%;
+  margin-bottom: 24px;
+  text-align: center;
+}
+.form-calc__input-callback {
+  margin-bottom: 20px;
+}

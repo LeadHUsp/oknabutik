@@ -30,3 +30,32 @@
   width: width(1170, 570);
   padding-top: 30px;
 }
+@media (max-width: 991.9px) {
+  .certeficate {
+    flex-wrap: wrap;
+  }
+  .certeficate__description {
+    width: 100%;
+  }
+  .certeficate__slider {
+    padding-top: 20px;
+    width: 100%;
+    padding-left: 0;
+  }
+  .certeficate__arrow-next {
+    right: 10px;
+  }
+  .certeficate__arrow-prev {
+    left: 10px;
+  }
+}
+@media (max-width: 768.9px) {
+  .certeficate {
+    padding-top: 15px;
+  }
+}
+@media (max-width: 600px) {
+  .certeficate__title {
+    font-size: 24px;
+  }
+}

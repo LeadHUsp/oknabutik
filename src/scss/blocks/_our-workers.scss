@@ -39,3 +39,25 @@
   color: $danger;
   flex-shrink: 0;
 }
+@media (max-width: 991.9px) {
+  .our-workers__wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .our-workers__photo {
+    width: 60%;
+  }
+  .our-workers__collumns {
+    width: 100%;
+    padding-top: 20px;
+  }
+}
+@media (max-width: 575.9px) {
+  .our-workers__collumns {
+    flex-wrap: wrap;
+  }
+  .our-workers__list {
+    width: 100%;
+    padding-left: 0;
+  }
+}

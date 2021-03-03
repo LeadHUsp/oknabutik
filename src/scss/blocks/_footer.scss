@@ -101,3 +101,47 @@
     color: $orange;
   }
 }
+@media (max-width: 1279.9px) {
+  .footer__contact {
+    padding-left: 10px;
+  }
+}
+@media (max-width: 991.9px) {
+  .footer__wrapper {
+    flex-wrap: wrap;
+  }
+  .footer__logo {
+    width: 50%;
+  }
+  .footer__nav,
+  .footer__info {
+    width: 25%;
+  }
+  .footer__recvizites,
+  .footer__contact {
+    padding-top: 15px;
+    width: 50%;
+  }
+}
+@media (max-width: 600px) {
+  .footer__nav,
+  .footer__info {
+    width: 50%;
+  }
+  .footer__logo,
+  .footer__recvizites,
+  .footer__contact {
+    width: 100%;
+  }
+  .footer-bot__wrapper {
+    flex-wrap: wrap;
+  }
+  .footer-bot__copy,
+  .footer-bot__info,
+  .footer-bot__policy {
+    width: 100%;
+  }
+  .footer-bot__policy {
+    text-align: center;
+  }
+}
