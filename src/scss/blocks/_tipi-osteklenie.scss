@@ -1,0 +1,37 @@
+.tabs-content__preview-glass {
+  width: width(1170, 564);
+  display: flex;
+  flex-direction: column;
+}
+.glass-type__slider {
+  width: width(1170, 606);
+  padding-left: 20px;
+  position: relative;
+  .slider__btn-prev {
+    left: 0;
+  }
+  .slider__btn-next {
+    right: -9px;
+  }
+}
+.slider__btn-glass {
+  top: 30%;
+}
+.glass-type__wrapper {
+  margin-right: -10px;
+  margin-left: -10px;
+}
+.tabs-card-glass {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+@media (max-width: 991.9px) {
+  .tabs-content__preview-glass {
+    width: 100%;
+  }
+  .glass-type__slider {
+    width: 100%;
+    padding-left: 0;
+    padding-top: 15px;
+  }
+}

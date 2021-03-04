@@ -1,9 +1,9 @@
-mixin header-banner(img, title)
+mixin header-banner(img, title, subtitle)
 	.banner.lozad(data-background-image=img)
 				.container
 					.banner__wrapper 
 						.banner__title !{title}
-						.banner__subtitle в Санкт-Петербурге от 7 тыс.руб
+						.banner__subtitle=subtitle
 						.banner__text Закажи немецкие термоокна с защитой от холода <br/> и жары по цене обычных со скидкой до 50%
 						.banner__list
 							.banner__item

@@ -1,6 +1,8 @@
 import "./color-solutions";
 import { quizeInit } from "./quize";
 import lozad from "lozad";
+import { tab } from "./tab";
+import "./tipi-osteklenie";
 
 document.addEventListener("DOMContentLoaded", () => {
   $(".stellarnav").stellarNav({
@@ -12,66 +14,17 @@ document.addEventListener("DOMContentLoaded", () => {
   });
   $("input[type='tel']").inputmask("+7(999)-999-99-99");
   //tabs
-  let tab = (
-    controlSelector,
-    contentSelector,
-    controlActiveClass,
-    contentActiveClass,
-    parent
-  ) => {
-    const tabControl = document.querySelectorAll(controlSelector);
-    const tabContent = document.querySelectorAll(contentSelector);
-    let tabName;
-    tabControl.forEach((item) => {
-      item.addEventListener("click", selectNavTab);
-    });
 
-    function selectNavTab() {
-      tabControl.forEach((tab) => {
-        tab.classList.remove(controlActiveClass);
-      });
-      this.classList.add(controlActiveClass);
-      tabName = this.getAttribute("data-tab");
-      selectTabContent(tabName, parent);
-    }
-    function selectTabContent(tabName, parentParam) {
-      if (parentParam) {
-        tabContent.forEach((item) => {
-          if (item.getAttribute("data-tab-content") == tabName) {
-            item.classList.add(contentActiveClass);
-            let childTabNavEl = item.querySelectorAll(".child-tabs__btn");
-            let childTabContent = item.querySelectorAll(".child-tabs__item");
-            childTabNavEl.forEach((childNav) => {
-              childNav.classList.remove("child-tabs__btn-active");
-            });
-            childTabNavEl[0].classList.add("child-tabs__btn-active");
-            childTabContent.forEach((child) => {
-              child.classList.remove("child-tabs__item-active");
-            });
-            childTabContent[0].classList.add("child-tabs__item-active");
-          } else {
-            item.classList.remove(contentActiveClass);
-          }
-        });
-      } else {
-        tabContent.forEach((item) => {
-          item.getAttribute("data-tab-content") == tabName
-            ? item.classList.add(contentActiveClass)
-            : item.classList.remove(contentActiveClass);
-        });
-      }
-    }
-  };
   tab(
-    ".tabs-nav__elem",
-    ".tabs-content__item",
+    ".product-tabs .tabs-nav__elem",
+    ".product-tabs .tabs-content__item",
     "tabs-nav__elem-active",
     "tabs-content__item-active",
     true
   );
   tab(
-    ".child-tabs__btn",
-    ".child-tabs__item",
+    ".product-tabs .child-tabs__btn",
+    ".product-tabs .child-tabs__item",
     "child-tabs__btn-active",
     "child-tabs__item-active",
     false

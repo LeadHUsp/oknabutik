@@ -1,0 +1,21 @@
+mixin item(img, title, price)
+    a(href="#").more-services__item 
+            .more-services__picture 
+                img(src="" data-src=img, alt=title).img-full.lozad.more-services__img
+            .more-services__title
+                .more-services__content=title
+                .more-services__price от <span class="more-services__price-danger">!{price}</span> руб
+            .more-services__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique.
+
+.more-services.container 
+    .block-title <b>Работы по отделке,</b> которые можно выполнить, кроме<br/> базового остекления
+    .more-services__wrapper 
+        +item('img/more-services/more-services-1.jpg', 'Внешняя отделка', '9200')
+        +item('img/more-services/more-services-2.jpg', 'Отделка потолка', '9200')
+        +item('img/more-services/more-services-3.jpg', 'Утепление', '9200')
+        +item('img/more-services/more-services-4.jpg', 'Теплый пол', '9200')
+        +item('img/more-services/more-services-5.jpg', 'Электромонтаж', '9200')
+        +item('img/more-services/more-services-6.jpg', 'Отделка стен', '9200')
+        +item('img/more-services/more-services-7.jpg', 'Отделка пола', '9200')
+        +item('img/more-services/more-services-8.jpg', 'Укрепление', '9200')
+        +item('img/more-services/more-services-9.jpg', 'Балкон с выносом', '9200')

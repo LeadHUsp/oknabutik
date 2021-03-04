@@ -1,5 +1,12 @@
-mixin page-inner(title, text)
+mixin page-inner(title, text, sublist)
     .page-inner
         .container
             .block-title !{title}
             .page-inner__text=text
+            if sublist=true
+                .page-inner__subtitle Устанавливаем светопрозрачные конструкции (СПК) всех видов:
+                ul.page-inner__list 
+                    li.page-inner__item недорогие окна с обычными одно- и двухкамерными стеклопакетами;
+                    li.page-inner__item алюминиевые СПК для холодного остекления коттеджей;
+                    li.page-inner__item панорамные витражные и безрамные системы для веранд и террас;
+                    li.page-inner__item СПК для остекления балконов и зимних садов, расположенных в коттеджах.

@@ -12,9 +12,11 @@
   "blocks/certeficate", "blocks/our-workers", "blocks/banner-sizes",
   "blocks/stars-rating", "blocks/questions", "blocks/parts/profile",
   "blocks/contact-label", "blocks/social-links",
-  "blocks/contact-link/footer-icon-link-group", "blocks/form-calc";
+  "blocks/contact-link/footer-icon-link-group", "blocks/form-calc",
+  "blocks/tipi-osteklenie", "blocks/furniture-slider", "blocks/balcony-cost",
+  "blocks/more-services";
 //pages
-@import "pages/_home-page";
+@import "pages/kotedgi-i-doma-page";
 
 @include make_container($breakpoints);
 

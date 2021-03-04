@@ -1,0 +1,72 @@
+.balcony-cost__wrapper {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(2, 1fr);
+}
+.balcony-cost__item {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: 0px 0px 30px rgba(26, 64, 73, 0.12);
+  border-radius: 3px;
+}
+
+.balcony-cost__preview {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.balcony-cost__title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 100%;
+}
+.balcony-cost__list {
+  width: 50%;
+  padding-left: 20px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 120%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.balcony-cost__char {
+  display: flex;
+  padding-bottom: 4px;
+}
+.balcony-cost__name {
+  width: 50%;
+}
+.balcony-cost__price {
+  width: 50%;
+  text-align: right;
+}
+.balcony-cost__btn {
+  width: 100%;
+  margin-top: 15px;
+  max-width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.balcony-cost__price-danger {
+  font-weight: 600;
+  color: $danger;
+}
+@media (max-width: 1279.9px) {
+  .balcony-cost__preview {
+    width: 100%;
+  }
+  .balcony-cost__list {
+    width: 100%;
+    padding-left: 0;
+    padding-top: 20px;
+  }
+}
+@media (max-width: 767.9px) {
+  .balcony-cost__wrapper {
+    grid-template-columns: 1fr;
+  }
+}
