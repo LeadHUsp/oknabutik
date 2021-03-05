@@ -1,0 +1,122 @@
+.about-services__inner {
+  display: flex;
+  align-items: center;
+  background: $blue;
+  padding-top: 15px;
+  flex-wrap: wrap;
+}
+.about-services__img {
+  position: relative;
+  width: width(1170, 756);
+  left: -46px;
+}
+.about-services__list {
+  padding-left: 60px;
+}
+.icon-about-services {
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+}
+.about-services__item {
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px;
+  &:last-child {
+    padding-bottom: 0;
+  }
+}
+.about-services__icon {
+  flex-shrink: 0;
+}
+.about-services__text {
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 100%;
+  letter-spacing: 0.01em;
+  padding-left: 10px;
+}
+.about-services__cards-list {
+  padding-top: 80px;
+  display: grid;
+  gap: 1px;
+  grid-template-columns: repeat(3, 1fr);
+}
+.about-services__card {
+  position: relative;
+}
+.about-services__layer {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(64, 64, 64, 0) 30.31%,
+    #212121 108.91%
+  );
+  width: 100%;
+  height: 100%;
+}
+.about-services__caption {
+  position: absolute;
+  padding: 30px;
+  bottom: 0;
+  width: 100%;
+  color: #fff;
+  z-index: 100;
+}
+.about-services__subtitle {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 120%;
+  padding-bottom: 6px;
+}
+.about-services__descr {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 120%;
+  padding-bottom: 12px;
+  font-feature-settings: "pnum" on, "lnum" on;
+}
+.about-services__btn {
+  max-width: 180px;
+}
+@media (max-width: 1279.9px) {
+  .about-services__inner {
+    padding-bottom: 15px;
+  }
+  .about-services__img {
+    width: 60%;
+    left: 0;
+  }
+  .about-services__list {
+    padding-left: 15px;
+    width: 40%;
+  }
+}
+@media (max-width: 991.9px) {
+  .about-services__img {
+    width: 100%;
+  }
+  .about-services__list {
+    padding-top: 15px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .about-services__item {
+    width: 50%;
+  }
+  .about-services__cards-list {
+    padding-top: 30px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .about-services__cards-list {
+    grid-template-columns: 1fr;
+  }
+  .about-services__item {
+    width: 100%;
+  }
+}

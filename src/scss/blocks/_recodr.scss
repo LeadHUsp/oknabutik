@@ -1,0 +1,15 @@
+.record__subtitle {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 120%;
+  text-align: center;
+}
+.record__video {
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 600px) {
+  .record__subtitle {
+    font-size: 18px;
+  }
+}

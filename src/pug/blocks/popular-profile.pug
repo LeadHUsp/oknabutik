@@ -1,0 +1,226 @@
+mixin item(data_tab,id)
+    div(data-tab-content=data_tab id=id).tabs-content__item
+        .tabs-content__preview.tabs-content__preview-glass
+            .tabs-content__title=data_tab
+            .tabs-content__text Хотите устроить на балконе гостиную или организовать детскую комнату, объединить кухню с лоджией? Для надежной защиты от холода, осадков, шума заказывайте теплое остекление балкона в Оконном бутике Виталия Хрусталeва. Мы сами производим окна и двери европейского качества. Прочный пластиковый профиль REHAU с металлическим армированием обеспечит комфорт в помещении в любой сезон. На правах производителя и официального партнера концерна «РЕХАУ» мы делаем теплое остекление из оригинальных материалов бренда. 
+            .tabs-content__image
+                img(src="" data-src="img/kotedgi-i-doma/kotedgi-i-doma-tabs-inner.jpg", alt="Теплое остекление").img-full.lozad
+        .glass-type__slider
+            <button type="button" class="slider__btn slider__btn-prev slider__btn-glass">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13.3711 10.7201C13.5092 10.5817 13.5851 10.3969 13.5847 10.2005C13.5851 10.0034 13.5092 9.81871 13.3711 9.68045M13.3711 10.7201L13.0175 10.3665L13.0174 10.3666C13.061 10.3229 13.0848 10.266 13.0847 10.2016L13.0847 10.1994C13.0848 10.134 13.0608 10.0773 13.0174 10.0339M13.3711 10.7201L13.0172 10.3668L7.05268 16.3311L7.05253 16.3313C7.00911 16.3747 6.95262 16.3986 6.88821 16.3986C6.82392 16.3986 6.76742 16.3748 6.72375 16.3311L6.72367 16.3311L6.28517 15.8928L5.93134 16.2461M13.3711 10.7201L7.40622 16.6847C7.26839 16.8226 7.0844 16.8986 6.88821 16.8986C6.69203 16.8986 6.50814 16.8226 6.3702 16.6847L5.93134 16.2461M13.0174 10.0339L13.0175 10.034L13.3711 9.68045M13.0174 10.0339L13.3711 9.68045M13.0174 10.0339L7.05822 4.07481L7.05808 4.07467C7.01466 4.03121 6.95817 4.00732 6.89376 4.00732C6.82936 4.00732 6.77287 4.03121 6.72945 4.07467L6.72926 4.07485L6.29065 4.51336C6.19992 4.60419 6.20031 4.75237 6.29038 4.84241L6.29045 4.84248L11.2946 9.84665L11.6482 10.2002L11.2946 10.5538L6.28503 15.5633L13.3711 9.68045M5.93134 16.2461L6.28481 15.8924L6.28497 15.8926M5.93134 16.2461C5.79351 16.108 5.71741 15.9241 5.71741 15.7278L6.28497 15.8926M6.28497 15.8926C6.24115 15.8486 6.21741 15.792 6.21741 15.7278C6.21741 15.6639 6.24114 15.6073 6.28489 15.5635L6.28497 15.8926Z" fill="white" stroke="white"/>
+                </svg>
+            </button>
+            <button type="button" class="slider__btn slider__btn-next slider__btn-glass">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13.3711 10.7201C13.5092 10.5817 13.5851 10.3969 13.5847 10.2005C13.5851 10.0034 13.5092 9.81871 13.3711 9.68045M13.3711 10.7201L13.0175 10.3665L13.0174 10.3666C13.061 10.3229 13.0848 10.266 13.0847 10.2016L13.0847 10.1994C13.0848 10.134 13.0608 10.0773 13.0174 10.0339M13.3711 10.7201L13.0172 10.3668L7.05268 16.3311L7.05253 16.3313C7.00911 16.3747 6.95262 16.3986 6.88821 16.3986C6.82392 16.3986 6.76742 16.3748 6.72375 16.3311L6.72367 16.3311L6.28517 15.8928L5.93134 16.2461M13.3711 10.7201L7.40622 16.6847C7.26839 16.8226 7.0844 16.8986 6.88821 16.8986C6.69203 16.8986 6.50814 16.8226 6.3702 16.6847L5.93134 16.2461M13.0174 10.0339L13.0175 10.034L13.3711 9.68045M13.0174 10.0339L13.3711 9.68045M13.0174 10.0339L7.05822 4.07481L7.05808 4.07467C7.01466 4.03121 6.95817 4.00732 6.89376 4.00732C6.82936 4.00732 6.77287 4.03121 6.72945 4.07467L6.72926 4.07485L6.29065 4.51336C6.19992 4.60419 6.20031 4.75237 6.29038 4.84241L6.29045 4.84248L11.2946 9.84665L11.6482 10.2002L11.2946 10.5538L6.28503 15.5633L13.3711 9.68045M5.93134 16.2461L6.28481 15.8924L6.28497 15.8926M5.93134 16.2461C5.79351 16.108 5.71741 15.9241 5.71741 15.7278L6.28497 15.8926M6.28497 15.8926C6.24115 15.8486 6.21741 15.792 6.21741 15.7278C6.21741 15.6639 6.24114 15.6073 6.28489 15.5635L6.28497 15.8926Z" fill="white" stroke="white"/>
+                </svg>
+            </button>
+            .glass-type__wrapper                        
+                .child-tabs__cards
+                    .tabs-card.tabs-card-glass
+                        .tabs-card__title Двухстворчатое окно
+                        img(class="tabs-card__img" src="" data-src="img/tipi-osteklenie/teploe-osteclenie-2.png", alt="window").lozad
+                        .tabs-card__price
+                            span.tabs-card__price-red 10 216 
+                            |руб./окно
+                        .tabs-card__price-full Цена “под ключ” 16 250 руб.
+                        ul.tabs-card__chars
+                            li.tabs-card__char
+                                span Размер 1300 х 1400 мм 
+                            li.tabs-card__char
+                                span Профиль Blitz, 3 камеры, 60мм
+                            li.tabs-card__char 
+                                span Стеклопакет 32 мм
+                            li.tabs-card__char 
+                                span Европейская фурнитура
+                        a(href="#form-calc").btn.tabs-card__btn.btn-popup Заказать
+                    .tabs-card.tabs-card-glass
+                        .tabs-card__title Двухстворчатое окно
+                        img(class="tabs-card__img" scr="" data-src="/img/tipi-osteklenie/teploe-osteclenie-2.png", alt="window").lozad
+                        .tabs-card__price
+                            span.tabs-card__price-red 10 216 
+                            |руб./окно
+                        .tabs-card__price-full Цена “под ключ” 16 250 руб.
+                        ul.tabs-card__chars
+                            li.tabs-card__char
+                                span Размер 1300 х 1400 мм 
+                            li.tabs-card__char
+                                span Профиль Blitz, 3 камеры, 60мм
+                            li.tabs-card__char 
+                                span Стеклопакет 32 мм
+                            li.tabs-card__char 
+                                span Европейская фурнитура
+                        a(href="#form-calc").btn.tabs-card__btn.btn-popup Заказать
+                    .tabs-card.tabs-card-glass
+                        .tabs-card__title Двухстворчатое окно
+                        img(class="tabs-card__img" src="" data-src="/img/tipi-osteklenie/teploe-osteclenie-3.png", alt="window").lozad
+                        .tabs-card__price
+                            span.tabs-card__price-red 10 216 
+                            |руб./окно
+                        .tabs-card__price-full Цена “под ключ” 16 250 руб.
+                        ul.tabs-card__chars
+                            li.tabs-card__char
+                                span Размер 1300 х 1400 мм 
+                            li.tabs-card__char
+                                span Профиль Blitz, 3 камеры, 60мм
+                            li.tabs-card__char 
+                                span Стеклопакет 32 мм
+                            li.tabs-card__char 
+                                span Европейская фурнитура
+                        a(href="#form-calc").btn.tabs-card__btn.btn-popup Заказать
+                    .tabs-card.tabs-card-glass
+                        .tabs-card__title Двухстворчатое окно
+                        img(class="tabs-card__img" src="" data-src="img/tipi-osteklenie/teploe-osteclenie-2.png", alt="window").lozad
+                        .tabs-card__price
+                            span.tabs-card__price-red 10 216 
+                            |руб./окно
+                        .tabs-card__price-full Цена “под ключ” 16 250 руб.
+                        ul.tabs-card__chars
+                            li.tabs-card__char
+                                span Размер 1300 х 1400 мм 
+                            li.tabs-card__char
+                                span Профиль Blitz, 3 камеры, 60мм
+                            li.tabs-card__char 
+                                span Стеклопакет 32 мм
+                            li.tabs-card__char 
+                                span Европейская фурнитура
+                        a(href="#form-calc").btn.tabs-card__btn.btn-popup Заказать
+                    .tabs-card.tabs-card-glass
+                        .tabs-card__title Двухстворчатое окно
+                        img(class="tabs-card__img" scr="" data-src="/img/tipi-osteklenie/teploe-osteclenie-2.png", alt="window").lozad
+                        .tabs-card__price
+                            span.tabs-card__price-red 10 216 
+                            |руб./окно
+                        .tabs-card__price-full Цена “под ключ” 16 250 руб.
+                        ul.tabs-card__chars
+                            li.tabs-card__char
+                                span Размер 1300 х 1400 мм 
+                            li.tabs-card__char
+                                span Профиль Blitz, 3 камеры, 60мм
+                            li.tabs-card__char 
+                                span Стеклопакет 32 мм
+                            li.tabs-card__char 
+                                span Европейская фурнитура
+                        a(href="#form-calc").btn.tabs-card__btn.btn-popup Заказать
+                .child-tabs__description
+                    p.child-tabs__subtitle Цена под ключ включает:
+                    |Стоимость изделия в выбранной оконной системе, подоконники - 250мм, отлив - 150 мм, подставочный профиль, базовый монтаж с изоляцией наружнего шва, откосы до 250 мм, подготовка проема к монтажу откосов, монтаж откосов. 
+
+.glass-type 
+    .container 
+        .block-title Просмотрите наиболее <b>популярные модели профилей,</b><br/> которые применяются
+        .tabs-nav
+            div(class="tabs-nav__elem tabs-nav__elem-active" data-tab="Алюминиевый профиль") Алюминиевый профиль
+            div(class="tabs-nav__elem" data-tab="Пластиковый профиль") Пластиковый профиль
+            div(class="tabs-nav__elem" data-tab="Дерево") Дерево
+        .tabs-content
+            div(data-tab-content="Алюминиевый профиль" id="glass-tab-1").tabs-content__item.tabs-content__item-active
+                .tabs-content__preview.tabs-content__preview-glass
+                    .tabs-content__title Алюминиевый профиль
+                    .tabs-content__text Хотите устроить на балконе гостиную или организовать детскую комнату, объединить кухню с лоджией? Для надежной защиты от холода, осадков, шума заказывайте теплое остекление балкона в Оконном бутике Виталия Хрусталeва. Мы сами производим окна и двери европейского качества. Прочный пластиковый профиль REHAU с металлическим армированием обеспечит комфорт в помещении в любой сезон. На правах производителя и официального партнера концерна «РЕХАУ» мы делаем теплое остекление из оригинальных материалов бренда. 
+                    .tabs-content__image
+                        img(src="" data-src="img/kotedgi-i-doma/kotedgi-i-doma-tabs-inner.jpg", alt="Теплое остекление").img-full.lozad
+                .glass-type__slider
+                    <button type="button" class="slider__btn slider__btn-prev slider__btn-glass">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.3711 10.7201C13.5092 10.5817 13.5851 10.3969 13.5847 10.2005C13.5851 10.0034 13.5092 9.81871 13.3711 9.68045M13.3711 10.7201L13.0175 10.3665L13.0174 10.3666C13.061 10.3229 13.0848 10.266 13.0847 10.2016L13.0847 10.1994C13.0848 10.134 13.0608 10.0773 13.0174 10.0339M13.3711 10.7201L13.0172 10.3668L7.05268 16.3311L7.05253 16.3313C7.00911 16.3747 6.95262 16.3986 6.88821 16.3986C6.82392 16.3986 6.76742 16.3748 6.72375 16.3311L6.72367 16.3311L6.28517 15.8928L5.93134 16.2461M13.3711 10.7201L7.40622 16.6847C7.26839 16.8226 7.0844 16.8986 6.88821 16.8986C6.69203 16.8986 6.50814 16.8226 6.3702 16.6847L5.93134 16.2461M13.0174 10.0339L13.0175 10.034L13.3711 9.68045M13.0174 10.0339L13.3711 9.68045M13.0174 10.0339L7.05822 4.07481L7.05808 4.07467C7.01466 4.03121 6.95817 4.00732 6.89376 4.00732C6.82936 4.00732 6.77287 4.03121 6.72945 4.07467L6.72926 4.07485L6.29065 4.51336C6.19992 4.60419 6.20031 4.75237 6.29038 4.84241L6.29045 4.84248L11.2946 9.84665L11.6482 10.2002L11.2946 10.5538L6.28503 15.5633L13.3711 9.68045M5.93134 16.2461L6.28481 15.8924L6.28497 15.8926M5.93134 16.2461C5.79351 16.108 5.71741 15.9241 5.71741 15.7278L6.28497 15.8926M6.28497 15.8926C6.24115 15.8486 6.21741 15.792 6.21741 15.7278C6.21741 15.6639 6.24114 15.6073 6.28489 15.5635L6.28497 15.8926Z" fill="white" stroke="white"/>
+                        </svg>
+                    </button>
+                    <button type="button" class="slider__btn slider__btn-next slider__btn-glass">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.3711 10.7201C13.5092 10.5817 13.5851 10.3969 13.5847 10.2005C13.5851 10.0034 13.5092 9.81871 13.3711 9.68045M13.3711 10.7201L13.0175 10.3665L13.0174 10.3666C13.061 10.3229 13.0848 10.266 13.0847 10.2016L13.0847 10.1994C13.0848 10.134 13.0608 10.0773 13.0174 10.0339M13.3711 10.7201L13.0172 10.3668L7.05268 16.3311L7.05253 16.3313C7.00911 16.3747 6.95262 16.3986 6.88821 16.3986C6.82392 16.3986 6.76742 16.3748 6.72375 16.3311L6.72367 16.3311L6.28517 15.8928L5.93134 16.2461M13.3711 10.7201L7.40622 16.6847C7.26839 16.8226 7.0844 16.8986 6.88821 16.8986C6.69203 16.8986 6.50814 16.8226 6.3702 16.6847L5.93134 16.2461M13.0174 10.0339L13.0175 10.034L13.3711 9.68045M13.0174 10.0339L13.3711 9.68045M13.0174 10.0339L7.05822 4.07481L7.05808 4.07467C7.01466 4.03121 6.95817 4.00732 6.89376 4.00732C6.82936 4.00732 6.77287 4.03121 6.72945 4.07467L6.72926 4.07485L6.29065 4.51336C6.19992 4.60419 6.20031 4.75237 6.29038 4.84241L6.29045 4.84248L11.2946 9.84665L11.6482 10.2002L11.2946 10.5538L6.28503 15.5633L13.3711 9.68045M5.93134 16.2461L6.28481 15.8924L6.28497 15.8926M5.93134 16.2461C5.79351 16.108 5.71741 15.9241 5.71741 15.7278L6.28497 15.8926M6.28497 15.8926C6.24115 15.8486 6.21741 15.792 6.21741 15.7278C6.21741 15.6639 6.24114 15.6073 6.28489 15.5635L6.28497 15.8926Z" fill="white" stroke="white"/>
+                        </svg>
+                    </button>
+                    .glass-type__wrapper                        
+                        .child-tabs__cards
+                            .tabs-card.tabs-card-glass
+                                .tabs-card__title Двухстворчатое окно
+                                img(class="tabs-card__img" src="" data-src="img/tipi-osteklenie/teploe-osteclenie-2.png", alt="window").lozad
+                                .tabs-card__price
+                                    span.tabs-card__price-red 10 216 
+                                    |руб./окно
+                                .tabs-card__price-full Цена “под ключ” 16 250 руб.
+                                ul.tabs-card__chars
+                                    li.tabs-card__char
+                                        span Размер 1300 х 1400 мм 
+                                    li.tabs-card__char
+                                        span Профиль Blitz, 3 камеры, 60мм
+                                    li.tabs-card__char 
+                                        span Стеклопакет 32 мм
+                                    li.tabs-card__char 
+                                        span Европейская фурнитура
+                                a(href="#form-calc").btn.tabs-card__btn.btn-popup Заказать
+                            .tabs-card.tabs-card-glass
+                                .tabs-card__title Двухстворчатое окно
+                                img(class="tabs-card__img" scr="" data-src="/img/tipi-osteklenie/teploe-osteclenie-2.png", alt="window").lozad
+                                .tabs-card__price
+                                    span.tabs-card__price-red 10 216 
+                                    |руб./окно
+                                .tabs-card__price-full Цена “под ключ” 16 250 руб.
+                                ul.tabs-card__chars
+                                    li.tabs-card__char
+                                        span Размер 1300 х 1400 мм 
+                                    li.tabs-card__char
+                                        span Профиль Blitz, 3 камеры, 60мм
+                                    li.tabs-card__char 
+                                        span Стеклопакет 32 мм
+                                    li.tabs-card__char 
+                                        span Европейская фурнитура
+                                a(href="#form-calc").btn.tabs-card__btn.btn-popup Заказать
+                            .tabs-card.tabs-card-glass
+                                .tabs-card__title Двухстворчатое окно
+                                img(class="tabs-card__img" src="" data-src="/img/tipi-osteklenie/teploe-osteclenie-3.png", alt="window").lozad
+                                .tabs-card__price
+                                    span.tabs-card__price-red 10 216 
+                                    |руб./окно
+                                .tabs-card__price-full Цена “под ключ” 16 250 руб.
+                                ul.tabs-card__chars
+                                    li.tabs-card__char
+                                        span Размер 1300 х 1400 мм 
+                                    li.tabs-card__char
+                                        span Профиль Blitz, 3 камеры, 60мм
+                                    li.tabs-card__char 
+                                        span Стеклопакет 32 мм
+                                    li.tabs-card__char 
+                                        span Европейская фурнитура
+                                a(href="#form-calc").btn.tabs-card__btn.btn-popup Заказать
+                            .tabs-card.tabs-card-glass
+                                .tabs-card__title Двухстворчатое окно
+                                img(class="tabs-card__img" src="" data-src="img/tipi-osteklenie/teploe-osteclenie-2.png", alt="window").lozad
+                                .tabs-card__price
+                                    span.tabs-card__price-red 10 216 
+                                    |руб./окно
+                                .tabs-card__price-full Цена “под ключ” 16 250 руб.
+                                ul.tabs-card__chars
+                                    li.tabs-card__char
+                                        span Размер 1300 х 1400 мм 
+                                    li.tabs-card__char
+                                        span Профиль Blitz, 3 камеры, 60мм
+                                    li.tabs-card__char 
+                                        span Стеклопакет 32 мм
+                                    li.tabs-card__char 
+                                        span Европейская фурнитура
+                                a(href="#form-calc").btn.tabs-card__btn.btn-popup Заказать
+                            .tabs-card.tabs-card-glass
+                                .tabs-card__title Двухстворчатое окно
+                                img(class="tabs-card__img" scr="" data-src="/img/tipi-osteklenie/teploe-osteclenie-2.png", alt="window").lozad
+                                .tabs-card__price
+                                    span.tabs-card__price-red 10 216 
+                                    |руб./окно
+                                .tabs-card__price-full Цена “под ключ” 16 250 руб.
+                                ul.tabs-card__chars
+                                    li.tabs-card__char
+                                        span Размер 1300 х 1400 мм 
+                                    li.tabs-card__char
+                                        span Профиль Blitz, 3 камеры, 60мм
+                                    li.tabs-card__char 
+                                        span Стеклопакет 32 мм
+                                    li.tabs-card__char 
+                                        span Европейская фурнитура
+                                a(href="#form-calc").btn.tabs-card__btn.btn-popup Заказать
+                        .child-tabs__description
+                            p.child-tabs__subtitle Цена под ключ включает:
+                            |Стоимость изделия в выбранной оконной системе, подоконники - 250мм, отлив - 150 мм, подставочный профиль, базовый монтаж с изоляцией наружнего шва, откосы до 250 мм, подготовка проема к монтажу откосов, монтаж откосов.
+            +item('Пластиковый профиль', 'glass-tab-2')
+            +item('Дерево', 'glass-tab-3')            

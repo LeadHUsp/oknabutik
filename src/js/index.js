@@ -145,25 +145,29 @@ document.addEventListener("DOMContentLoaded", () => {
     false
   );
   //Yandex map init
-  ymaps.ready(init);
-  function init() {
-    var myMap = new ymaps.Map("map", {
-      center: [59.943971, 30.447954],
-      zoom: 17,
-    });
-    myMap.geoObjects.add(
-      new ymaps.Placemark(
-        [59.944003, 30.449187],
-        {
-          balloonContent: "цвет <strong>воды пляжа бонди</strong>",
-        },
-        {
-          preset: "islands#icon",
-          iconColor: "#0095b6",
-        }
-      )
-    );
+
+  if (document.getElementById("map") !== null) {
+    ymaps.ready(init);
+    function init() {
+      var myMap = new ymaps.Map("map", {
+        center: [59.943971, 30.447954],
+        zoom: 17,
+      });
+      myMap.geoObjects.add(
+        new ymaps.Placemark(
+          [59.944003, 30.449187],
+          {
+            balloonContent: "цвет <strong>воды пляжа бонди</strong>",
+          },
+          {
+            preset: "islands#icon",
+            iconColor: "#0095b6",
+          }
+        )
+      );
+    }
   }
+
   //popup
   $(".btn-popup").magnificPopup({
     type: "inline",

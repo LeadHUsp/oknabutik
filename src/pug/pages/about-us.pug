@@ -1,0 +1,72 @@
+include ../blocks/breadcrumbs
+
+doctype
+html
+	include ../blocks/_head.pug
+		title О нас
+	body
+		include ../blocks/_header.pug
+		+breadcrumbs('О нас')
+		.container 
+			.block-title.about-us__title О нас
+			.about-us__wrapper 
+				a(href="#").about-us__link 
+					img(src="" data-src="img/pages/about-us/nash-blog.jpg", alt="Наш блог").img-full.lozad
+					.about-us__label Наш видеоблог
+				a(href="#").about-us__link 
+					img(src="" data-src="img/pages/about-us/nash-blog-1.jpg", alt="Наш блог").img-full.lozad
+					.about-us__label фотогалерея
+				a(href="#").about-us__link 
+					img(src="" data-src="img/pages/about-us/nash-blog-2.jpg", alt="Наш блог").img-full.lozad
+					.about-us__label наши работы
+				a(href="#").about-us__link 
+					img(src="" data-src="img/pages/about-us/nash-blog-3.jpg", alt="Наш блог").img-full.lozad
+					.about-us__label отзывы
+				a(href="#").about-us__link 
+					img(src="" data-src="img/pages/about-us/nash-blog-4.jpg", alt="Наш блог").img-full.lozad
+					.about-us__label наше производство
+				a(href="#").about-us__link 
+					img(src="" data-src="img/pages/about-us/nash-blog-5.jpg", alt="Наш блог").img-full.lozad
+					.about-us__label Благотворительность
+				a(href="#").about-us__link 
+					img(src="" data-src="img/pages/about-us/nash-blog-6.jpg", alt="Наш блог").img-full.lozad
+					.about-us__label сертификаты
+				a(href="#").about-us__link 
+					img(src="" data-src="img/pages/about-us/nash-blog-7.jpg", alt="Наш блог").img-full.lozad
+					.about-us__label техническая документация
+				a(href="#").about-us__link 
+					img(src="" data-src="img/pages/about-us/nash-blog-8.jpg", alt="Наш блог").img-full.lozad
+					.about-us__label Вакансии
+			.about-us-intro
+				.about-us-intro__wrapper 
+					.about-us-intro__content
+						.about-us-intro__title Будем знакомы!
+						.seo-text-container 
+							p <b>Я, Виталий Хрусталев - Генеральный директор «Оконного бутика»,</b> рад приветствовать Вас на нашем сайте. Наше профессиональное кредо – высочайшее качество и честный и искренний сервис.
+							p Наша миссия – делать жизнь наших клиентов комфортнее, давать сотрудникам стабильность, а бизнес-партнерам уверенность в нашей надежности. Наши ценности отражены в высоком качестве наших услуг и отлаженных внутренних процессах.
+							p Компания «Оконный Бутик Виталия Хрусталева» была основана в 2003 году. Мы – это команда единомышленников, начиная от руководства и заканчивая квалифицированными специалистами.
+							p Мы занимаемся всеми видами остекления квартир, коттеджей, бассейнов, веранд, зимних садов. При установке и монтажных работах используем только проверенное и надежное оборудование, которое соответствует мировым стандартам качества.
+							p К Вашим услугам окна на любой вкус – пластиковые, алюминиевые, деревянные конструкции. Также мы поможем произвести остекление сдвижных порталов и нестандартных окон. Мы работаем не только с крупными застройщиками и организациями, но и с частными лицами. При этом главным показателем нашей деятельности является соблюдение индивидуальных условий при сотрудничестве и многочисленные положительные отзывы клиентов.
+					.about-us-intro__img 
+						img(src="" data-src="img/pages/about-us/director.jpg", alt="Виталий Хрусталев - Генеральный директор «Оконного бутика»").img-full.lozad
+				.about-us-intro__wrapper
+					.about-us-intro__content <span class="about-us-intro__content-high">Вы можете связаться со мной в соцсетях</span><br/><span class="about-us-intro__content-orange">Я всегда открыт для общения</span>
+					.about-us-intro__social 
+						a(href="#").about-us-intro__link 
+							i.icon-vk
+						a(href="#").about-us-intro__link 
+							i.icon-insta
+						a(href="#").about-us-intro__link 
+							i.icon-facebook
+			<hr/>
+			.about-us-prizes
+				.about-us-prizes__img
+					img(src="" data-src="img/pages/about-us/prize.jpg", alt="").img-full.lozad 
+				.about-us-prizes__content 
+					.about-us-prizes__subtitle Компания «Оконный Бутик Виталия Хрусталева»
+					.about-us-prizes__title получила звание «Привлекательный работодатель 2020»
+					.about-us-prizes__text SuperJob отметил не только активную деятельность компании по привлечению персонала, но и достойный уровень заработной платы. Это, несомненно, показатель доверия соискателей и знак перспективной и открытой компании, имеющей стабильное положение на рынке.
+
+
+		include ../blocks/_footer.pug
+		include ../blocks/_scripts.pug

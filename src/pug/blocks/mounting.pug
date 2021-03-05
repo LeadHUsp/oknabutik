@@ -1,0 +1,15 @@
+mixin item(src, title)
+    .mounting__row 
+        .mounting__img 
+            img(src="" data-src=src alt=title).img-full.lozad
+        .mounting__descr
+            .mounting__title=title
+            .mounting__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. 
+            a(href="#").btn.mounting__btn Подробнее
+
+.mounting.container 
+    .block-title Выполняем <b>монтаж конструкций любой сложности</b>
+    +item('img/constraction/constraction-item-1.jpg', 'Остекление крыш' )
+    +item('img/constraction/constraction-item-2.jpg', 'Фасадное остекление' )
+    +item('img/constraction/constraction-item-3.jpg', 'Монтаж фасадных систем' )
+    +item('img/constraction/constraction-item-4.jpg', 'Монтаж витражных систем' )

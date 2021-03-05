@@ -1,0 +1,110 @@
+.about-us__title {
+  margin-top: 0;
+  text-align: left;
+  font-weight: 700;
+  padding-bottom: 35px;
+}
+.about-us__wrapper {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(3, 1fr);
+}
+.about-us__link {
+  position: relative;
+  &:hover > .about-us__label {
+    background: darken($orange, 5%);
+  }
+}
+.about-us__label {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  background: $orange;
+  font-weight: bold;
+  font-size: 21px;
+  padding: 21px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  transition: all 0.4s ease;
+}
+.about-us-intro {
+  padding-top: 73px;
+  padding-bottom: 40px;
+}
+.about-us-intro__wrapper {
+  display: flex;
+  padding-bottom: 33px;
+}
+.about-us-intro__content {
+  width: width(1170, 771);
+  padding-right: 21px;
+}
+.about-us-intro__content-high {
+  font-size: 36px;
+  line-height: 118%;
+}
+.about-us-intro__content-orange {
+  color: $orange;
+  font-size: 25px;
+  line-height: 110%;
+}
+.about-us-intro__social {
+  width: width(1170, 398);
+  display: flex;
+  justify-content: space-around;
+}
+.about-us-intro__link {
+  font-size: 32px;
+  color: $text;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  border: 1px solid #bbbbbb;
+  border-radius: 50%;
+  transition: all 0.3s ease-out;
+  &:hover {
+    background: $orange;
+    color: #fff;
+  }
+}
+.about-us-intro__title {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 160.5%;
+  color: $orange;
+}
+.about-us-intro__img {
+  width: width(1170, 398);
+}
+.about-us-prizes {
+  display: flex;
+  padding-top: 60px;
+  align-items: center;
+}
+.about-us-prizes__img {
+  width: width(12, 3);
+  padding: 0 17px;
+}
+@media (max-width: 1279.9px) {
+  .about-us__label {
+    font-size: 17px;
+  }
+}
+@media (max-width: 991.9px) {
+  .about-us__wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 767.9px) {
+  .about-us__wrapper {
+    gap: 15px;
+  }
+}
+@media (max-width: 575.9px) {
+  .about-us__wrapper {
+    grid-template-columns: 1fr;
+  }
+}

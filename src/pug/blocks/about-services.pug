@@ -1,3 +1,56 @@
+mixin card(img, title)
+    .about-services__card
+        img(src="" data-src=img, alt=title).img-full.lozad
+        .about-services__caption
+            .about-services__subtitle=title
+            .about-services__descr Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate
+            a(href="#form-calc").btn.about-services__btn.btn-popup Получить расчет
+        .about-services__layer
+
+
 .about-services 
     .container 
         .block-title <b>Какие работы мы выполняем по остеклению</b><br/> и почему нас советуют друзьям
+        .about-services__inner 
+            .about-services__img 
+                img(src="" data-src="img/about-services/about-services-prev.png", alt="Дом с остеклением").img-full.lozad
+            ul.about-services__list
+                li.about-services__item 
+                    .about-services__icon
+                        i.icon.icon-sliding-window.icon-about-services
+                    .about-services__text Раздвижные окна и двери
+                li.about-services__item 
+                    .about-services__icon
+                        i.icon.icon-alloy-window.icon-about-services
+                    .about-services__text Алюминиевое остекление
+                li.about-services__item 
+                    .about-services__icon
+                        i.icon.icon-plastik-window.icon-about-services
+                    .about-services__text Пластиковые окна
+                li.about-services__item 
+                    .about-services__icon
+                        i.icon.icon-frameless-window.icon-about-services
+                    .about-services__text Безрамное остекление
+                li.about-services__item 
+                    .about-services__icon
+                        i.icon.icon-enter-doors.icon-about-services
+                    .about-services__text Входные группы и двери 
+                li.about-services__item 
+                    .about-services__icon
+                        i.icon.icon-wooden-doors.icon-about-services
+                    .about-services__text Деревянные окна 
+        .about-services__cards-list
+            +card('img/about-services/about-services-card-1.jpg', 'Остекление беседок')
+            +card('img/about-services/about-services-card-2.jpg', 'Остекление террас и веранд')
+            +card('img/about-services/about-services-card-3.jpg', 'Остекление домов и коттеджей')
+            +card('img/about-services/about-services-card-4.jpg', 'Остекление зимних садов')
+            +card('img/about-services/about-services-card-5.jpg', 'Портальные двери')
+            +card('img/about-services/about-services-card-6.jpg', 'Раздвижные двери')
+        .seo-text-container
+            p Вид СПК для загородного дома выбирается исходя из стиля строения и запросов владельца. Для коттеджей эконом-класса обычно заказывают остекление пластиковыми окнами, изготовленными из профиля Rehau моделей Sib-Design, Blitz. Если к дизайну окон предъявляются более высокие требования, можно выбрать системы Delight-Design с изящными рамами и створками.
+            p Дизайн экстерьера здания, как и комфорт проживания в нем, напрямую зависит внешнего вида окон, балконов, веранды, террасы. Если красота и уют родного жилища важны для вас, заказывайте остекление своего загородного дома нам.
+            p Мы работаем в Санкт-Петербурге и пригородных поселках. Производим и монтируем стандартные и элитные окна. Для создания уникального дизайна окон премиум-класса применяем специальные материалы, покраску и ламинацию профиля. Цены зависят от масштабности задачи, типа материалов и других факторов.
+            p Мы готовы реализовать любой проект остекления загородного дома. Принимаем заказы любого уровня сложности. Нас не пугают нестандартные размеры окон и дверей. Профессионально выполним остекление любого типа.
+            p Мы принимаем также заказы на остекление загородных домов под ключ. Такая услуга подразумевает последовательное выполнение всех работ – от замеров монтажных проемов до декоративной отделки откосов и утепления балконов, лоджий.
+            p Если у вас есть намерение поручить изготовление и монтаж систем остекления ответственному подрядчику, позвоните нам. В ближайшие дни к вам выедет специалист, который произведет измерения и выполнит расчет стоимости. После заключения договора мы сразу начнем изготовление пластиковых окон для остекления вашего загородного дома.
+             

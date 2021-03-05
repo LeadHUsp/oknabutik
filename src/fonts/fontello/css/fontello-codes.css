@@ -12,6 +12,12 @@
 .icon-success:before { content: '\e80a'; } /* '' */
 .icon-tape:before { content: '\e80b'; } /* '' */
 .icon-arrow:before { content: '\e80c'; } /* '' */
+.icon-alloy-window:before { content: '\e80d'; } /* '' */
 .icon-email:before { content: '\e812'; } /* '' */
 .icon-vk:before { content: '\e813'; } /* '' */
 .icon-youtube:before { content: '\e814'; } /* '' */
+.icon-enter-doors:before { content: '\e815'; } /* '' */
+.icon-frameless-window:before { content: '\e816'; } /* '' */
+.icon-plastik-window:before { content: '\e817'; } /* '' */
+.icon-sliding-window:before { content: '\e818'; } /* '' */
+.icon-wooden-doors:before { content: '\e819'; } /* '' */

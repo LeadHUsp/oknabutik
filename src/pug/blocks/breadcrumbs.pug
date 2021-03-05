@@ -1,0 +1,8 @@
+mixin breadcrumbs(...items)
+    .container
+        ul.breadcrumbs
+            li.breadcrumbs__item
+                a(href="#").breadcrumbs__link Главная
+            each item in items
+                li.breadcrumbs__item 
+                    a(href="#").breadcrumbs__link=item

@@ -1,0 +1,28 @@
+- var img = 'img/';
+include ../blocks/header-banner
+include ../blocks/page-inner
+doctype
+html
+	include ../blocks/_head.pug
+		title Конструкции
+	body
+		include ../blocks/_header.pug
+		+header-banner('img/constraction/constraction-banner.jpg', '<b>Остекление и монтаж конструкций<br/></b> под ключ', 'в Санкт-Петербурге от 15 тыс.руб')
+		include ../blocks/mounting.pug
+		include ../blocks/services.pug
+		include ../blocks/banner-sale.pug
+		include ../blocks/promos.pug
+		include ../blocks/reviews.pug
+		include ../blocks/creation.pug
+		include ../blocks/certeficate.pug
+		include ../blocks/our-workers.pug
+		include ../blocks/banner-sizes.pug
+		include ../blocks/stars-rating.pug
+		include ../blocks/questions.pug			
+		include ../blocks/map.pug
+		include ../blocks/_footer.pug
+		include ../blocks/popup-calculation.pug
+		include ../blocks/popup-call-director.pug
+		<script src="https://api-maps.yandex.ru/2.1/?apikey=98211b84-7f08-45d8-abec-5f3f4575258b&lang=ru_RU" type="text/javascript">
+		</script>
+		include ../blocks/_scripts.pug
