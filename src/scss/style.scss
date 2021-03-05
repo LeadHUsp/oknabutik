@@ -1,29 +1,28 @@
 //utils
-@import "utils/_reset", "utils/_vars", "utils/_mixins", "utils/fonts",
-  "../libs/sass-mediaqueries/media-queries";
-@import "../fonts/fontello/css/fontello.css";
+@import 'utils/_reset', 'utils/_vars', 'utils/_mixins', 'utils/fonts',
+  '../libs/sass-mediaqueries/media-queries';
+@import '../fonts/fontello/css/fontello.css';
 
 // blocks
-@import "blocks/ui-parts", "blocks/_header", "blocks/_footer",
-  "blocks/header-banner", "blocks/page-inner", "blocks/product-tabs",
-  "blocks/child-tabs", "blocks/_color-solutions", "blocks/quize",
-  "blocks/advantages-tabs", "blocks/_services", "blocks/banner-sale",
-  "blocks/promos", "blocks/reviews", "blocks/list-compare", "blocks/creation",
-  "blocks/certeficate", "blocks/our-workers", "blocks/banner-sizes",
-  "blocks/stars-rating", "blocks/questions", "blocks/parts/profile",
-  "blocks/contact-label", "blocks/social-links",
-  "blocks/contact-link/footer-icon-link-group", "blocks/form-calc",
-  "blocks/tipi-osteklenie", "blocks/furniture-slider", "blocks/balcony-cost",
-  "blocks/more-services", "blocks/about-services", "blocks/recodr",
-  "blocks/mounting", "blocks/breadcrumbs";
+@import 'blocks/ui-parts', 'blocks/_header', 'blocks/_footer', 'blocks/header-banner',
+  'blocks/page-inner', 'blocks/product-tabs', 'blocks/child-tabs',
+  'blocks/_color-solutions', 'blocks/quize', 'blocks/advantages-tabs', 'blocks/_services',
+  'blocks/banner-sale', 'blocks/promos', 'blocks/reviews', 'blocks/list-compare',
+  'blocks/creation', 'blocks/certeficate', 'blocks/our-workers', 'blocks/banner-sizes',
+  'blocks/stars-rating', 'blocks/questions', 'blocks/parts/profile',
+  'blocks/contact-label', 'blocks/social-links',
+  'blocks/contact-link/footer-icon-link-group', 'blocks/form-calc',
+  'blocks/tipi-osteklenie', 'blocks/furniture-slider', 'blocks/balcony-cost',
+  'blocks/more-services', 'blocks/about-services', 'blocks/recodr', 'blocks/mounting',
+  'blocks/breadcrumbs';
 //pages
-@import "pages/kotedgi-i-doma-page", "pages/about-us";
+@import 'pages/kotedgi-i-doma-page', 'pages/about-us';
 
 @include make_container($breakpoints);
 
 html,
 body {
-  font-family: "Myriad Pro", sans-serif;
+  font-family: 'Myriad Pro', sans-serif;
   background: #fff;
   color: $text;
   overflow-x: hidden;
@@ -52,6 +51,9 @@ button {
 hr {
   background: #e1e1e1;
   height: 1px;
+}
+.crysler {
+  color: $orange;
 }
 /* .slick-list {
   height: 100%;
