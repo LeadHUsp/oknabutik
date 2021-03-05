@@ -1,6 +1,4 @@
-$ cat .gitignore
-
 node_modules
 app
 dist
-src
+style.scss
