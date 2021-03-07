@@ -159,16 +159,10 @@ document.addEventListener('DOMContentLoaded', () => {
         zoom: 17,
       });
       myMap.geoObjects.add(
-        new ymaps.Placemark(
-          [59.944003, 30.449187],
-          {
-            balloonContent: 'цвет <strong>воды пляжа бонди</strong>',
-          },
-          {
-            preset: 'islands#icon',
-            iconColor: '#0095b6',
-          }
-        )
+        new ymaps.Placemark([59.944003, 30.449187], {
+          preset: 'islands#icon',
+          iconColor: '#0095b6',
+        })
       );
     }
   }
