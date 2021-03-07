@@ -1,5 +1,5 @@
 include ../blocks/breadcrumbs
-
+include ../blocks/reviews-card
 doctype
 html
 	include ../blocks/_head.pug
@@ -11,31 +11,31 @@ html
 			.block-title.about-us__title О нас
 			.about-us__wrapper 
 				a(href="#").about-us__link 
-					img(src="" data-src="img/pages/about-us/nash-blog.jpg", alt="Наш блог").img-full.lozad
+					img(src="img/fallback.jpg" data-src="img/pages/about-us/nash-blog.jpg", alt="Наш блог").img-full.lozad
 					.about-us__label Наш видеоблог
 				a(href="#").about-us__link 
-					img(src="" data-src="img/pages/about-us/nash-blog-1.jpg", alt="Наш блог").img-full.lozad
+					img(src="img/fallback.jpg" data-src="img/pages/about-us/nash-blog-1.jpg", alt="Наш блог").img-full.lozad
 					.about-us__label фотогалерея
 				a(href="#").about-us__link 
-					img(src="" data-src="img/pages/about-us/nash-blog-2.jpg", alt="Наш блог").img-full.lozad
+					img(src="img/fallback.jpg" data-src="img/pages/about-us/nash-blog-2.jpg", alt="Наш блог").img-full.lozad
 					.about-us__label наши работы
 				a(href="#").about-us__link 
-					img(src="" data-src="img/pages/about-us/nash-blog-3.jpg", alt="Наш блог").img-full.lozad
+					img(src="img/fallback.jpg" data-src="img/pages/about-us/nash-blog-3.jpg", alt="Наш блог").img-full.lozad
 					.about-us__label отзывы
 				a(href="#").about-us__link 
-					img(src="" data-src="img/pages/about-us/nash-blog-4.jpg", alt="Наш блог").img-full.lozad
+					img(src="img/fallback.jpg" data-src="img/pages/about-us/nash-blog-4.jpg", alt="Наш блог").img-full.lozad
 					.about-us__label наше производство
 				a(href="#").about-us__link 
-					img(src="" data-src="img/pages/about-us/nash-blog-5.jpg", alt="Наш блог").img-full.lozad
+					img(src="img/fallback.jpg" data-src="img/pages/about-us/nash-blog-5.jpg", alt="Наш блог").img-full.lozad
 					.about-us__label Благотворительность
 				a(href="#").about-us__link 
-					img(src="" data-src="img/pages/about-us/nash-blog-6.jpg", alt="Наш блог").img-full.lozad
+					img(src="img/fallback.jpg" data-src="img/pages/about-us/nash-blog-6.jpg", alt="Наш блог").img-full.lozad
 					.about-us__label сертификаты
 				a(href="#").about-us__link 
-					img(src="" data-src="img/pages/about-us/nash-blog-7.jpg", alt="Наш блог").img-full.lozad
+					img(src="img/fallback.jpg" data-src="img/pages/about-us/nash-blog-7.jpg", alt="Наш блог").img-full.lozad
 					.about-us__label техническая документация
 				a(href="#").about-us__link 
-					img(src="" data-src="img/pages/about-us/nash-blog-8.jpg", alt="Наш блог").img-full.lozad
+					img(src="img/fallback.jpg" data-src="img/pages/about-us/nash-blog-8.jpg", alt="Наш блог").img-full.lozad
 					.about-us__label Вакансии
 			.about-us-intro
 				.about-us-intro__wrapper 
@@ -48,7 +48,7 @@ html
 							p Мы занимаемся всеми видами остекления квартир, коттеджей, бассейнов, веранд, зимних садов. При установке и монтажных работах используем только проверенное и надежное оборудование, которое соответствует мировым стандартам качества.
 							p К Вашим услугам окна на любой вкус – пластиковые, алюминиевые, деревянные конструкции. Также мы поможем произвести остекление сдвижных порталов и нестандартных окон. Мы работаем не только с крупными застройщиками и организациями, но и с частными лицами. При этом главным показателем нашей деятельности является соблюдение индивидуальных условий при сотрудничестве и многочисленные положительные отзывы клиентов.
 					.about-us-intro__img 
-						img(src="" data-src="img/pages/about-us/director.jpg", alt="Виталий Хрусталев - Генеральный директор «Оконного бутика»").img-full.lozad
+						img(src="img/fallback.jpg" data-src="img/pages/about-us/director.jpg", alt="Виталий Хрусталев - Генеральный директор «Оконного бутика»").img-full.lozad
 				.about-us-intro__wrapper
 					.about-us-intro__content <span class="about-us-intro__content-high">Вы можете связаться со мной в соцсетях</span><br/><span class="about-us-intro__content-orange">Я всегда открыт для общения</span>
 					.about-us-intro__social 
@@ -61,12 +61,67 @@ html
 			<hr/>
 			.about-us-prizes
 				.about-us-prizes__img
-					img(src="" data-src="img/pages/about-us/prize.jpg", alt="").img-full.lozad 
+					img(src="img/fallback.jpg" data-src="img/pages/about-us/prize.jpg", alt="").img-full.lozad 
 				.about-us-prizes__content 
 					.about-us-prizes__subtitle Компания «Оконный Бутик Виталия Хрусталева»
 					.about-us-prizes__title получила звание «Привлекательный работодатель 2020»
 					.about-us-prizes__text SuperJob отметил не только активную деятельность компании по привлечению персонала, но и достойный уровень заработной платы. Это, несомненно, показатель доверия соискателей и знак перспективной и открытой компании, имеющей стабильное положение на рынке.
-
-
+				.about-us-prizes__note Отдельное внимание уделяем выбору материалов продукции, и предлагаем зарекомендовавшие себя на рынке марки!
+			.about-us-parthners
+				.about-us-parthners__item 
+					img(src="img/fallback.jpg" data-src="img/pages/about-us/parthners-1.jpg", alt="rehau").img-full.lozad
+				.about-us-parthners__item 
+					img(src="img/fallback.jpg" data-src="img/pages/about-us/parthners-2.jpg", alt="alutech").img-full.lozad
+				.about-us-parthners__item 
+					img(src="img/fallback.jpg" data-src="img/pages/about-us/parthners-3.jpg", alt="reynaers").img-full.lozad
+				.about-us-parthners__note *Правильный выбор оконных систем создает комфортную и уютную атмосферу в доме. Наша миссия реализовать все эти условия, чтобы Вам не пришлось ни о чем переживать, после оформления заказа.  Желаете получить бесплатный монтаж или установку?  Тогда следите за акциями, которые обновляются на сайте. При соблюдении некоторых условий можно сэкономить и при этом получить все услуги под ключ.
+			.about-us-advantages 
+				.about-us-advantages__title Наши преимущества
+				.about-us-advantages__prizes 
+					.about-us-advantages__item
+						.about-us-advantages__icon
+							img(src="img/icons/advantage-list.svg", alt="преимущества") 
+						.about-us-advantages__text <b>3 года гарантии</b> на конструкции<br/> и 5 лет на установку
+					.about-us-advantages__item
+						.about-us-advantages__icon
+							img(src="img/icons/advantage-prize.svg", alt="преимущества") 
+						.about-us-advantages__text <b>3 года гарантии</b> на конструкции<br/> и 5 лет на установку
+					.about-us-advantages__item
+						.about-us-advantages__icon
+							img(src="img/icons/advantage-clock.svg", alt="преимущества") 
+						.about-us-advantages__text <b>3 года гарантии</b> на конструкции<br/> и 5 лет на установку
+					.about-us-advantages__item
+						.about-us-advantages__icon
+							img(src="img/icons/advantage-money.svg", alt="преимущества") 
+						.about-us-advantages__text <b>3 года гарантии</b> на конструкции<br/> и 5 лет на установку
+					.about-us-advantages__item
+						.about-us-advantages__icon
+							img(src="img/icons/advantage-doc.svg", alt="преимущества") 
+						.about-us-advantages__text <b>3 года гарантии</b> на конструкции<br/> и 5 лет на установку
+				.about-us-advantages__note Мы уверены, что наше сотрудничество принесет пользу каждому покупателю, и не сомневаемся в своей продукции. Гарантия на все изделия и виды работ до 17 лет.
+				ul.about-us-advantages__list
+					li.about-us-advantages__point Мы даем нашим клиентам почувствовать удовольствие от высококачественных окон. Мы несем ответственность за каждое проданное и установленное окно .
+					li.about-us-advantages__point Мы создаем атмосферу, в которой профессионалы компании Оконный Бутик Виталия Хрусталева используют свой многолетний опыт, а также знание передовых технологий оконного рынка, отвечая интересам наших взыскательных клиентов.
+			.about-us-reviews
+				.about-us-reviews__control 
+					<button id="about-us-reviews-prev" type="button" class="about-us-reviews__btn about-us-reviews__btn-prev">
+						<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M13.3711 10.7201C13.5092 10.5817 13.5851 10.3969 13.5847 10.2005C13.5851 10.0034 13.5092 9.81871 13.3711 9.68045M13.3711 10.7201L13.0175 10.3665L13.0174 10.3666C13.061 10.3229 13.0848 10.266 13.0847 10.2016L13.0847 10.1994C13.0848 10.134 13.0608 10.0773 13.0174 10.0339M13.3711 10.7201L13.0172 10.3668L7.05268 16.3311L7.05253 16.3313C7.00911 16.3747 6.95262 16.3986 6.88821 16.3986C6.82392 16.3986 6.76742 16.3748 6.72375 16.3311L6.72367 16.3311L6.28517 15.8928L5.93134 16.2461M13.3711 10.7201L7.40622 16.6847C7.26839 16.8226 7.0844 16.8986 6.88821 16.8986C6.69203 16.8986 6.50814 16.8226 6.3702 16.6847L5.93134 16.2461M13.0174 10.0339L13.0175 10.034L13.3711 9.68045M13.0174 10.0339L13.3711 9.68045M13.0174 10.0339L7.05822 4.07481L7.05808 4.07467C7.01466 4.03121 6.95817 4.00732 6.89376 4.00732C6.82936 4.00732 6.77287 4.03121 6.72945 4.07467L6.72926 4.07485L6.29065 4.51336C6.19992 4.60419 6.20031 4.75237 6.29038 4.84241L6.29045 4.84248L11.2946 9.84665L11.6482 10.2002L11.2946 10.5538L6.28503 15.5633L13.3711 9.68045M5.93134 16.2461L6.28481 15.8924L6.28497 15.8926M5.93134 16.2461C5.79351 16.108 5.71741 15.9241 5.71741 15.7278L6.28497 15.8926M6.28497 15.8926C6.24115 15.8486 6.21741 15.792 6.21741 15.7278C6.21741 15.6639 6.24114 15.6073 6.28489 15.5635L6.28497 15.8926Z" fill="white" stroke="white"/>
+						</svg>
+					</button>
+					<button id="about-us-reviews-next" type="button" class="about-us-reviews__btn">
+						<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M13.3711 10.7201C13.5092 10.5817 13.5851 10.3969 13.5847 10.2005C13.5851 10.0034 13.5092 9.81871 13.3711 9.68045M13.3711 10.7201L13.0175 10.3665L13.0174 10.3666C13.061 10.3229 13.0848 10.266 13.0847 10.2016L13.0847 10.1994C13.0848 10.134 13.0608 10.0773 13.0174 10.0339M13.3711 10.7201L13.0172 10.3668L7.05268 16.3311L7.05253 16.3313C7.00911 16.3747 6.95262 16.3986 6.88821 16.3986C6.82392 16.3986 6.76742 16.3748 6.72375 16.3311L6.72367 16.3311L6.28517 15.8928L5.93134 16.2461M13.3711 10.7201L7.40622 16.6847C7.26839 16.8226 7.0844 16.8986 6.88821 16.8986C6.69203 16.8986 6.50814 16.8226 6.3702 16.6847L5.93134 16.2461M13.0174 10.0339L13.0175 10.034L13.3711 9.68045M13.0174 10.0339L13.3711 9.68045M13.0174 10.0339L7.05822 4.07481L7.05808 4.07467C7.01466 4.03121 6.95817 4.00732 6.89376 4.00732C6.82936 4.00732 6.77287 4.03121 6.72945 4.07467L6.72926 4.07485L6.29065 4.51336C6.19992 4.60419 6.20031 4.75237 6.29038 4.84241L6.29045 4.84248L11.2946 9.84665L11.6482 10.2002L11.2946 10.5538L6.28503 15.5633L13.3711 9.68045M5.93134 16.2461L6.28481 15.8924L6.28497 15.8926M5.93134 16.2461C5.79351 16.108 5.71741 15.9241 5.71741 15.7278L6.28497 15.8926M6.28497 15.8926C6.24115 15.8486 6.21741 15.792 6.21741 15.7278C6.21741 15.6639 6.24114 15.6073 6.28489 15.5635L6.28497 15.8926Z" fill="white" stroke="white"/>
+						</svg>
+					</button>						
+				.about-us-reviews__wrapper 
+					.about-us-reviews__slide 
+						+reviews-card('Василий', 'Отличное качество по разумной цене.  Установили окна в деревянном доме.  Нигде не сквозит, не дует.  Дали советы по дальнейшему обслуживанию окон.  Работой доволен, всем рекомендую фирму “Оконный бутик”', 1,2)
+					.about-us-reviews__slide 
+						+reviews-card('Василий', 'Отличное качество по разумной цене.  Установили окна в деревянном доме.  Нигде не сквозит, не дует.  Дали советы по дальнейшему обслуживанию окон.  Работой доволен, всем рекомендую фирму “Оконный бутик”', 1,2)
+					.about-us-reviews__slide 
+						+reviews-card('Василий', 'Отличное качество по разумной цене.  Установили окна в деревянном доме.  Нигде не сквозит, не дует.  Дали советы по дальнейшему обслуживанию окон.  Работой доволен, всем рекомендую фирму “Оконный бутик”', 1,2,3,4)
+					.about-us-reviews__slide 
+						+reviews-card('Василий', 'Отличное качество по разумной цене.  Установили окна в деревянном доме.  Нигде не сквозит, не дует.  Дали советы по дальнейшему обслуживанию окон.  Работой доволен, всем рекомендую фирму “Оконный бутик”', 1,2,3,4)
 		include ../blocks/_footer.pug
 		include ../blocks/_scripts.pug

@@ -14,7 +14,7 @@
   'blocks/contact-link/footer-icon-link-group', 'blocks/form-calc',
   'blocks/tipi-osteklenie', 'blocks/furniture-slider', 'blocks/balcony-cost',
   'blocks/more-services', 'blocks/about-services', 'blocks/recodr', 'blocks/mounting',
-  'blocks/breadcrumbs';
+  'blocks/breadcrumbs', 'blocks/reviews-card';
 //pages
 @import 'pages/kotedgi-i-doma-page', 'pages/about-us';
 
@@ -73,6 +73,6 @@ hr {
 }
 
 .shlyapa__ysataya {
-    height: 100%;
-    width: 100%;
+  height: 100%;
+  width: 100%;
 }

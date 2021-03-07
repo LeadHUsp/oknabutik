@@ -1,42 +1,47 @@
-import "./color-solutions";
-import { quizeInit } from "./quize";
-import lozad from "lozad";
-import { tab } from "./tab";
-import "./tipi-osteklenie";
+import './color-solutions';
+import { quizeInit } from './quize';
+import lozad from 'lozad';
+import { tab } from './tab';
+import './tipi-osteklenie';
+import './page-about-us';
 
-document.addEventListener("DOMContentLoaded", () => {
-  $(".stellarnav").stellarNav({
+document.addEventListener('DOMContentLoaded', () => {
+  //lazyload images
+  const el = document.querySelectorAll('.lozad');
+  const observer = lozad(el);
+  observer.observe();
+  //init navigation
+  $('.stellarnav').stellarNav({
     breakpoint: 1280,
-    menuLabel: "",
+    menuLabel: '',
     closeBtn: true,
-    closeLabel: "",
-    position: "right",
+    closeLabel: '',
+    position: 'right',
   });
-  $("input[type='tel']").inputmask("+7(999)-999-99-99");
+  $("input[type='tel']").inputmask('+7(999)-999-99-99');
   //tabs
-
   tab(
-    ".product-tabs .tabs-nav__elem",
-    ".product-tabs .tabs-content__item",
-    "tabs-nav__elem-active",
-    "tabs-content__item-active",
+    '.product-tabs .tabs-nav__elem',
+    '.product-tabs .tabs-content__item',
+    'tabs-nav__elem-active',
+    'tabs-content__item-active',
     true
   );
   tab(
-    ".product-tabs .child-tabs__btn",
-    ".product-tabs .child-tabs__item",
-    "child-tabs__btn-active",
-    "child-tabs__item-active",
+    '.product-tabs .child-tabs__btn',
+    '.product-tabs .child-tabs__item',
+    'child-tabs__btn-active',
+    'child-tabs__item-active',
     false
   );
 
-  $(".furniture-slider__wrapper").slick({
+  $('.furniture-slider__wrapper').slick({
     infinite: false,
     slidesToShow: 6,
     slidesToScroll: 1,
     arrows: true,
-    prevArrow: $(".slider__btn-prev"),
-    nextArrow: $(".slider__btn-next"),
+    prevArrow: $('.slider__btn-prev'),
+    nextArrow: $('.slider__btn-next'),
     responsive: [
       {
         breakpoint: 1200,
@@ -63,25 +68,25 @@ document.addEventListener("DOMContentLoaded", () => {
   quizeInit();
   //advantages tabs
   tab(
-    "#advantages-tabs .advantages-tabs__link",
-    "#advantages-tabs .advantages-tabs__item",
-    "advantages-tabs__link-active",
-    "advantages-tabs__item-active",
+    '#advantages-tabs .advantages-tabs__link',
+    '#advantages-tabs .advantages-tabs__item',
+    'advantages-tabs__link-active',
+    'advantages-tabs__item-active',
     false
   );
   //reviews slider
-  $(".reviews__gallery").slick({
+  $('.reviews__gallery').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: true,
     infinite: false,
     swipe: false,
-    prevArrow: $("#reviews-prev"),
-    nextArrow: $("#reviews-next"),
+    prevArrow: $('#reviews-prev'),
+    nextArrow: $('#reviews-next'),
   });
-  const reviewSlidesEl = document.querySelectorAll(".reviews__slide");
+  const reviewSlidesEl = document.querySelectorAll('.reviews__slide');
   reviewSlidesEl.forEach((slide) => {
-    let sliderId = slide.getAttribute("id");
+    let sliderId = slide.getAttribute('id');
     $(`#${sliderId} .gallery-parent__wrapper`).slick({
       slidesToShow: 1,
       slidesToScroll: 1,
@@ -111,45 +116,45 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   //Наше производство
-  $(".creation__gallery").slick({
+  $('.creation__gallery').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: true,
     dots: true,
     infinite: false,
-    appendDots: $(".creation__dots"),
-    prevArrow: $("#creation-prev"),
-    nextArrow: $("#creation-next"),
+    appendDots: $('.creation__dots'),
+    prevArrow: $('#creation-prev'),
+    nextArrow: $('#creation-next'),
   });
   //Сертефикаты
-  $(".certeficate__gallery").slick({
+  $('.certeficate__gallery').slick({
     slidesToShow: 2,
     slidesToScroll: 1,
     arrows: true,
     infinite: true,
-    prevArrow: $("#certeficate-prev"),
-    nextArrow: $("#certeficate-next"),
+    prevArrow: $('#certeficate-prev'),
+    nextArrow: $('#certeficate-next'),
   });
-  $(".certeficate__slide").fancybox({
-    buttons: ["zoom", "close"],
+  $('.certeficate__slide').fancybox({
+    buttons: ['zoom', 'close'],
     /* thumbs: {
       autoStart: true,
     }, */
   });
   //Вопросы
   tab(
-    "#questions-tabs .advantages-tabs__link",
-    "#questions-tabs .advantages-tabs__item",
-    "advantages-tabs__link-active",
-    "advantages-tabs__item-active",
+    '#questions-tabs .advantages-tabs__link',
+    '#questions-tabs .advantages-tabs__item',
+    'advantages-tabs__link-active',
+    'advantages-tabs__item-active',
     false
   );
   //Yandex map init
 
-  if (document.getElementById("map") !== null) {
+  if (document.getElementById('map') !== null) {
     ymaps.ready(init);
     function init() {
-      var myMap = new ymaps.Map("map", {
+      var myMap = new ymaps.Map('map', {
         center: [59.943971, 30.447954],
         zoom: 17,
       });
@@ -157,11 +162,11 @@ document.addEventListener("DOMContentLoaded", () => {
         new ymaps.Placemark(
           [59.944003, 30.449187],
           {
-            balloonContent: "цвет <strong>воды пляжа бонди</strong>",
+            balloonContent: 'цвет <strong>воды пляжа бонди</strong>',
           },
           {
-            preset: "islands#icon",
-            iconColor: "#0095b6",
+            preset: 'islands#icon',
+            iconColor: '#0095b6',
           }
         )
       );
@@ -169,10 +174,10 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   //popup
-  $(".btn-popup").magnificPopup({
-    type: "inline",
+  $('.btn-popup').magnificPopup({
+    type: 'inline',
     preloader: false,
-    focus: "#name",
+    focus: '#name',
 
     // When elemened is focused, some mobile browsers in some cases zoom in
     // It looks not nice, so we disable it:
@@ -181,12 +186,9 @@ document.addEventListener("DOMContentLoaded", () => {
         if ($(window).width() < 700) {
           this.st.focus = false;
         } else {
-          this.st.focus = "#name";
+          this.st.focus = '#name';
         }
       },
     },
   });
-  const el = document.querySelectorAll(".lozad");
-  const observer = lozad(el);
-  observer.observe();
 });

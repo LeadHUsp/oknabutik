@@ -1,0 +1,8 @@
+mixin reviews-card(name, text, ...items)
+    .review-card
+        .review-card__head 
+            .review-card__title=name 
+            .review-card__star 
+                each item in items
+                    i.review-card__icon.icon-reviews-star
+        .review-card__text=text     
