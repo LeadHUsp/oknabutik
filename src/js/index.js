@@ -4,6 +4,7 @@ import lozad from 'lozad';
 import { tab } from './tab';
 import './tipi-osteklenie';
 import './page-about-us';
+import './yandexMapInit';
 
 document.addEventListener('DOMContentLoaded', () => {
   //lazyload images
@@ -151,7 +152,7 @@ document.addEventListener('DOMContentLoaded', () => {
   );
   //Yandex map init
 
-  if (document.getElementById('map') !== null) {
+  /*  if (document.getElementById('map') !== null) {
     ymaps.ready(init);
     function init() {
       var myMap = new ymaps.Map('map', {
@@ -165,7 +166,7 @@ document.addEventListener('DOMContentLoaded', () => {
         })
       );
     }
-  }
+  } */
 
   //popup
   $('.btn-popup').magnificPopup({
