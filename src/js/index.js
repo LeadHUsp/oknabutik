@@ -4,7 +4,8 @@ import lozad from 'lozad';
 import { tab } from './tab';
 import './tipi-osteklenie';
 import './page-about-us';
-import './yandexMapInit';
+/* import './yandexMapInit'; */
+import { YandexMapLazy } from './yandexMapLazy';
 
 document.addEventListener('DOMContentLoaded', () => {
   //lazyload images
@@ -150,24 +151,8 @@ document.addEventListener('DOMContentLoaded', () => {
     'advantages-tabs__item-active',
     false
   );
-  //Yandex map init
-
-  /*  if (document.getElementById('map') !== null) {
-    ymaps.ready(init);
-    function init() {
-      var myMap = new ymaps.Map('map', {
-        center: [59.943971, 30.447954],
-        zoom: 17,
-      });
-      myMap.geoObjects.add(
-        new ymaps.Placemark([59.944003, 30.449187], {
-          preset: 'islands#icon',
-          iconColor: '#0095b6',
-        })
-      );
-    }
-  } */
-
+  let map = new YandexMapLazy();
+  map.init();
   //popup
   $('.btn-popup').magnificPopup({
     type: 'inline',
