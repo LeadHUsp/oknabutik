@@ -6,9 +6,10 @@
                     img(id="project-calc__inside-img" src="img/project-calc/glass-default/project-calc-default-inside-warm.png", alt="").img-full
                 .project-calc__part.project-calc__light
                     img( id="project-calc__light-img" src="img/project-calc/project-calc-light-top.png", alt="").img-full 
-                .project-calc__part.project-calc__teplo 
-                    img(src="", alt="")
-                .project-calc__part.project-calc__parapet 
+                .project-calc__part.project-calc__warming 
+                    img(id="project-calc__warming-img" src="img/project-calc/project-calc-warming-default.png", alt="").img-full
+                .project-calc__part.project-calc__siding 
+                    img(id="project-calc__siding-img" src="", alt="") 
                 .project-calc__part.project-calc__pol 
                 .project-calc__part.project-calc__floor 
                 .project-calc__part.project-calc__shkaf
@@ -23,13 +24,33 @@
                     label(for="radio-typeof-balcony-france" data-src="img/project-calc/glass-france/project-calc-france-inside.png").project-calc__label.project-calc__label-type-glass От пола до потолка 
                 .project-calc__group 
                     .project-calc__name Освещение  
-                    input(id="radio-typeof-light-ceiling" type="radio" name="typeof-light").project-calc__radio
+                    input(id="radio-typeof-light-ceiling" type="radio" name="typeof-light" checked="true").project-calc__radio
                     label(for="radio-typeof-light-ceiling" data-group='typeof-light' data-src="img/project-calc/project-calc-light-top.png").project-calc__label Потолочное 
                     input(id="radio-typeof-light-floor"  data-src="img/project-calc/project-calc-light-wall.png" type="radio" name="typeof-light").project-calc__radio
                     label(for="radio-typeof-light-floor" data-group='typeof-light' data-src="img/project-calc/project-calc-light-wall.png").project-calc__label Настенное
                 .project-calc__group 
-                    .project-calc__name Сайдинг  
-                    input(id="radio-typeof-light-ceiling" type="radio" name="typeof-light").project-calc__radio
-                    label(for="radio-typeof-light-ceiling").project-calc__label Потолочное 
-                    input(id="radio-typeof-light-floor" type="radio" name="typeof-light").project-calc__radio
-                    label(for="radio-typeof-light-floor").project-calc__label Настенное
+                    .project-calc__name Утепление  
+                    input(id="radio-typeof-warming-default" type="radio" name="typeof-warming" checked="true").project-calc__radio
+                    label(for="radio-typeof-warming-default" data-group="typeof-warming" data-src="img/project-calc/project-calc-warming-default.png").project-calc__label Стандарт 
+                    input(id="radio-typeof-warming-prem" type="radio" name="typeof-warming").project-calc__radio
+                    label(for="radio-typeof-warming-prem" data-group="typeof-warming" data-src="img/project-calc/project-calc-warming-prem.png").project-calc__label Премиум
+                .project-calc__group 
+                    .project-calc__name Обшивка парапета  
+                    .project-calc__tab-nav
+                        div(data-tab="metall").project-calc__label.child-tabs__btn-active Металл
+                        div(data-tab="siding").project-calc__label Сайдинг
+                    .project-calc__tab-content
+                        div(data-tab-content="metall").project-calc__tab-item.project-calc__tab-active 
+                            button.project-calc__round.project-calc__round-active
+                                img(src="img/project-calc/metall-siding.jpg", alt="").project-calc__palette
+                        div(data-tab-content="siding").project-calc__tab-item 
+                            button.project-calc__round.project-calc__round-active
+                                img(src="img/project-calc/metall-siding.jpg", alt="").project-calc__palette
+                            button.project-calc__round
+                                img(src="", alt="").project-calc__palette
+                            button.project-calc__round
+                                img(src="", alt="").project-calc__palette
+                            button.project-calc__round
+                                img(src="", alt="").project-calc__palette
+                            button.project-calc__round
+                                img(src="", alt="").project-calc__palette
