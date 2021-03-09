@@ -53,7 +53,7 @@
   font-size: 27px;
   font-weight: bold;
   color: $text;
-  font-feature-settings: 'pnum' on, 'lnum' on;
+  font-feature-settings: "pnum" on, "lnum" on;
 }
 .header__item-messagers {
   width: width(975, 100);
@@ -81,6 +81,7 @@
   }
 }
 .stellarnav {
+  z-index: 500;
   .header-nav__item {
     flex-shrink: 1;
     background: $orange;

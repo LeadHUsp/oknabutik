@@ -1,0 +1,16 @@
+- var img = 'img/';
+
+include ../blocks/breadcrumbs
+include ../blocks/inner-pages-blocks/inner-banner
+doctype
+html
+	include ../blocks/_head.pug
+		title Пластиковые окна
+	body
+		include ../blocks/_header.pug
+		+breadcrumbs('Окна', 'Пластиковые окна')
+		+inner-banner('img/inner-pages/plastikovie-okna/plastikovie-okna-banner.jpg', 'Высококачественные пластиковые окна')
+		include ../blocks/_footer.pug
+		include ../blocks/popup-calculation.pug
+		include ../blocks/popup-call-director.pug		
+		include ../blocks/_scripts.pug

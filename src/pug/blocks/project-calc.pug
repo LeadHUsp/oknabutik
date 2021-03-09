@@ -1,0 +1,35 @@
+.project-calc.container 
+        .block-title <b>Создайте проект</b> своего будущего балкона
+        .project-calc__wrapper 
+            .project-calc__view 
+                .project-calc__inside
+                    img(id="project-calc__inside-img" src="img/project-calc/glass-default/project-calc-default-inside-warm.png", alt="").img-full
+                .project-calc__part.project-calc__light
+                    img( id="project-calc__light-img" src="img/project-calc/project-calc-light-top.png", alt="").img-full 
+                .project-calc__part.project-calc__teplo 
+                    img(src="", alt="")
+                .project-calc__part.project-calc__parapet 
+                .project-calc__part.project-calc__pol 
+                .project-calc__part.project-calc__floor 
+                .project-calc__part.project-calc__shkaf
+            .project-calc__control
+                .project-calc__group 
+                    .project-calc__name Тип остекления  
+                    input(id="radio-typeof-glass-warm" type="radio" name="typeof-glass" checked="true").project-calc__radio
+                    label(for="radio-typeof-glass-warm" data-src="img/project-calc/glass-default/project-calc-default-inside-warm.png").project-calc__label.project-calc__label-type-glass Теплое 
+                    input(id="radio-typeof-glass-cold" type="radio" name="typeof-glass").project-calc__radio
+                    label(for="radio-typeof-glass-cold" data-src="img/project-calc/glass-default/project-calc-default-inside-cold.png").project-calc__label.project-calc__label-type-glass Холодное
+                    input(id="radio-typeof-balcony-france" type="radio" name="typeof-glass").project-calc__radio
+                    label(for="radio-typeof-balcony-france" data-src="img/project-calc/glass-france/project-calc-france-inside.png").project-calc__label.project-calc__label-type-glass От пола до потолка 
+                .project-calc__group 
+                    .project-calc__name Освещение  
+                    input(id="radio-typeof-light-ceiling" type="radio" name="typeof-light").project-calc__radio
+                    label(for="radio-typeof-light-ceiling" data-group='typeof-light' data-src="img/project-calc/project-calc-light-top.png").project-calc__label Потолочное 
+                    input(id="radio-typeof-light-floor"  data-src="img/project-calc/project-calc-light-wall.png" type="radio" name="typeof-light").project-calc__radio
+                    label(for="radio-typeof-light-floor" data-group='typeof-light' data-src="img/project-calc/project-calc-light-wall.png").project-calc__label Настенное
+                .project-calc__group 
+                    .project-calc__name Сайдинг  
+                    input(id="radio-typeof-light-ceiling" type="radio" name="typeof-light").project-calc__radio
+                    label(for="radio-typeof-light-ceiling").project-calc__label Потолочное 
+                    input(id="radio-typeof-light-floor" type="radio" name="typeof-light").project-calc__radio
+                    label(for="radio-typeof-light-floor").project-calc__label Настенное

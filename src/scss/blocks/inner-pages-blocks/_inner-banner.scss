@@ -1,0 +1,21 @@
+.inner-banner {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 68px 0;
+  color: #000000;
+}
+.inner-banner__card {
+  background: rgba(255, 255, 255, 0.7);
+  padding: 45px 38px;
+  width: width(1170, 780);
+}
+.inner-banner__btn {
+  max-width: 226px;
+}
+.inner-banner__title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 10px;
+  margin-bottom: 30px;
+}

@@ -27,8 +27,18 @@ const path = {
   app: "./app",
   html: {
     html: "./src/*.html",
-    pug: ["./src/pug/*.pug", "./src/pug/blocks/*.pug", "./src/pug/pages/*.pug"],
-    pugBuild: ["./src/pug/*.pug", "./src/pug/pages/*.pug"],
+    pug: [
+      "./src/pug/*.pug",
+      "./src/pug/blocks/*.pug",
+      "./src/pug/pages/*.pug",
+      "./src/pug/inner-pages/*.pug",
+      "./src/pug/inner-pages/blocks/inner-pages-blocks/*.pug",
+    ],
+    pugBuild: [
+      "./src/pug/*.pug",
+      "./src/pug/pages/*.pug",
+      "./src/pug/inner-pages/*.pug",
+    ],
     result: "./app/",
   },
   style: {

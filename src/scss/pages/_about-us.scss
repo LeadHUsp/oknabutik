@@ -34,6 +34,7 @@
 }
 .about-us-intro__wrapper {
   display: flex;
+  flex-wrap: wrap;
   padding-bottom: 33px;
 }
 .about-us-intro__content {
@@ -188,7 +189,7 @@
   margin-bottom: 27px;
   padding-left: 32px;
   &:before {
-    content: '';
+    content: "";
     position: absolute;
     left: 10px;
     top: 50%;
@@ -246,9 +247,95 @@
   .about-us__wrapper {
     gap: 15px;
   }
+  .about-us-intro__content {
+    width: 100%;
+    padding-bottom: 15px;
+    padding-right: 0;
+  }
+  .about-us-intro__img {
+    width: 50%;
+    margin: 0 auto;
+  }
+  .about-us-intro__social {
+    width: 100%;
+    justify-content: space-evenly;
+  }
+  .about-us-intro__content-high {
+    font-size: 24px;
+  }
+  .about-us-intro {
+    padding-bottom: 0;
+  }
+  .about-us-prizes {
+    padding-top: 20px;
+  }
+  .about-us-prizes {
+    align-items: flex-start;
+  }
+  .about-us-prizes__title {
+    font-size: 24px;
+  }
+  .about-us-prizes__note {
+    font-size: 17px;
+  }
+  .about-us-advantages__title {
+    font-size: 24px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+}
+@media (max-width: 650px) {
+  .about-us-prizes__img {
+    display: none;
+  }
+  .about-us-prizes__content {
+    width: 100%;
+  }
+  .about-us__label {
+    font-size: 15px;
+  }
+  .about-us-intro,
+  .about-us-prizes__text,
+  .about-us-advantages__text,
+  .about-us-advantages__note,
+  .about-us-advantages__point,
+  .about-us-prizes__note {
+    font-size: 14px;
+  }
+  .about-us-advantages__item {
+    width: 50%;
+  }
+  .about-us-advantages__note {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .about-us-advantages__point {
+    margin-bottom: 14px;
+  }
+  .about-us-parthners__note {
+    padding-top: 15px;
+  }
+  .about-us-parthners__item {
+    width: 25%;
+  }
 }
 @media (max-width: 575.9px) {
   .about-us__wrapper {
     grid-template-columns: 1fr;
+  }
+  .about-us-intro__link {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+  }
+}
+@media (max-width: 460px) {
+  .about-us-intro__content-high,
+  .about-us-prizes__title {
+    font-size: 17px;
+  }
+
+  .about-us-intro__content-orange {
+    font-size: 17px;
   }
 }
