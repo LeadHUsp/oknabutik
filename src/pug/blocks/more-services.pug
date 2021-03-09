@@ -1,7 +1,7 @@
 mixin item(img, title, price)
     a(href="#").more-services__item 
             .more-services__picture 
-                img(src="" data-src=img, alt=title).img-full.lozad.more-services__img
+                img(src="img/fallback.jpg" data-src=img, alt=title).img-full.lozad.more-services__img
             .more-services__title
                 .more-services__content=title
                 .more-services__price от <span class="more-services__price-danger">!{price}</span> руб
