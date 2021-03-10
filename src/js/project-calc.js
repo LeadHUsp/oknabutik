@@ -90,7 +90,8 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
   typeOfWarmFloor.forEach((item) => {
-    item.addEventListener("click", (e) => {
+    item.addEventListener("click", () => {
+      console.log("work");
       if (item.value === "warm-floor-no") {
         imgWarmFloor.style.display = "none";
       } else {
