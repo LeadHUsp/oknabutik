@@ -92,7 +92,7 @@ document.addEventListener("DOMContentLoaded", () => {
   typeOfWarmFloor.forEach((item) => {
     item.addEventListener("click", () => {
       console.log("work");
-      if (item.value === "warm-floor-no") {
+      if (item.getAttribute("for") === "radio-typeof-floor-no") {
         imgWarmFloor.style.display = "none";
       } else {
         imgWarmFloor.style.display = "block";
