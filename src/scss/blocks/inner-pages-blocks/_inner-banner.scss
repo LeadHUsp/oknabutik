@@ -16,6 +16,19 @@
 .inner-banner__title {
   font-weight: bold;
   font-size: 36px;
-  line-height: 10px;
+  line-height: 100%;
   margin-bottom: 30px;
+}
+@media (max-width: 767.9px) {
+  .inner-banner__card {
+    width: 100%;
+  }
+  .inner-banner__title {
+    font-size: 30px;
+  }
+}
+@media (max-width: 600px) {
+  .inner-banner__title {
+    font-size: 24px;
+  }
 }

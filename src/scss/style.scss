@@ -18,9 +18,13 @@
   "blocks/mounting", "blocks/breadcrumbs", "blocks/reviews-card",
   "blocks/project-calc";
 //pages
-@import "pages/kotedgi-i-doma-page", "pages/about-us";
+@import "pages/kotedgi-i-doma-page", "pages/about-us",
+  "inner-pages/plastikovie-okna";
 //inner pages blocks
-@import "blocks/inner-pages-blocks/inner-banner";
+@import "blocks/inner-pages-blocks/inner-banner",
+  "blocks/inner-pages-blocks/type-of-windows",
+  "blocks/inner-pages-blocks/cards-orange-mark",
+  "blocks/inner-pages-blocks/inner-advantages";
 
 @include make_container($breakpoints);
 
@@ -56,27 +60,10 @@ hr {
   background: #e1e1e1;
   height: 1px;
 }
-.class {
-  color: #fff;
-}
-.crysler {
-  color: $orange;
-}
 
-/* .slick-list {
-  height: 100%;
-}
-.slick-track {
-  height: 100%;
-} */
 @media (max-width: 620px) {
   .container {
     padding-left: 10px;
     padding-right: 10px;
   }
-}
-
-.shlyapa__ysataya {
-  height: 100%;
-  width: 100%;
 }

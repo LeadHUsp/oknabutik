@@ -24,10 +24,6 @@
 
   &:first-child > .breadcrumbs__link {
     padding-left: 0;
-    &:hover {
-      color: inherit;
-      cursor: unset;
-    }
   }
   &:first-child:before {
     display: none;

@@ -1,0 +1,20 @@
+.plastikovie-okna__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+.plastikovie-okna__col-text {
+  width: width(12, 8);
+}
+.plastikovie-okna__col-img {
+  width: width(12, 4);
+}
+@media (max-width: 767.9px) {
+  .plastikovie-okna__col-text {
+    width: 100%;
+    order: 2;
+  }
+  .plastikovie-okna__col-img {
+    width: 100%;
+    order: 1;
+  }
+}

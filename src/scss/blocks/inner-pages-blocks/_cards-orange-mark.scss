@@ -1,0 +1,107 @@
+.cards-orange-mark {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  padding-bottom: 128px;
+}
+.cards-orange-mark-reverse {
+  flex-direction: row-reverse;
+}
+.cards-orange-mark__content {
+  width: width(12, 7);
+  padding-right: 25px;
+}
+.cards-orange-mark__content-reverse {
+  padding-left: 25px;
+  padding-right: 0;
+}
+.cards-orange-mark__picture {
+  position: relative;
+  width: width(12, 5);
+}
+.cards-orange-mark__btn {
+  width: 100%;
+  max-width: 300px;
+  background: $orange;
+  padding: 20px;
+  text-transform: uppercase;
+  display: block;
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  &:hover {
+    background: darken($orange, 5%);
+  }
+}
+.cards-orange-mark__img {
+  position: relative;
+  z-index: 400;
+}
+.cards-orange-mark__borders {
+  top: -28px;
+  position: absolute;
+  width: width(500, 328);
+  height: 75%;
+  background: $orange;
+  z-index: 100;
+}
+.cards-orange-mark__borders-right {
+  right: -30px;
+}
+.cards-orange-mark__borders-left {
+  left: -30px;
+}
+.cards-orange-mark__title {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 160.5%;
+  margin-bottom: 12px;
+}
+.cards-orange-mark__text {
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 160.5%;
+  margin-bottom: 60px;
+}
+@media (max-width: 991.9px) {
+  .cards-orange-mark {
+    align-items: center;
+  }
+  .cards-orange-mark {
+    padding-bottom: 60px;
+  }
+}
+@media (max-width: 767.9px) {
+  .cards-orange-mark__content {
+    width: 100%;
+  }
+  .cards-orange-mark__picture {
+    width: 100%;
+    padding-top: 70px;
+  }
+  .cards-orange-mark__content-reverse {
+    padding-left: 0;
+  }
+
+  .cards-orange-mark__borders {
+    top: 24px;
+  }
+}
+@media (max-width: 650px) {
+  .cards-orange-mark__borders {
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  .cards-orange-mark__title {
+    font-size: 17px;
+  }
+  .cards-orange-mark__text {
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+}
