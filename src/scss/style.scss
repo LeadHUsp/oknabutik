@@ -1,36 +1,34 @@
 //utils
-@import "utils/_reset", "utils/_vars", "utils/_mixins", "utils/fonts",
-  "../libs/sass-mediaqueries/media-queries";
-@import "../fonts/fontello/css/fontello.css";
+@import 'utils/_reset', 'utils/_vars', 'utils/_mixins', 'utils/fonts',
+  '../libs/sass-mediaqueries/media-queries';
+@import '../fonts/fontello/css/fontello.css';
 
 // blocks
-@import "blocks/ui-parts", "blocks/_header", "blocks/_footer",
-  "blocks/header-banner", "blocks/page-inner", "blocks/product-tabs",
-  "blocks/child-tabs", "blocks/_color-solutions", "blocks/quize",
-  "blocks/advantages-tabs", "blocks/_services", "blocks/banner-sale",
-  "blocks/promos", "blocks/reviews", "blocks/list-compare", "blocks/creation",
-  "blocks/certeficate", "blocks/our-workers", "blocks/banner-sizes",
-  "blocks/stars-rating", "blocks/questions", "blocks/parts/profile",
-  "blocks/contact-label", "blocks/social-links",
-  "blocks/contact-link/footer-icon-link-group", "blocks/form-calc",
-  "blocks/tipi-osteklenie", "blocks/furniture-slider", "blocks/balcony-cost",
-  "blocks/more-services", "blocks/about-services", "blocks/recodr",
-  "blocks/mounting", "blocks/breadcrumbs", "blocks/reviews-card",
-  "blocks/project-calc";
+@import 'blocks/ui-parts', 'blocks/_header', 'blocks/_footer', 'blocks/header-banner',
+  'blocks/page-inner', 'blocks/product-tabs', 'blocks/child-tabs',
+  'blocks/_color-solutions', 'blocks/quize', 'blocks/advantages-tabs', 'blocks/_services',
+  'blocks/banner-sale', 'blocks/promos', 'blocks/reviews', 'blocks/list-compare',
+  'blocks/creation', 'blocks/certeficate', 'blocks/our-workers', 'blocks/banner-sizes',
+  'blocks/stars-rating', 'blocks/questions', 'blocks/parts/profile',
+  'blocks/contact-label', 'blocks/social-links',
+  'blocks/contact-link/footer-icon-link-group', 'blocks/form-calc',
+  'blocks/tipi-osteklenie', 'blocks/furniture-slider', 'blocks/balcony-cost',
+  'blocks/more-services', 'blocks/about-services', 'blocks/recodr', 'blocks/mounting',
+  'blocks/breadcrumbs', 'blocks/reviews-card', 'blocks/project-calc',
+  'blocks/project-from';
 //pages
-@import "pages/kotedgi-i-doma-page", "pages/about-us",
-  "inner-pages/plastikovie-okna";
+@import 'pages/kotedgi-i-doma-page', 'pages/about-us', 'inner-pages/plastikovie-okna';
 //inner pages blocks
-@import "blocks/inner-pages-blocks/inner-banner",
-  "blocks/inner-pages-blocks/type-of-windows",
-  "blocks/inner-pages-blocks/cards-orange-mark",
-  "blocks/inner-pages-blocks/inner-advantages";
+@import 'blocks/inner-pages-blocks/inner-banner',
+  'blocks/inner-pages-blocks/type-of-windows',
+  'blocks/inner-pages-blocks/cards-orange-mark',
+  'blocks/inner-pages-blocks/inner-advantages';
 
 @include make_container($breakpoints);
 
 html,
 body {
-  font-family: "Myriad Pro", sans-serif;
+  font-family: 'Myriad Pro', sans-serif;
   background: #fff;
   color: $text;
   overflow-x: hidden;
