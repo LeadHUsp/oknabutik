@@ -165,116 +165,119 @@ document.addEventListener('DOMContentLoaded', () => {
       btnClear.classList.remove('project-calc__btn-visible');
     });
   };
-  //Управление группами
-  typeOfGlassNavEl.forEach((item) => {
-    item.addEventListener('click', () => {
-      changeImage(item, imgInsideEl);
-      setValueToOutPut(item, typeofGlassOutpPut);
-      if (item.getAttribute('for') === 'radio-typeof-balcony-france') {
-        imgSidingEl.style.display = 'none';
-        typeOfSidingBlockEl.style.display = 'none';
-        typeOfSidingOutPutGroup.forEach((item) => {
-          item.classList.add('project-form__group-hidden');
-        });
-        flagOfFranceGlassType = true;
-        swapDataSrcOnChange(typeOfWarmingNavEl, imgWarmingEl);
-        swapDataSrcOnChange(typeOfFurnitureNavEl, imgFurnitureEl);
-        swapDataSrcOnChange(typeOfWalssNavEl, imgWalssEl);
-        swapDataSrcOnChange(typeOfFloorNavEl, imgFloorEl);
-      } else {
-        imgSidingEl.style.display = 'block';
-        typeOfSidingBlockEl.style.display = 'block';
-        typeOfSidingOutPutGroup.forEach((item) => {
-          item.classList.remove('project-form__group-hidden');
-        });
-        flagOfFranceGlassType = false;
-        reverseSwapDataSrcOnChange(typeOfWarmingNavEl, imgWarmingEl);
-        reverseSwapDataSrcOnChange(typeOfFurnitureNavEl, imgFurnitureEl);
-        reverseSwapDataSrcOnChange(typeOfWalssNavEl, imgWalssEl);
-        reverseSwapDataSrcOnChange(typeOfFloorNavEl, imgFloorEl);
-      }
+
+  if (document.querySelector('.project-calc') !== null) {
+    //Управление группами
+    typeOfGlassNavEl.forEach((item) => {
+      item.addEventListener('click', () => {
+        changeImage(item, imgInsideEl);
+        setValueToOutPut(item, typeofGlassOutpPut);
+        if (item.getAttribute('for') === 'radio-typeof-balcony-france') {
+          imgSidingEl.style.display = 'none';
+          typeOfSidingBlockEl.style.display = 'none';
+          typeOfSidingOutPutGroup.forEach((item) => {
+            item.classList.add('project-form__group-hidden');
+          });
+          flagOfFranceGlassType = true;
+          swapDataSrcOnChange(typeOfWarmingNavEl, imgWarmingEl);
+          swapDataSrcOnChange(typeOfFurnitureNavEl, imgFurnitureEl);
+          swapDataSrcOnChange(typeOfWalssNavEl, imgWalssEl);
+          swapDataSrcOnChange(typeOfFloorNavEl, imgFloorEl);
+        } else {
+          imgSidingEl.style.display = 'block';
+          typeOfSidingBlockEl.style.display = 'block';
+          typeOfSidingOutPutGroup.forEach((item) => {
+            item.classList.remove('project-form__group-hidden');
+          });
+          flagOfFranceGlassType = false;
+          reverseSwapDataSrcOnChange(typeOfWarmingNavEl, imgWarmingEl);
+          reverseSwapDataSrcOnChange(typeOfFurnitureNavEl, imgFurnitureEl);
+          reverseSwapDataSrcOnChange(typeOfWalssNavEl, imgWalssEl);
+          reverseSwapDataSrcOnChange(typeOfFloorNavEl, imgFloorEl);
+        }
+      });
     });
-  });
-  // активация группы освещение
-  activateControlGroup(
-    typeOfLightNavEl,
-    '#typeof-lighting',
-    imgLightEl,
-    false,
-    'project-calc__label-active',
-    false,
-    typeofLightOutPut
-  );
-  // активация группы утепление
-  activateControlGroup(
-    typeOfWarmingNavEl,
-    '#typeof-warming',
-    imgWarmingEl,
-    true,
-    'project-calc__label-active',
-    false,
-    typeofWarmingOutPut
-  );
-  // активация группы мебель
-  activateControlGroup(
-    typeOfFurnitureNavEl,
-    '#typeof-furniture',
-    imgFurnitureEl,
-    true,
-    'project-calc__label-active',
-    false,
-    typeofFurnitureOutPut
-  );
-  // активация группы обшивка
-  activateControlGroup(
-    typeOfSidingNavEl,
-    '#typeof-siding-control',
-    imgSidingEl,
-    false,
-    'project-calc__round-active',
-    true,
-    [typeofSidingTypeOutPut, typeofSidingColorOutPut]
-  );
-  // активация группы отделка стен
-  activateControlGroup(
-    typeOfWalssNavEl,
-    '#typeof-walls-control',
-    imgWalssEl,
-    true,
-    'project-calc__round-active',
-    true,
-    [typeofWallsTypeOutPut, typeofWallsColorOutPut]
-  );
-  // активация группы отделка пола
-  activateControlGroup(
-    typeOfFloorNavEl,
-    '#typeof-floor-control',
-    imgFloorEl,
-    true,
-    'project-calc__round-active',
-    true,
-    [typeofFloorTypeOutPut, typeofFloorColorOutPut]
-  );
-  // Опция теплый пол
-  typeOfWarmFloor.forEach((item) => {
-    item.addEventListener('click', () => {
-      if (item.getAttribute('for') === 'radio-typeof-floor-no') {
-        imgWarmFloor.style.display = 'none';
-        typeofWarmFloorOutPut.value = 'Нет';
-      } else {
-        imgWarmFloor.style.display = 'block';
-        typeofWarmFloorOutPut.value = 'Да';
-      }
+    // активация группы освещение
+    activateControlGroup(
+      typeOfLightNavEl,
+      '#typeof-lighting',
+      imgLightEl,
+      false,
+      'project-calc__label-active',
+      false,
+      typeofLightOutPut
+    );
+    // активация группы утепление
+    activateControlGroup(
+      typeOfWarmingNavEl,
+      '#typeof-warming',
+      imgWarmingEl,
+      true,
+      'project-calc__label-active',
+      false,
+      typeofWarmingOutPut
+    );
+    // активация группы мебель
+    activateControlGroup(
+      typeOfFurnitureNavEl,
+      '#typeof-furniture',
+      imgFurnitureEl,
+      true,
+      'project-calc__label-active',
+      false,
+      typeofFurnitureOutPut
+    );
+    // активация группы обшивка
+    activateControlGroup(
+      typeOfSidingNavEl,
+      '#typeof-siding-control',
+      imgSidingEl,
+      false,
+      'project-calc__round-active',
+      true,
+      [typeofSidingTypeOutPut, typeofSidingColorOutPut]
+    );
+    // активация группы отделка стен
+    activateControlGroup(
+      typeOfWalssNavEl,
+      '#typeof-walls-control',
+      imgWalssEl,
+      true,
+      'project-calc__round-active',
+      true,
+      [typeofWallsTypeOutPut, typeofWallsColorOutPut]
+    );
+    // активация группы отделка пола
+    activateControlGroup(
+      typeOfFloorNavEl,
+      '#typeof-floor-control',
+      imgFloorEl,
+      true,
+      'project-calc__round-active',
+      true,
+      [typeofFloorTypeOutPut, typeofFloorColorOutPut]
+    );
+    // Опция теплый пол
+    typeOfWarmFloor.forEach((item) => {
+      item.addEventListener('click', () => {
+        if (item.getAttribute('for') === 'radio-typeof-floor-no') {
+          imgWarmFloor.style.display = 'none';
+          typeofWarmFloorOutPut.value = 'Нет';
+        } else {
+          imgWarmFloor.style.display = 'block';
+          typeofWarmFloorOutPut.value = 'Да';
+        }
+      });
     });
-  });
-  const checkOutBtn = document.querySelector('.project-calc__btn');
-  const checkOutForm = document.querySelector('.project-calc__form');
-  const goBackBtn = document.querySelector('.project-form__back');
-  checkOutBtn.addEventListener('click', () => {
-    checkOutForm.classList.add('project-calc__form-show');
-  });
-  goBackBtn.addEventListener('click', (e) => {
-    e.preventDefault();
-    checkOutForm.classList.remove('project-calc__form-show');
-  });
+    const checkOutBtn = document.querySelector('.project-calc__btn');
+    const checkOutForm = document.querySelector('.project-calc__form');
+    const goBackBtn = document.querySelector('.project-form__back');
+    checkOutBtn.addEventListener('click', () => {
+      checkOutForm.classList.add('project-calc__form-show');
+    });
+    goBackBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      checkOutForm.classList.remove('project-calc__form-show');
+    });
+  }
 });

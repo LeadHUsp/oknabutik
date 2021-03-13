@@ -4,9 +4,9 @@
       arrows: true,
       dots: false,
       prevArrow:
-        '<button class="color-solutions__arrow color-solutions__arrow-prev"><img src="/img/icons/arrow-dark.svg"></button>',
+        '<button class="color-solutions__arrow color-solutions__arrow-prev"><img src="img/icons/arrow-dark.svg"></button>',
       nextArrow:
-        '<button class="color-solutions__arrow color-solutions__arrow-next"><img src="/img/icons/arrow-dark.svg"></button>',
+        '<button class="color-solutions__arrow color-solutions__arrow-next"><img src="img/icons/arrow-dark.svg"></button>',
       slidesToShow: 5,
       slidesToScroll: 1,
       infinite: true,
