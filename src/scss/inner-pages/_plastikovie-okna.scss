@@ -8,6 +8,66 @@
 .plastikovie-okna__col-img {
   width: width(12, 4);
 }
+.how-chose-window {
+  display: flex;
+  flex-wrap: wrap;
+  font-weight: 400;
+  font-size: 17px;
+  margin: 0 -15px;
+  .block-title {
+    padding-bottom: 60px;
+  }
+}
+.how-chose-window__col {
+  width: 50%;
+  padding: 15px;
+}
+.how-chose-window__note {
+  padding-top: 45px;
+  line-height: 160%;
+  padding-bottom: 100px;
+}
+.how-chose-window__warning {
+  width: width(12, 5);
+  display: flex;
+  align-items: center;
+}
+.how-chose-window__video {
+  width: width(12, 7);
+}
+.how-chose-window__symbol {
+  color: $orange;
+  font-weight: bold;
+  font-size: 115px;
+  line-height: 160.5%;
+}
+.how-chose-window__message {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 127%;
+  color: $text;
+  margin-left: 22px;
+}
+@media (max-width: 991.9px) {
+  .how-chose-window__col {
+    width: 100%;
+  }
+  .how-chose-window__warning {
+    width: 100%;
+  }
+  .how-chose-window__video {
+    width: 100%;
+  }
+  .how-chose-window__note {
+    padding-bottom: 20px;
+  }
+  .how-chose-window__symbol {
+    font-size: 60px;
+  }
+  .how-chose-window__message {
+    font-size: 25px;
+  }
+}
 @media (max-width: 767.9px) {
   .plastikovie-okna__col-text {
     width: 100%;
@@ -16,5 +76,17 @@
   .plastikovie-okna__col-img {
     width: 100%;
     order: 1;
+  }
+  .how-chose-window .block-title {
+    padding-bottom: 25px;
+  }
+}
+@media (max-width: 600px) {
+  .how-chose-window__col,
+  .how-chose-window__note {
+    font-size: 14px;
+  }
+  .how-chose-window__message {
+    font-size: 20px;
   }
 }
