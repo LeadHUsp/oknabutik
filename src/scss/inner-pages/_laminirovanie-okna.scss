@@ -1,0 +1,47 @@
+.lam-okna-preview {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0 -15px;
+  padding-top: 112px;
+  padding-bottom: 15px;
+}
+.lam-okna-preview__col {
+  width: 50%;
+  padding: 0 15px 55px;
+}
+.lam-okna-preview__title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 39px;
+  margin-bottom: 39px;
+}
+.lam-okna-preview__text {
+  font-size: 17px;
+  line-height: 39px;
+  color: #000000;
+}
+@media (max-width: 991.9px) {
+  .lam-okna-preview {
+    padding-top: 35px;
+  }
+
+  .lam-okna-preview__col {
+    width: 100%;
+    padding-bottom: 15px;
+  }
+}
+@media (max-width: 767.9px) {
+  .lam-okna-preview__title {
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 600px) {
+  .lam-okna-preview__title {
+    font-size: 24px;
+  }
+  .lam-okna-preview__text {
+    font-size: 14px;
+  }
+}

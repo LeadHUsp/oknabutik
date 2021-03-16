@@ -1,0 +1,45 @@
+- var img = 'img/';
+
+include ../blocks/breadcrumbs
+include ../blocks/inner-pages-blocks/inner-banner
+include ../blocks/inner-pages-blocks/cards-orange-mark
+doctype
+html
+	include ../blocks/_head.pug
+		title Ламинированные окна
+	body
+		include ../blocks/_header.pug
+		+breadcrumbs('Окна', 'Ламинированные окна')
+		+inner-banner('img/inner-pages/laminirovanie-okna/header-banner.jpg', 'Ламинированные окна', 'Узнать больше')
+		.lam-okna-preview.container
+			.lam-okna-preview__col
+				.lam-okna-preview__title Ламинированные окна
+				.lam-okna-preview__text Окна из металлопластикового профиля можно назвать оптимальным решением по цене и качеству. Преимуществом считается универсальный внешний вид, который вписывается в большинство интерьеров.  На помощь приходят ламинированные окна – что это такое и в чем преимущества расскажем подробнее.
+			.lam-okna-preview__col
+					img(src="" data-src="img/inner-pages/laminirovanie-okna/preview.jpg", alt="Ламинированные окна").img-full.lozad
+			.lam-okna-preview__col
+				.lam-okna-preview__title Особенности
+				.lam-okna-preview__text Технология ламинации пластиковых окон проста – к стандартному белому профилю приклеивается пленка выбранного оттенка.  Процесс проводится  при температуре 130 градусов и высоком давлении. При соблюдении технологии пленка надежно впечатывается в профиль, и сохраняет внешний вид до 25 лет. Главная особенность ламинации в разнообразии цветовых решений. 
+			.lam-okna-preview__col
+				.lam-okna-preview__text Сегодня доступно около 150 оттенков, однотонная, матовая или глянцевая поверхность. Самым популярным решением считается ламинирование под дерево – оно настолько точно имитирует деревянную поверхность, что ее сложно отличить от рам из натурального дерева. 
+		.container 
+			.block-title <b>Цены на ламинированные окна</b>
+		include ../blocks/inner-pages-blocks/inner-advantages.pug
+		.how-chose-window.container 
+			.block-title <b>Как выбрать окно ПВХ в условиях Санкт-Петербурга?</b>
+			.how-chose-window__col
+				.seo-text-container__title Собственное производство окон
+				.seo-text-container__title.seo-text-container__title-orange Преимущества
+				p Эксплуатация до 40 лет. Высокая стойкость к износу, нагрузке. Высокая герметичность. Простой уход. Надежная звукоизоляция. Доступная стоимость.
+			.how-chose-window__col
+				<iframe width="100%" height="315" src="https://www.youtube.com/embed/WOEX1fLAoQE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+			p.how-chose-window__note Для оформления оконного проема можно использовать ламинацию, декоративные раскладки, тонированные стекла, витражи.  Подобрать наиболее удачное решение поможет замерщик. Вызывайте мастера бесплатно. И он порекомендует материалы, точно рассчитает смету.  Чтобы сделать приблизительный расчет, воспользуйтесь онлайн-калькулятором.  Для заказа звоните по телефону +7 812 679-90-80 или вызывайте замерщика через форму обратной связи на сайте.
+			.how-chose-window__warning <div class="how-chose-window__symbol">!</div> <div class="how-chose-window__message">Не покупайте окна ПВХ, пока не посмотрите!</div>
+			.how-chose-window__video <iframe width="100%" height="397" src="https://www.youtube.com/embed/s6sGHIWx1tQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		include ../blocks/inner-pages-blocks/inner-our-works.pug
+		include ../blocks/inner-pages-blocks/inner-certeficate-slider.pug
+		include ../blocks/inner-pages-blocks/inner-footer-banner.pug
+		include ../blocks/_footer.pug
+		include ../blocks/popup-calculation.pug
+		include ../blocks/popup-call-director.pug		
+		include ../blocks/_scripts.pug

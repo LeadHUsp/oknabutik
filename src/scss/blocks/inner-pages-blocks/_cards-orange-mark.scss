@@ -55,6 +55,10 @@
 .cards-orange-mark__borders-left {
   left: -30px;
 }
+.cards-orange-mark__borders-bottom {
+  top: unset;
+  bottom: -28px;
+}
 .cards-orange-mark__title {
   font-weight: bold;
   font-size: 24px;
@@ -88,7 +92,7 @@
   }
 
   .cards-orange-mark__borders {
-    top: 24px;
+    top: 36px;
   }
 }
 @media (max-width: 650px) {
@@ -103,5 +107,11 @@
   .cards-orange-mark__text {
     font-size: 14px;
     margin-bottom: 30px;
+  }
+  .cards-orange-mark__picture {
+    padding-top: 30px;
+  }
+  .cards-orange-mark__picture-notbtn {
+    padding-top: 15px;
   }
 }

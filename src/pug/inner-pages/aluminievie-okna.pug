@@ -1,0 +1,66 @@
+- var img = 'img/';
+
+include ../blocks/breadcrumbs
+include ../blocks/inner-pages-blocks/inner-banner
+include ../blocks/inner-pages-blocks/cards-orange-mark
+doctype
+html
+	include ../blocks/_head.pug
+		title Алюминиевые окна
+	body
+		include ../blocks/_header.pug
+		+breadcrumbs('Окна', 'Алюминиевые окна')
+		+inner-banner('img/inner-pages/aluminievie-okna/header-banner.jpg', 'Алюминиевые окна', 'Узнать больше')
+		.aluminievie-okna-seo.container
+			.aluminievie-okna-seo__wrapper 
+				.aluminievie-okna-seo__text
+					.aluminievie-okna-seo__title Алюминиевые окна
+					p Алюминиевые окна – это хорошая альтернатива профильным системам из дерева или ПВХ. Их ставят на балконах, верандах, в беседках, остекляют ими дома и коммерческие объекты. Есть холодный и теплый профиль из алюминия.
+					p Наша компания выполняет быстрое и качественное остекление с использованием алюминиевого профиля. Даем гарантию 17 лет. Устанавливаем быстро, четко соблюдаем заявленные сроки. Предлагаем выгодные цены, консультируем по всем вопросам. Чтобы оставить заявку на монтаж рам, заполните форму на сайте или звоните.
+					a(href="#form-calc").btn.btn-popup.aluminievie-okna-seo__btn Заказать сейчас
+				.aluminievie-okna-seo__img
+					img(src="" data-src="img/inner-pages/aluminievie-okna/aluminum-windows-3.jpg", alt="Алюминиевые окна").img-full.lozad
+		.container 
+			.block-title У конструкций из алюминиевого сплава<br><b>есть несколько преимуществ</b>
+			+cards-orange-mark('Стойкость к внешним угрозам', 'Алюминий хорошо защищен от коррозии, плесени, грибка и деформации', 'img/inner-pages/aluminievie-okna/advantage-alumin-okna-1.jpg', false, false, true)
+			+cards-orange-mark('Длительный срок использования', 'Время эксплуатации составляет 50-80 лет', 'img/inner-pages/aluminievie-okna/advantage-alumin-okna-2.jpg', true, false, true)
+			+cards-orange-mark('Комбинирование створок', ' Это помогает создать максимально удобные в использовании конструкции', 'img/inner-pages/aluminievie-okna/advantage-alumin-okna-3.jpg', false, false, true)
+			+cards-orange-mark('Красивый дизайн', ' Поверхность можно окрашивать в любой цвет методом порошкового напыления', 'img/inner-pages/aluminievie-okna/advantage-alumin-okna-4.jpg', true, false, true)
+		.container
+			.aluminievie-okna-advantages
+				.aluminievie-okna-advantages__col 
+					.aluminievie-okna-advantages__title Особенности алюминиевых оконных блоков
+					.aluminievie-okna-advantages__text Мы используем профили Provedal и Alutech. Монтажная ширина у рам из алюминия меньше, чем у аналогов из пластика. В зависимости от типа системы внутрь можно поставить стекло или стеклопакет.  Первый вариант чаще всего используется для монтажа в помещениях, которые не планируется отапливать — в беседках, на верандах, балконах, лоджиях. 
+				.aluminievie-okna-advantages__col 
+					.aluminievie-okna-advantages__text Второй можно ставить в жилых комнатах, он обеспечит стопроцентную герметизацию помещения и не пропустит холодный воздух внутрь. Возможна установка распашных, откидных, раздвижных и глухих створок.
+			.aluminievie-okna-advantages.aluminievie-okna-offset
+				.aluminievie-okna-advantages__col
+					.aluminievie-okna-advantages__title Алюминиевые окна: где применяются 
+					.aluminievie-okna-advantages__text Алюминиевый профиль ошибочно считают дешевым вариантом остекления. Изначально он использовался как бюджетная альтернатива ПВХ, так как не дотягивал по уровню прочности и теплоизоляции. В наши дни при производстве светопропускающих конструкций из алюминия в состав добавляют медь и магний, благодаря чему металл становится более прочным, долговечным, способен выдерживать большую нагрузку.
+					.aluminievie-okna-advantages__text Кроме того, окна из алюминия долгое время воспринимали как холодный вариант, но постепенно проблема теплоизоляции таких конструкций была решена. Использование полиамидных прослоек позволяет сохранять тепло, что значительно расширяет сферу применения. Купить алюминиевые окна теперь можно и для жилых комнат.
+				.aluminievie-okna-advantages__col
+					img(src="" data-src="img/inner-pages/aluminievie-okna/al-window-use.jpg", alt="Алюминиевые окна, где применяются").img-full.lozad
+		include ../blocks/inner-pages-blocks/inner-advantages.pug
+		include ../blocks/inner-pages-blocks/inner-our-works.pug
+		.container
+			.block-title <b>Профиль из алюминия используется</b>
+			.aluminievie-okna-use
+				.aluminievie-okna-use__item
+					.aluminievie-okna-use__icon 1
+					.aluminievie-okna-use__text Для холодного остекления балконов, лоджий, теплиц, террас, беседок
+				.aluminievie-okna-use__item
+					.aluminievie-okna-use__icon 2
+					.aluminievie-okna-use__text При остеклении офисов, промышленных объектов, витрин
+			.aluminievie-okna-use
+				.aluminievie-okna-use__item
+					.aluminievie-okna-use__icon 3
+					.aluminievie-okna-use__text Для жилых помещений
+				.aluminievie-okna-use__item
+					.aluminievie-okna-use__icon 4
+					.aluminievie-okna-use__text При обустройстве панорамных балконов, лоджий
+		include ../blocks/inner-pages-blocks/inner-certeficate-slider.pug
+		include ../blocks/inner-pages-blocks/inner-footer-banner.pug
+		include ../blocks/_footer.pug
+		include ../blocks/popup-calculation.pug
+		include ../blocks/popup-call-director.pug		
+		include ../blocks/_scripts.pug

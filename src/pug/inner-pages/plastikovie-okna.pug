@@ -10,7 +10,7 @@ html
 	body
 		include ../blocks/_header.pug
 		+breadcrumbs('Окна', 'Пластиковые окна')
-		+inner-banner('img/inner-pages/plastikovie-okna/plastikovie-okna-banner.jpg', 'Высококачественные пластиковые окна')
+		+inner-banner('img/inner-pages/plastikovie-okna/plastikovie-okna-banner.jpg', 'Высококачественные пластиковые окна', 'Заказать')
 		.plastikovie-okna__inner.container 
 			.block-title <b>Из чего состоит пластиковое окно</b>
 			.plastikovie-okna__wrapper
@@ -29,9 +29,9 @@ html
 		include ../blocks/inner-pages-blocks/type-of-windows.pug
 		.container 
 			.block-title <b>Виды пластиковых окон</b>
-			+cards-orange-mark('Энергосберегающие окна', 'Установка теплых окон позволяет добиться комфортной температуры с минимальными тратами на обогрев даже в условиях сурового климата. Они позволяют сохранить тепло в доме, так как специальное напыление на стекле препятствует проникновения холодных потоков с улицы', 'img/inner-pages/plastikovie-okna/typeof-window-page.jpg', false)
-			+cards-orange-mark('Энергосберегающие окна', 'Установка теплых окон позволяет добиться комфортной температуры с минимальными тратами на обогрев даже в условиях сурового климата. Они позволяют сохранить тепло в доме, так как специальное напыление на стекле препятствует проникновения холодных потоков с улицы', 'img/inner-pages/plastikovie-okna/typeof-window-page.jpg', true)
-			+cards-orange-mark('Энергосберегающие окна', 'Установка теплых окон позволяет добиться комфортной температуры с минимальными тратами на обогрев даже в условиях сурового климата. Они позволяют сохранить тепло в доме, так как специальное напыление на стекле препятствует проникновения холодных потоков с улицы', 'img/inner-pages/plastikovie-okna/typeof-window-page.jpg', false)
+			+cards-orange-mark('Энергосберегающие окна', 'Установка теплых окон позволяет добиться комфортной температуры с минимальными тратами на обогрев даже в условиях сурового климата. Они позволяют сохранить тепло в доме, так как специальное напыление на стекле препятствует проникновения холодных потоков с улицы', 'img/inner-pages/plastikovie-okna/typeof-window-page.jpg', false, true)
+			+cards-orange-mark('Энергосберегающие окна', 'Установка теплых окон позволяет добиться комфортной температуры с минимальными тратами на обогрев даже в условиях сурового климата. Они позволяют сохранить тепло в доме, так как специальное напыление на стекле препятствует проникновения холодных потоков с улицы', 'img/inner-pages/plastikovie-okna/typeof-window-page.jpg', true, true)
+			+cards-orange-mark('Энергосберегающие окна', 'Установка теплых окон позволяет добиться комфортной температуры с минимальными тратами на обогрев даже в условиях сурового климата. Они позволяют сохранить тепло в доме, так как специальное напыление на стекле препятствует проникновения холодных потоков с улицы', 'img/inner-pages/plastikovie-okna/typeof-window-page.jpg', false, true)
 		include ../blocks/inner-pages-blocks/inner-advantages.pug
 		.how-chose-window.container 
 			.block-title <b>Как выбрать окно ПВХ в условиях Санкт-Петербурга?</b>
@@ -45,6 +45,8 @@ html
 			.how-chose-window__warning <div class="how-chose-window__symbol">!</div> <div class="how-chose-window__message">Не покупайте окна ПВХ, пока не посмотрите!</div>
 			.how-chose-window__video <iframe width="100%" height="397" src="https://www.youtube.com/embed/s6sGHIWx1tQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 		include ../blocks/inner-pages-blocks/inner-our-works.pug
+		include ../blocks/inner-pages-blocks/inner-certeficate-slider.pug
+		include ../blocks/inner-pages-blocks/inner-footer-banner.pug
 		include ../blocks/_footer.pug
 		include ../blocks/popup-calculation.pug
 		include ../blocks/popup-call-director.pug		

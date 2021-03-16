@@ -32,7 +32,7 @@ const path = {
       "./src/pug/blocks/*.pug",
       "./src/pug/pages/*.pug",
       "./src/pug/inner-pages/*.pug",
-      "./src/pug/inner-pages/blocks/inner-pages-blocks/*.pug",
+      "./src/pug/blocks/inner-pages-blocks/*.pug",
     ],
     pugBuild: [
       "./src/pug/*.pug",

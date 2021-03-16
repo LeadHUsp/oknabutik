@@ -19,13 +19,17 @@
   "blocks/project-calc", "blocks/project-from";
 //pages
 @import "pages/kotedgi-i-doma-page", "pages/about-us",
-  "inner-pages/plastikovie-okna";
+  "inner-pages/plastikovie-okna", "inner-pages/aluminievie-okna",
+  "inner-pages/laminirovanie-okna";
 //inner pages blocks
 @import "blocks/inner-pages-blocks/inner-banner",
   "blocks/inner-pages-blocks/type-of-windows",
   "blocks/inner-pages-blocks/cards-orange-mark",
   "blocks/inner-pages-blocks/inner-advantages",
-  "blocks/inner-pages-blocks/inner-our-works";
+  "blocks/inner-pages-blocks/inner-our-works",
+  "blocks/inner-pages-blocks/inner-certeficate-slider",
+  "blocks/inner-pages-blocks/inner-footer-banner",
+  "blocks/inner-pages-blocks/inner-product-card";
 
 @include make_container($breakpoints);
 

@@ -1,19 +1,43 @@
-mixin cards-orange-mark(title,text,img,left)
+mixin cards-orange-mark(title,text,img,left, btn, bottom)
     if left
         .cards-orange-mark.cards-orange-mark-reverse 
             .cards-orange-mark__content.cards-orange-mark__content-reverse 
                 .cards-orange-mark__title=title 
                 .cards-orange-mark__text=text
-                a(href="#").cards-orange-mark__btn Подробнее 
-            .cards-orange-mark__picture 
-                img(src="img/fallback.jpg" data-src=img, alt=title).img-full.cards-orange-mark__img.lozad
-                .cards-orange-mark__borders.cards-orange-mark__borders-left
+                if btn 
+                    a(href="#").cards-orange-mark__btn Подробнее
+            if btn 
+                .cards-orange-mark__picture 
+                    img(src="img/fallback.jpg" data-src=img, alt=title).img-full.cards-orange-mark__img.lozad
+                    if bottom
+                        .cards-orange-mark__borders.cards-orange-mark__borders-left.cards-orange-mark__borders-bottom
+                    else 
+                        .cards-orange-mark__borders.cards-orange-mark__borders-left
+            else
+                .cards-orange-mark__picture 
+                    img(src="img/fallback.jpg" data-src=img, alt=title).img-full.cards-orange-mark__img.lozad
+                    if bottom
+                        .cards-orange-mark__borders.cards-orange-mark__borders-left.cards-orange-mark__borders-bottom
+                    else 
+                        .cards-orange-mark__borders.cards-orange-mark__borders-left
     else  
         .cards-orange-mark 
             .cards-orange-mark__content 
                 .cards-orange-mark__title=title 
                 .cards-orange-mark__text=text
-                a(href="#").cards-orange-mark__btn Подробнее 
-            .cards-orange-mark__picture 
-                img(src="img/fallback.jpg" data-src=img, alt=title).img-full.cards-orange-mark__img.lozad
-                .cards-orange-mark__borders.cards-orange-mark__borders-right
+                if btn 
+                    a(href="#").cards-orange-mark__btn Подробнее
+            if btn 
+                .cards-orange-mark__picture 
+                    img(src="img/fallback.jpg" data-src=img, alt=title).img-full.cards-orange-mark__img.lozad
+                    if bottom
+                        .cards-orange-mark__borders.cards-orange-mark__borders-right.cards-orange-mark__borders-bottom
+                    else 
+                        .cards-orange-mark__borders.cards-orange-mark__borders-right
+            else 
+                .cards-orange-mark__picture.cards-orange-mark__picture-notbtn 
+                    img(src="img/fallback.jpg" data-src=img, alt=title).img-full.cards-orange-mark__img.lozad
+                    if bottom
+                        .cards-orange-mark__borders.cards-orange-mark__borders-right.cards-orange-mark__borders-bottom
+                    else 
+                        .cards-orange-mark__borders.cards-orange-mark__borders-right

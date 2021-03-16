@@ -1,11 +1,12 @@
 document.addEventListener("DOMContentLoaded", () => {
-  $(".inner-our-works__slider").slick({
-    infinite: false,
+  //Сертефикаты
+  $(".inner-certeficate__slider").slick({
     slidesToShow: 3,
     slidesToScroll: 1,
     arrows: true,
-    prevArrow: $(".inner-our-works__btn-prev"),
-    nextArrow: $(".inner-our-works__btn-next"),
+    infinite: false,
+    prevArrow: $(".inner-certeficate__btn-prev"),
+    nextArrow: $(".inner-certeficate__btn-next"),
     responsive: [
       {
         breakpoint: 767,
@@ -20,5 +21,11 @@ document.addEventListener("DOMContentLoaded", () => {
         },
       },
     ],
+  });
+  $(".inner-certeficate__slide").fancybox({
+    buttons: ["zoom", "close"],
+    /* thumbs: {
+      autoStart: true,
+    }, */
   });
 });

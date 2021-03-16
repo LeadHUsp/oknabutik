@@ -7,7 +7,8 @@ import "./page-about-us";
 import "./project-calc";
 /* import './yandexMapInit'; */
 import { YandexMapLazy } from "./yandexMapLazy";
-
+import "./inner-our-works";
+import "./inner-certeficate";
 document.addEventListener("DOMContentLoaded", () => {
   //lazyload images
   const el = document.querySelectorAll(".lozad");

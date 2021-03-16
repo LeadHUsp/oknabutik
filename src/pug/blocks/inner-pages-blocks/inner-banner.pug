@@ -1,7 +1,7 @@
-mixin inner-banner(img, text)
+mixin inner-banner(img, text, btnText)
     .inner-banner.lozad(data-background-image=img) 
         .container 
             .inner-banner__card 
                 .inner-banner__title=text
                 .inner-banner__btn 
-                    a(href="#form-calc").btn.btn-popup Заказать
+                    a(href="#form-calc").btn.btn-popup=btnText

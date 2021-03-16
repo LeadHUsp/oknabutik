@@ -1,0 +1,151 @@
+.aluminievie-okna-seo {
+  padding-top: 116px;
+}
+.aluminievie-okna-seo__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+.aluminievie-okna-seo__text {
+  width: width(12, 7);
+  p {
+    margin-bottom: 25px;
+  }
+}
+.aluminievie-okna-seo__img {
+  width: width(12, 5);
+}
+.aluminievie-okna-seo__text {
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 161%;
+  color: #000000;
+  margin-bottom: 27px;
+  padding-right: 30px;
+}
+.aluminievie-okna-seo__title {
+  font-weight: bold;
+  font-size: 36px;
+  margin-bottom: 18px;
+}
+.aluminievie-okna-seo__btn {
+  max-width: 219px;
+}
+.aluminievie-okna-advantages {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+.aluminievie-okna-advantages__col {
+  width: 50%;
+  padding: 0 15px;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 159%;
+  color: #000000;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.aluminievie-okna-advantages__title {
+  width: 100%;
+  margin-bottom: 30px;
+  color: $text;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 123.5%;
+}
+.aluminievie-okna-advantages__text {
+  width: 100%;
+}
+.aluminievie-okna-offset {
+  padding-top: 82px;
+}
+.aluminievie-okna-use {
+  width: width(1170, 968);
+  margin: 0 auto 60px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.aluminievie-okna-use__item {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+.aluminievie-okna-use__icon {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 1;
+  color: #ffebd2;
+  flex-shrink: 0;
+  background: $orange;
+  border-radius: 50%;
+}
+.aluminievie-okna-use__text {
+  padding-left: 35px;
+  font-size: 17px;
+  color: #000000;
+  padding-right: 30px;
+}
+@media (max-width: 1279.9px) {
+  .aluminievie-okna-use {
+    width: 100%;
+  }
+}
+@media (max-width: 991.9px) {
+  .aluminievie-okna-seo {
+    padding-top: 35px;
+  }
+  .aluminievie-okna-seo__text {
+    width: 100%;
+    padding-right: 0;
+  }
+  .aluminievie-okna-seo__img {
+    width: 100%;
+  }
+}
+@media (max-width: 767.9px) {
+  .aluminievie-okna-seo__title {
+    font-size: 30px;
+  }
+  .aluminievie-okna-advantages__col {
+    width: 100%;
+  }
+  .aluminievie-okna-offset {
+    padding-top: 35px;
+  }
+}
+@media (max-width: 600px) {
+  .aluminievie-okna-seo__text,
+  .aluminievie-okna-advantages__text {
+    font-size: 14px;
+  }
+  .aluminievie-okna-seo__title {
+    font-size: 24px;
+  }
+  .aluminievie-okna-use__item {
+    width: 100%;
+    padding: 15px;
+  }
+  .aluminievie-okna-use {
+    margin-bottom: 0;
+  }
+  .aluminievie-okna-use__text {
+    font-size: 14px;
+  }
+}
+@media (max-width: 480px) {
+  .aluminievie-okna-use__icon {
+    width: 50px;
+    height: 50px;
+    font-size: 32px;
+  }
+  .aluminievie-okna-use__text {
+    padding-left: 10px;
+    padding-right: 0;
+  }
+}
