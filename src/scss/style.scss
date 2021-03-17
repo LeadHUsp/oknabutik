@@ -1,62 +1,69 @@
 //utils
 @import 'utils/_reset', 'utils/_vars', 'utils/_mixins', 'utils/fonts',
-  '../libs/sass-mediaqueries/media-queries';
+'../libs/sass-mediaqueries/media-queries';
 @import '../fonts/fontello/css/fontello.css';
 
 // blocks
 @import 'blocks/ui-parts', 'blocks/_header', 'blocks/_footer', 'blocks/header-banner',
-  'blocks/page-inner', 'blocks/product-tabs', 'blocks/child-tabs',
-  'blocks/_color-solutions', 'blocks/quize', 'blocks/advantages-tabs', 'blocks/_services',
-  'blocks/banner-sale', 'blocks/promos', 'blocks/reviews', 'blocks/list-compare',
-  'blocks/creation', 'blocks/certeficate', 'blocks/our-workers', 'blocks/banner-sizes',
-  'blocks/stars-rating', 'blocks/questions', 'blocks/parts/profile',
-  'blocks/contact-label', 'blocks/social-links',
-  'blocks/contact-link/footer-icon-link-group', 'blocks/form-calc',
-  'blocks/tipi-osteklenie', 'blocks/furniture-slider', 'blocks/balcony-cost',
-  'blocks/more-services', 'blocks/about-services', 'blocks/recodr', 'blocks/mounting',
-  'blocks/breadcrumbs';
+'blocks/page-inner', 'blocks/product-tabs', 'blocks/child-tabs',
+'blocks/_color-solutions', 'blocks/quize', 'blocks/advantages-tabs', 'blocks/_services',
+'blocks/banner-sale', 'blocks/promos', 'blocks/reviews', 'blocks/list-compare',
+'blocks/creation', 'blocks/certeficate', 'blocks/our-workers', 'blocks/banner-sizes',
+'blocks/stars-rating', 'blocks/questions', 'blocks/parts/profile',
+'blocks/contact-label', 'blocks/social-links',
+'blocks/contact-link/footer-icon-link-group', 'blocks/form-calc',
+'blocks/tipi-osteklenie', 'blocks/furniture-slider', 'blocks/balcony-cost',
+'blocks/more-services', 'blocks/about-services', 'blocks/recodr', 'blocks/mounting',
+'blocks/breadcrumbs', 'all_design/blocks/button-show-more';
 //pages
-@import 'pages/kotedgi-i-doma-page', 'pages/about-us';
+@import 'pages/kotedgi-i-doma-page', 'pages/about-us', 'all_design/our-videoblog';
 
 @include make_container($breakpoints);
 
 html,
 body {
-  font-family: 'Myriad Pro', sans-serif;
-  background: #fff;
-  color: $text;
-  overflow-x: hidden;
+    font-family: 'Myriad Pro', sans-serif;
+    background: #fff;
+    color: $text;
+    overflow-x: hidden;
 }
+
 button {
-  font-family: inherit;
-  background: none;
-  color: inherit;
-  cursor: pointer;
+    font-family: inherit;
+    background: none;
+    color: inherit;
+    cursor: pointer;
 }
+
 .img-full {
-  width: 100%;
-  height: auto;
+    width: 100%;
+    height: auto;
 }
+
 .seo-text-container {
-  font-weight: 300;
-  font-size: 17px;
-  line-height: 140%;
-  letter-spacing: 0.01em;
-  color: $text;
-  padding-top: 40px;
-  p {
-    margin-bottom: 15px;
-  }
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 140%;
+    letter-spacing: 0.01em;
+    color: $text;
+    padding-top: 40px;
+
+    p {
+        margin-bottom: 15px;
+    }
 }
+
 hr {
-  background: #e1e1e1;
-  height: 1px;
+    background: #e1e1e1;
+    height: 1px;
 }
+
 .class {
-  color: #fff;
+    color: #fff;
 }
+
 .crysler {
-  color: $orange;
+    color: $orange;
 }
 
 /* .slick-list {
@@ -66,8 +73,8 @@ hr {
   height: 100%;
 } */
 @media (max-width: 620px) {
-  .container {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
+    .container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 }

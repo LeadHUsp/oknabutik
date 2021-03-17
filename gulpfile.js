@@ -27,7 +27,7 @@ const path = {
   app: "./app",
   html: {
     html: "./src/*.html",
-    pug: ["./src/pug/*.pug", "./src/pug/blocks/*.pug", "./src/pug/pages/*.pug"],
+    pug: ["./src/pug/*.pug", "./src/pug/blocks/*.pug", "./src/pug/pages/*.pug", "./src/pug/all_design/*.pug"],
     pugBuild: ["./src/pug/*.pug", "./src/pug/pages/*.pug"],
     result: "./app/",
   },

@@ -1,4 +1,6 @@
 node_modules
 app
 dist
-style.scss
+!src\scss\style.scss
+!gulpfile.js
+!src\js\index.js

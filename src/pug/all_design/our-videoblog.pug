@@ -1,0 +1,67 @@
+include ../blocks/breadcrumbs
+
+-
+    let links = [
+        {videoLink: "3Olo001aMsw", imgLink: "//img.youtube.com/vi/3Olo001aMsw/mqdefault.jpg", description: "Окна REHAU нестандартных форм в Санкт-Петербурге"},
+        {videoLink: "9KUb1Qx88MQ", imgLink: "//img.youtube.com/vi/9KUb1Qx88MQ/mqdefault.jpg", description: "Глобальный Оконный шок итоги 2020 года в оконной отрасли"},
+        {videoLink: "OIm2lQ8KLrk", imgLink: "//img.youtube.com/vi/OIm2lQ8KLrk/mqdefault.jpg", description: "Раздвижные алюминиевые двери Reynaers (Рейнарс) CP 155 LS"},
+        {videoLink: "xwrcyi0nvw4", imgLink: "//img.youtube.com/vi/xwrcyi0nvw4/mqdefault.jpg", description: "Фасадное остекление алюминием.Система стоечно-ригельного фасада ALT F50"},
+        {videoLink: "o9Nxy1ZHQiM", imgLink: "//img.youtube.com/vi/o9Nxy1ZHQiM/mqdefault.jpg", description: "Остекление зимнего сада с Санкт-Петербурге"},
+        {videoLink: "AhHWE7W8_zM", imgLink: "//img.youtube.com/vi/AhHWE7W8_zM/mqdefault.jpg", description: "Остекление коттеджа или загородного дома"},
+        {videoLink: "5rvvB1PUDDs", imgLink: "//img.youtube.com/vi/5rvvB1PUDDs/mqdefault.jpg", description: "Замена холодного фасадного остекления на теплое ПВХ без изменения фасада"},
+        {videoLink: "eqcMdUHCov0", imgLink: "//img.youtube.com/vi/eqcMdUHCov0/mqdefault.jpg", description: "Тёплая складная сдвижная система Reynaers CF 77 Гармошка"},
+        {videoLink: "AMDM-ckScLE", imgLink: "//img.youtube.com/vi/AMDM-ckScLE/mqdefault.jpg", description: "Тёплая раздвижная система Reynaers Hi-Finity"},
+        {videoLink: "notmK9-eox8", imgLink: "//img.youtube.com/vi/notmK9-eox8/mqdefault.jpg", description: "CP155LS Slim (Concept Patio 155 подъёмно-сдвижная с узким переплётном)"},
+        {videoLink: "XriNTc8NimA", imgLink: "//img.youtube.com/vi/XriNTc8NimA/mqdefault.jpg", description: "Монтаж окна по ГОСТу"},
+        {videoLink: "GmIHNgaDZOw", imgLink: "//img.youtube.com/vi/GmIHNgaDZOw/mqdefault.jpg", description: "Монтаж дерево-алюминиевых окон из дуба, лиственницы и сосны"},
+        {videoLink: "sOKvP2j30S4", imgLink: "//img.youtube.com/vi/sOKvP2j30S4/mqdefault.jpg", description: "Замена холодного остекления на тёплое Санкт-Петербург"},
+        {videoLink: "dM7jNmymW5U", imgLink: "//img.youtube.com/vi/dM7jNmymW5U/mqdefault.jpg", description: "Параллельно - сдвижная система дверей PSK для коттеджей в Санкт-Петербурге"},
+        {videoLink: "tS_imuqs6Go", imgLink: "//img.youtube.com/vi/tS_imuqs6Go/mqdefault.jpg", description: "Остекление Балконов и лоджий в ЖК Живи в Рыбацком"},
+        {videoLink: "t9RaAGJJnEQ", imgLink: "//img.youtube.com/vi/t9RaAGJJnEQ/mqdefault.jpg", description: "Остекление коттеджей и загородных домов в Санкт-Петербурге"},
+        {videoLink: "drcpqypBZ_Q", imgLink: "//img.youtube.com/vi/drcpqypBZ_Q/mqdefault.jpg", description: "Пластиковые раздвижные двери REHAU ROTO PATIO"},
+        {videoLink: "5UKfgP1nGBQ", imgLink: "//img.youtube.com/vi/5UKfgP1nGBQ/mqdefault.jpg", description: "Остекление террас и веранд в Санкт-Петербурге"},
+        {videoLink: "s6sGHIWx1tQ", imgLink: "//img.youtube.com/vi/s6sGHIWx1tQ/mqdefault.jpg", description: "Не покупайте окна ПВХ, пока не посмотрите!"},
+        {videoLink: "me_lAbbsOO4", imgLink: "//img.youtube.com/vi/me_lAbbsOO4/mqdefault.jpg", description: "Отзыв Оконный Бутик Виталия Хрусталева"},
+        {videoLink: "HBA99KMKmqo", imgLink: "//img.youtube.com/vi/HBA99KMKmqo/mqdefault.jpg", description: "Установка деревянных окон в квартире"},
+        {videoLink: "jiB7hLQdJW0", imgLink: "//img.youtube.com/vi/jiB7hLQdJW0/mqdefault.jpg", description: "Замена холодного фасадного остекления на теплое без изменения внешнего фасада в Санкт-Петербурге"},
+        {videoLink: "WOEX1fLAoQE", imgLink: "//img.youtube.com/vi/WOEX1fLAoQE/mqdefault.jpg", description: "Производства окон REHAU в Санкт-Петербурге"},
+        {videoLink: "FohF2AEepho", imgLink: "//img.youtube.com/vi/FohF2AEepho/mqdefault.jpg", description: "Замена холодного остекления на теплое в СПБ Санкт-Петербурге Алюминиевая система Авангард."},
+        {videoLink: "flPeQkNgFik", imgLink:"//img.youtube.com/vi/flPeQkNgFik/mqdefault.jpg", description: "Гармошка Roto Patio Fold"},
+    ];
+-
+    let reviews = [
+        {videoLink: "vYffMqScQzE", imgLink: "//img.youtube.com/vi/vYffMqScQzE/mqdefault.jpg"},
+        {videoLink: "me_lAbbsOO4", imgLink: "//img.youtube.com/vi/me_lAbbsOO4/mqdefault.jpg"},
+        {videoLink: "quKLrZljamc", imgLink: "//img.youtube.com/vi/quKLrZljamc/mqdefault.jpg"},
+        {videoLink: "UPvfCg5OFSk", imgLink: "//img.youtube.com/vi/UPvfCg5OFSk/mqdefault.jpg"},
+    ];
+
+doctype
+html
+    include ../blocks/_head.pug
+        title Наш видеоблог
+    body
+        include ../blocks/_header.pug
+        +breadcrumbs('О нас', 'Наш видеоблог')
+        .container
+            .block-title.our-videoblog__title Наш видеоблог
+            .our-videoblog__banner 
+                img(src="" data-src="img/pages/our-videoblog/our-videoblog__banner.jpg").img-full.lozad
+            .our-videoblog__wrapper
+                each link in links
+                    a(href=`https://www.youtube.com/watch?v=${link.videoLink}` title=link.description).our-videoblog__link.popup-youtube
+                        img(src="" data-src=link.imgLink).img-full.lozad
+                        .our-videoblog__description 
+                            h2 #{link.description}
+                            p Watch video
+            .block-title.our-videoblog__title Отзывы клиентов
+            .our-videoblog__wrapper.pb-3
+                each review in reviews 
+                    a(href=`https://www.youtube.com/watch?v=${review.videoLink}`).our-videoblog-rewievs__link.popup-youtube__reviews
+                        img(src="" data-src=review.imgLink).img-full.lozad
+            .button-show-more
+                a.button-show-more__link Показать ещё
+
+
+        include ../blocks/_footer.pug
+        include ../blocks/_scripts.pug

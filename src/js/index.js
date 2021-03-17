@@ -3,6 +3,7 @@ import { quizeInit } from "./quize";
 import lozad from "lozad";
 import { tab } from "./tab";
 import "./tipi-osteklenie";
+import "./our-videoblog"
 
 document.addEventListener("DOMContentLoaded", () => {
   $(".stellarnav").stellarNav({
@@ -186,6 +187,7 @@ document.addEventListener("DOMContentLoaded", () => {
       },
     },
   });
+
   const el = document.querySelectorAll(".lozad");
   const observer = lozad(el);
   observer.observe();
